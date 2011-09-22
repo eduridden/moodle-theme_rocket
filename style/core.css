@@ -408,7 +408,7 @@ cursor: pointer;
 
 .block_login.block {
 	margin: 0px;
-	background: #a61e37;
+	background: [[setting:themecolor]];
 }
 
 .block_login div.header {
@@ -505,7 +505,7 @@ cursor: pointer;
 }
 
 .block_calendar_month .calendar-controls {
-	background: #d32b4a;
+	background: [[setting:themetrimcolor]];
 	padding: 5px;
 	border: 1px solid #ccc !important;
 	border-bottom: 0px none !important;
