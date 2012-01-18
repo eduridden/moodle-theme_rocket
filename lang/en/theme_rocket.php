@@ -50,7 +50,7 @@ $string['bannerdesc'] = 'Change the banner on the frontpage by entering the URL 
 $string['themecolor'] = 'Theme Color';
 $string['themecolordesc'] = 'What color should your theme be. This will change mulitple components to produce the color you wish across the moodle site';
 
-$string['themetrimcolor'] = 'Theme Color';
+$string['themetrimcolor'] = 'Theme Trim Color';
 $string['themetrimcolordesc'] = 'What color should your theme be. This will change mulitple components to produce the color you wish across the moodle site';
 
 $string['menucolor'] = 'Menu Color';
