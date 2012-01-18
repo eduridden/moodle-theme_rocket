@@ -1,5 +1,5 @@
 <?phpdefined('MOODLE_INTERNAL') || die;if ($ADMIN->fulltree) {// Institution Name$name = 'theme_rocket/sitename';$title = get_string('sitename','theme_rocket');$description = get_string('sitenamedesc', 'theme_rocket');$default = 'Welcome to my site';$setting = new admin_setting_configtext($name, $title, $description, $default);$settings->add($setting);// Logo file setting$name = 'theme_rocket/logo';$title = get_string('logo','theme_rocket');$description = get_string('logodesc', 'theme_rocket');
-$default = 'rocket/pix/logo/rocket.png';$setting = new admin_setting_configtext($name, $title, $description, $default);$settings->add($setting);
+$default = 'rocket/pix/logo/rocket.png';$setting = new admin_setting_configfile($name, $title, $description, $default);$settings->add($setting);
 
 // Banner file setting$name = 'theme_rocket/banner';$title = get_string('banner','theme_rocket');$description = get_string('bannerdesc', 'theme_rocket');
 $default = 'rocket/pix/banner/default.png';$setting = new admin_setting_configtext($name, $title, $description, $default);$settings->add($setting);
