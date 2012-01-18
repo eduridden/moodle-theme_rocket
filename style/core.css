@@ -15,13 +15,34 @@ html, body {	font-family : "Helvetica Neue", Helvetica, Arial, sans-serif;	mar
 
 #headerwrap {	height : 260px;	width : 1000px;	margin-left : auto;	margin-right : auto;	clear : both;	background : transparent;
 	padding-top: 16px;}
+
+.headerTable .logininfo {
+	color: #fff;
+	font-size: .85em;
+	float: right;
+	position: relative;
+	top: 70px;
+	right: 5px;
+	z-index: 1;
+	margin-bottom: -15px;
+}
+
+.headerTable .logininfo a {
+	color: #fff;
+}
+
+.headerTable .logininfo a:hover {
+	border-bottom: 1px dotted #fff;
+	text-decoration: none;
+}
 #logowrap {	height : 140px;
 	width: 260px;
 	margin-top: 10px;}
 #logo {
 	background: url([[setting:logo]]) top center no-repeat transparent;
-	width: 250px;
-	height:  140px;}
+	width: 251px;
+	height:  140px;
+	border-bottom: 4px solid [[setting:menutrimcolor]];}
 
 #header_right {	width : 710px;	margin-left : 261px;	margin-right : 0px;	clear : both;	background : #000;}
 
@@ -58,7 +79,7 @@ html, body {	font-family : "Helvetica Neue", Helvetica, Arial, sans-serif;	mar
  #banner {
 	background: url([[setting:banner]])  top center no-repeat #000;
 	width: 750px;
-	height: 350px;
+	height: 348px;
 }
 
 #toplinks {
