@@ -44,7 +44,8 @@ function rocket_performance_output($param) {
     $html .= '</ul></div>';
 
     return $html;
-}/**
+}
+/**
  * Generate updated custommenu with enroled courses listed
  */class transmuted_custom_menu_item extends custom_menu_item {
     public function __construct(custom_menu_item $menunode) {

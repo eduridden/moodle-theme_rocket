@@ -575,7 +575,7 @@ margin-top: 0px;}
 
 /* @group Performance Information */
 
-
+/*
 #footerinner .performanceinfo {
 	-moz-border-radius-topleft:15px;
 	-moz-border-radius-topright:15px;
@@ -636,7 +636,7 @@ margin-top: 0px;}
 	color:#fff;
 	display: block;
 }
-
+*/
 /* @end */
 
 div#jcontrols_button span.arrow.sep {font-size : 1px;color : #dadada;display : inline-block;width : 16px;}
