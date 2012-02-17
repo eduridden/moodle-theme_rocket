@@ -3,7 +3,7 @@
 	<?php  echo $OUTPUT->login_info(); ?>
 		<div class="header_left">
 			<div id="logowrap">
-				<a href="http://ilearn.asam.mq.edu.au/"><div id="logo"></div></a>
+				<a href="/index.php"><div id="logo"></div></a>
 			</div>		</div>
 		<div class="header_right">
 			<div id="menuwrap">				<?php 				if ($hascustommenu) { ?> 					<div id="menuitemswrap"><div id="custommenu"><?php echo $custommenu; ?></div></div>				<?php } ?>			</div>
