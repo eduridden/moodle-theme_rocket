@@ -77,7 +77,7 @@ $THEME->larrow = "<";
 // include.
 ////////////////////////////////////////////////////
 
-// $THEME->rendererfactory = 'theme_overridden_renderer_factory';
+$THEME->rendererfactory = 'theme_overridden_renderer_factory';
 
 ////////////////////////////////////////////////////
 // Sets a custom render factory to use with the 
