@@ -9,11 +9,13 @@
     if (!empty($theme->settings->menuhovercolor)) {        $menuhovercolor = $theme->settings->menuhovercolor;    } else {        $menuhovercolor = null;    }    $css = rocket_set_menuhovercolor($css, $menuhovercolor);
     
     // Set the custommenu trim color
-    if (!empty($theme->settings->menutrimcolor)) {        $menutrimcolor = $theme->settings->menutrimcolor;    } else {        $menutrimcolor = null;    }    $css = rocket_set_menutrimcolor($css, $menutrimcolor);    	// Set the background image for the logo     if (!empty($theme->settings->logo)) {        $logo = $theme->settings->logo;    } else {        $logo = null;    }    $css = rocket_set_logo($css, $logo);
+    if (!empty($theme->settings->menutrimcolor)) {        $menutrimcolor = $theme->settings->menutrimcolor;    } else {        $menutrimcolor = null;    }    $css = rocket_set_menutrimcolor($css, $menutrimcolor);
+
+	// Set the custommenu link color
+    if (!empty($theme->settings->menulinkcolor)) {        $menulinkcolor = $theme->settings->menulinkcolor;    } else {        $menulinkcolor = null;    }    $css = rocket_set_menulinkcolor($css, $menulinkcolor);    	// Set the background image for the logo     if (!empty($theme->settings->logo)) {        $logo = $theme->settings->logo;    } else {        $logo = null;    }    $css = rocket_set_logo($css, $logo);
     
     // Set the background image for the Banner     if (!empty($theme->settings->banner)) {        $banner = $theme->settings->banner;    } else {        $banner = null;    }    $css = rocket_set_banner($css, $banner);
-    
-    // Set the height of the banner     if (!empty($theme->settings->bannerheight)) {        $bannerheight = $theme->settings->bannerheight;    } else {        $bannerheight = null;    }    $css = rocket_set_bannerheight($css, $bannerheight);        return $css;}
+            return $css;}
 function rocket_set_themecolor($css, $themecolor) {    $tag = '[[setting:themecolor]]';    $replacement = $themecolor;    if (is_null($replacement)) {        $replacement = '#5faff2';    }    $css = str_replace($tag, $replacement, $css);    return $css;}
 
 function rocket_set_themetrimcolor($css, $themetrimcolor) {    $tag = '[[setting:themetrimcolor]]';    $replacement = $themetrimcolor;    if (is_null($replacement)) {        $replacement = '#660000';    }    $css = str_replace($tag, $replacement, $css);    return $css;}
@@ -21,6 +23,8 @@ function rocket_set_themetrimcolor($css, $themetrimcolor) {    $tag = '[[settin
 function rocket_set_menucolor($css, $menucolor) {    $tag = '[[setting:menucolor]]';    $replacement = $menucolor;    if (is_null($replacement)) {        $replacement = '#76777c';    }    $css = str_replace($tag, $replacement, $css);    return $css;}
 
 function rocket_set_menuhovercolor($css, $menuhovercolor) {    $tag = '[[setting:menuhovercolor]]';    $replacement = $menuhovercolor;    if (is_null($replacement)) {        $replacement = '#919193';    }    $css = str_replace($tag, $replacement, $css);    return $css;}
+
+function rocket_set_menulinkcolor($css, $menulinkcolor) {    $tag = '[[setting:menulinkcolor]]';    $replacement = $menulinkcolor;    if (is_null($replacement)) {        $replacement = '#ffffff';    }    $css = str_replace($tag, $replacement, $css);    return $css;}
 
 function rocket_set_menutrimcolor($css, $menutrimcolor) {    $tag = '[[setting:menutrimcolor]]';    $replacement = $menutrimcolor;    if (is_null($replacement)) {        $replacement = '#4c4c4c';    }    $css = str_replace($tag, $replacement, $css);    return $css;}function rocket_set_logo($css, $logo) {	global $OUTPUT;  	$tag = '[[setting:logo]]';	$replacement = $logo;	if (is_null($replacement)) {        $replacement = 'rocket/pix/logo/rocket.png';    }	$css = str_replace($tag, $replacement, $css);	return $css;}
 
