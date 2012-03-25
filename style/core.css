@@ -13,15 +13,15 @@ html, body {	font-family : "Helvetica Neue", Helvetica, Arial, sans-serif;	mar
 
 /* @group Header */
 
-#headerwrap {	height : 260px;	width : 1000px;	margin-left : auto;	margin-right : auto;	clear : both;	background : transparent;
-	padding-top: 16px;}
+#headerwrap {	width : 1000px;	margin-left : auto;	margin-right : auto;	clear : both;	background : transparent;
+	padding-top: 0px;}
 
 .headerTable .logininfo {
 	color: #fff;
 	font-size: .85em;
 	float: right;
 	position: relative;
-	top: 70px;
+	top: 50px;
 	right: 5px;
 	z-index: 1;
 	margin-bottom: -15px;
@@ -35,13 +35,13 @@ html, body {	font-family : "Helvetica Neue", Helvetica, Arial, sans-serif;	mar
 	border-bottom: 1px dotted #fff;
 	text-decoration: none;
 }
-#logowrap {	height : 140px;
+#logowrap {	height : 120px;
 	width: 260px;
 	margin-top: 10px;}
 #logo {
-	background: url([[setting:logo]]) top center no-repeat transparent;
+	background: url([[setting:logo]]) bottom center no-repeat transparent;
 	width: 251px;
-	height:  140px;
+	height:  120px;
 	border-bottom: 4px solid [[setting:menutrimcolor]];}
 
 #header_right {	width : 710px;	margin-left : 261px;	margin-right : 0px;	clear : both;	background : #000;}
@@ -76,14 +76,16 @@ html, body {	font-family : "Helvetica Neue", Helvetica, Arial, sans-serif;	mar
     background: transparent;
  }
  
- #banner {
+ #homeblocks {
 	background: url([[setting:banner]])  top center no-repeat #000;
 	width: 750px;
-	height: 348px;
+	height: 250px;
+	padding: 0px;
+	margin: 0px;
 }
 
 #toplinks {
-	height: 350px;
+	height: 250px;
 	width: 100%;
 	background: [[setting:menucolor]];
 	border-top: 3px solid [[setting:menutrimcolor]];
@@ -119,21 +121,21 @@ div#jcontrols_button a {
 
 #menuwrap {	height : 45px;	width : 100%;	margin: 0px;	clear : both;	background : [[setting:menucolor]];
 	border-bottom: 4px solid [[setting:menutrimcolor]];
-	margin-top: 104px;}
+	margin-top: 84px;}
 
 #custommenu {	border : none !important ;	height : 45px;}
 
 div.yui3-menu.yui3-menu-horizontal {	background : transparent !important ;	border : none !important ;	float : left;}.yui3-skin-sam .yui3-menu-horizontal .yui3-menu-label {    background-image: none !important;}
 div.yui3-menu-content {	border : none !important ;	background : transparent !important ;}
 
-.yui3-menu-content li a:hover{
+.yui3-menu-content li a:hover {
 	background : [[setting:menuhovercolor]] !important;
 }
 .yui3-menu-content li a {	font-size : 1.3em;	text-transform : uppercase;	margin : 0 !important ;	font-weight : 400 !important ;	line-height : 45px !important ;	cursor : pointer !important ;
 	padding-left: 18px !important;
-	padding-right: 18px !important;	border-right : 1px [[setting:menutrimcolor]] solid !important ;	border-top : none !important ;	border-bottom : none !important ;	color : #ffffff !important ;
+	padding-right: 18px !important;	border-right : 1px [[setting:menutrimcolor]] solid !important ;	border-top : none !important ;	border-bottom : none !important ;	color : [[setting:menulinkcolor]] !important ;
 	background: [[setting:menucolor]];}
-.yui3-menu-horizontal .yui3-menu-label {	padding-left : 20px !important ;	color : #ffffff !important ;}
+.yui3-menu-horizontal .yui3-menu-label {	padding-left : 20px !important ;	color : [[setting:menulinkcolor]] !important ;}
 .yui3-menu-horizontal .yui3-menu-label-menuvisible {	background-position : 5px -23px !important ;}
 .yui3-menu-content li {	border : none !important ;}
 .yui3-menu-content li:hover {	background: [[setting:menuhovercolor]] !important;}
@@ -311,10 +313,41 @@ border-bottom: 1px dashed #fff;}.breadcrumb li img {vertical-align : middle;
 
 /* @end */
 
+/* @group Home Blocks */
+#homeblocks .block {
+	background: transparent;
+	width: 100%;
+	margin:0px;
+}
+
+#homeblocks .block .header {
+	padding-left: 10px;
+}
+
+#homeblocks .block label,
+#homeblocks .block .block_action {
+	display: none;
+}
+
+#homeblocks .block .title h2 {
+	margin: 0px;
+	padding: 0px;
+	padding-bottom: 5px;
+	font-size: 1.1em;
+}
+
+#homeblocks .block div.content {
+	padding: 0px;
+	margin-top: -3px;
+}
+
+/* @end */
+
 /* @group Top Links */
 #toplinks .block {
 	background: transparent;
 	width: 215px;
+	color: [[setting:menulinkcolor]];
 }
 
 #toplinks .block label,
@@ -343,7 +376,7 @@ border-bottom: 1px dashed #fff;}.breadcrumb li img {vertical-align : middle;
 
 #toplinks .block_html .content,
 #toplinks .block_html .content a {
-	color: #fff;
+	color: [[setting:menulinkcolor]];
 }
 
 #toplinks .block_html .content ul li:hover {
@@ -431,10 +464,6 @@ cursor: pointer;
 	margin: 0px;
 	background: [[setting:themecolor]];
 }
-
-.block_login div.header {
-	display: none;
-}
 .block_login div.content label {	color: #fff;
 	text-transform: uppercase;
 	font-size : 1.2em;	display : inline-block;	min-width : 50px;	margin-right : 3px;
@@ -473,7 +502,15 @@ cursor: pointer;
 	padding-bottom: 10px;
 }
 
+.block_login .header h2,
+.block_login .header .block_action {
+	display: none;
+}
 
+.block_login .header .commands {
+	border-top: 20px solid [[setting:themecolor]];
+	width: 150px;
+}
 
 /* @end */
 
@@ -723,8 +760,8 @@ div.yui3-widget.yui3-overlay.yui3-widget-positioned {border : 1px solid #cccccc
 /* @group Dock */
 
 #dock {padding-top : 6px;width : 30px;
-background: [[setting:menutrimcolor]];}div.dockeditem_container div.dockeditem {background : url([[pix:theme|mbar]]) repeat-y;border : none;color : #fff;font : 100% Constantia, Lucidabright, Lucida, Georgia, serif;}div.dockeditem_container.firstdockitem {border-top : none;}div.dockedtitle {border-top: none !important;
-border-color: #fff !important;padding-top : 3px;padding-bottom : 3px;
+background: [[setting:menutrimcolor]];}div.dockeditem_container div.dockeditem {background : url([[pix:theme|mbar]]) repeat-y;border : none;color : [[setting:menulinkcolor]];font : 100% Constantia, Lucidabright, Lucida, Georgia, serif;}div.dockeditem_container.firstdockitem {border-top : none;}div.dockedtitle {border-top: none !important;
+border-color: [[setting:menulinkcolor]] !important;padding-top : 3px;padding-bottom : 3px;
 background: [[setting:menucolor]];}.dockedtitle h2 {
 font-size: 1em;}div.dockeditempanel_content {border : 1px solid #fff !important ;border-left : none !important ;font-size : 90%;}div.dockeditempanel_content a {text-decoration : none;}div.dockeditempanel_hd {text-align : left;font-size : 12px;}div.dockeditempanel_hd {padding-top : 3px;padding-bottom : 3px;background : #eee;border-bottom : 1px solid #dadada !important ;}div.dockeditempanel_hd h2 {font-weight : 600;font-size : 12px;}div.dockeditempanel_bd ul, div.dockeditempanel_bd li {list-style-type : none;padding : 0;}div.dockeditempanel_bd {font-weight : 200;}#dockeditempanel {margin-left : 1px;}#dock div.controls {margin-top : 20px;padding-top : 0;position : relative;}
 
