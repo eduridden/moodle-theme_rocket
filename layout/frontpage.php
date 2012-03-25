@@ -11,7 +11,7 @@
 		</div>	</div>
 	<div class="header_right">
 		<div id="menuwrap">		<?php 		if ($hascustommenu) { ?> 			<div id="menuitemswrap"><div id="custommenu"><?php echo $custommenu; ?></div></div>		<?php } ?>		</div>
-		<div id="banner"></div>
+		<div id="homeblocks"><?php echo $OUTPUT->blocks_for_region('homeblock') ?></div>
 	</div>
 	</div>
 	
