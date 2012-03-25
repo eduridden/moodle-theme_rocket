@@ -61,3 +61,8 @@ $string['menuhovercolordesc'] = 'Change the color of the menu items when the mou
 
 $string['menutrimcolor'] = 'Menu Trim Color';
 $string['menutrimcolordesc'] = 'Change the color used to trim the edges of the menu';
+
+$string['menulinkcolor'] = 'Menu Link Color';
+$string['menulinkcolordesc'] = 'Change the color used for links in the menu';
+
+$string['mycourses'] = 'My Courses';
