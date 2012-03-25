@@ -7,7 +7,7 @@ class theme_rocket_core_renderer extends core_renderer {
         $mycourses = $this->page->navigation->get('mycourses');
  
         if (isloggedin() && $mycourses && $mycourses->has_children()) {
-            $branchlabel = 'My Units';
+            $branchlabel = get_string('mycourses', 'theme_rocket');
             $branchurl   = new moodle_url('/my/index.php');
             $branchtitle = $branchlabel;
             $branchsort  = 10000;
@@ -18,7 +18,7 @@ class theme_rocket_core_renderer extends core_renderer {
                 $branch->add($coursenode->get_content(), $coursenode->action, $coursenode->get_title());
             }
         } else {
-        	$branchlabel = 'All Courses';
+        	$branchlabel = get_string('mycourses', 'theme_rocket');
             $branchurl   = new moodle_url('/course/index.php');
             $branchtitle = $branchlabel;
             $branchsort  = 10000;
