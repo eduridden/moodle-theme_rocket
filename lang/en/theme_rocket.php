@@ -47,6 +47,10 @@ $string['sitenamedesc'] = 'The name of your institution is shown on the frontpag
 $string['banner'] = 'Banner';
 $string['bannerdesc'] = 'Change the banner on the frontpage by entering the URL to a new one (i.e., http://www.somesite/banner.png). As a reference, the default banner is 750px by 350px.';
 
+$string['bannerheight'] = 'Hoempage Banner Height';
+$string['nobanner'] = 'Disable Banner';
+$string['bannerheightdesc'] = 'If you are using the Banner location on the homepage you can change its defult height here. The max is 350px.';
+
 $string['themecolor'] = 'Theme Color';
 $string['themecolordesc'] = 'What color should your theme be. This will change mulitple components to produce the color you wish across the moodle site';
 
@@ -66,3 +70,8 @@ $string['menulinkcolor'] = 'Menu Link Color';
 $string['menulinkcolordesc'] = 'Change the color used for links in the menu';
 
 $string['mycourses'] = 'My Courses';
+
+$string['screenwidth'] = 'Screen Width';
+$string['screenwidthdesc'] = 'This allows you to designate if this theme is displayed as a fixed with of 1000px or a variable width of 100%. <br> Please note that for design reasons the frontpage of the site will always remain fixed width';
+$string['fixedwidth'] = 'Fixed Width';
+$string['variablewidth'] = 'Variable Width';
