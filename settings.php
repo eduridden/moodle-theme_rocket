@@ -5,13 +5,22 @@ $default = 'rocket/pix/logo/rocket.png';$setting = new admin_setting_configfile
 $default = 'rocket/pix/banner/default.png';$setting = new admin_setting_configtext($name, $title, $description, $default);$settings->add($setting);
 
 // Banner Height
-//$name = 'theme_rocket/bannerheight';
-//$title = get_string('bannerheight','theme_rocket');
-//$description = get_string('bannerheightdesc', 'theme_rocket');
-//$default = 350;
-//$choices = array(0=>'none', 150=>'150px', 250=>'250px', 350=>'350px');
-//$setting = new admin_setting_configselect($name, $title, $description, $default, $choices);
-//$settings->add($setting);// Main theme background colour setting$name = 'theme_rocket/themecolor';$title = get_string('themecolor','theme_rocket');$description = get_string('themecolordesc', 'theme_rocket');$default = '#a8213a';$previewconfig = NULL;$setting = new admin_setting_configcolourpicker($name, $title, $description, $default, $previewconfig);$settings->add($setting);
+$name = 'theme_rocket/bannerheight';
+$title = get_string('bannerheight','theme_rocket');
+$description = get_string('bannerheightdesc', 'theme_rocket');
+$default = 250;
+$choices = array(5=>get_string('nobanner', 'theme_rocket'), 55=>'50px', 105=>'100px',155=>'150px', 205=>'200px', 255=>'250px',  305=>'300px',355=>'350px');
+$setting = new admin_setting_configselect($name, $title, $description, $default, $choices);
+$settings->add($setting);
+
+// Fullscreen Toggle
+$name = 'theme_rocket/screenwidth';
+$title = get_string('screenwidth','theme_rocket');
+$description = get_string('screenwidthdesc', 'theme_rocket');
+$default = 250;
+$choices = array(1000=>get_string('fixedwidth','theme_rocket'), '97'=>get_string('variablewidth','theme_rocket'));
+$setting = new admin_setting_configselect($name, $title, $description, $default, $choices);
+$settings->add($setting);// Main theme background colour setting$name = 'theme_rocket/themecolor';$title = get_string('themecolor','theme_rocket');$description = get_string('themecolordesc', 'theme_rocket');$default = '#a8213a';$previewconfig = NULL;$setting = new admin_setting_configcolourpicker($name, $title, $description, $default, $previewconfig);$settings->add($setting);
 
 // Main theme trim colour setting$name = 'theme_rocket/themetrimcolor';$title = get_string('themetrimcolor','theme_rocket');$description = get_string('themetrimcolordesc', 'theme_rocket');$default = '#660000';$previewconfig = NULL;$setting = new admin_setting_configcolourpicker($name, $title, $description, $default, $previewconfig);$settings->add($setting);
 
