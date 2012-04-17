@@ -1,22 +1,35 @@
 html, body {	font-family : "Helvetica Neue", Helvetica, Arial, sans-serif;	margin : 0;	padding : 0;	background : url([[pix:theme|body_bg_sml]]) repeat-x top [[setting:themecolor]];	color : #333333;
-	border-top: 3px solid [[setting:themetrimcolor]];}
+	}
+
+html {
+	border-top: 6px solid [[setting:themetrimcolor]];
+}
 
 #page-site-index {
-	background: url([[pix:theme|body_bg]]) [[setting:themecolor]] repeat-x;	
-}html a:hover, body a:hover {	text-decoration : underline;}
+	background: url([[pix:theme|body_bg]]) [[setting:themecolor]] repeat-x 0 [[setting:bannerheight]];	
+}
+html a:hover, body a:hover {	text-decoration : underline;}
 html a, body a, html a:visited, body a:visited {	color : #333333;}
 td.maincalendar table.calendartable th, table.rolecap .header, .generaltable .header, .forumheaderlist .header, .files .header, .editcourse .header, .logtable .header, #attempts .header, table#categoryquestions th {	background : #eeeeee !important ;}
 div.yui3-widget-bd a, .tabtree li a, .block div.content a, .unlist a, .categorybox a, .course_category_tree a, .section a {	text-decoration : none;}a:active {	outline : 0;}
 a:focus {	outline : 0;}
 
-#contentwrapper {width : 1000px;margin-left : auto;margin-right : auto;margin-bottom : 15px;padding-top : 0;clear : both;}
+#contentwrapper {width : [[setting:screenwidth]];margin-left : auto;margin-right : auto;margin-bottom : 15px;padding-top : 0;clear : both;
+border-top: 3px solid [[setting:menutrimcolor]];}
+
+#contentwrapper-frontpage {width : 1000px;margin-left : auto;margin-right : auto;margin-bottom : 15px;padding-top : 0;clear : both;}
 
 /* @group Header */
 
-#headerwrap {	width : 1000px;	margin-left : auto;	margin-right : auto;	clear : both;	background : transparent;
+#headerwrap-frontpage {	width : 1000px;	margin-left : auto;	margin-right : auto;
+	clear : both;	background : transparent;
 	padding-top: 0px;}
 
-.headerTable .logininfo {
+#headerwrap {	width : 100%;	margin-left : auto;	margin-right : auto;	clear : both;	background : transparent;
+	padding-top: 0px;}
+
+.headerTable .logininfo,
+.headerTable-frontpage .logininfo {
 	color: #fff;
 	font-size: .85em;
 	float: right;
@@ -27,11 +40,13 @@ html, body {	font-family : "Helvetica Neue", Helvetica, Arial, sans-serif;	mar
 	margin-bottom: -15px;
 }
 
-.headerTable .logininfo a {
+.headerTable .logininfo a,
+.headerTable-frontpage .logininfo a {
 	color: #fff;
 }
 
-.headerTable .logininfo a:hover {
+.headerTable .logininfo a:hover,
+.headerTable-frontpage .logininfo a:hover {
 	border-bottom: 1px dotted #fff;
 	text-decoration: none;
 }
@@ -39,6 +54,12 @@ html, body {	font-family : "Helvetica Neue", Helvetica, Arial, sans-serif;	mar
 	width: 260px;
 	margin-top: 10px;}
 #logo {
+	background: url([[setting:logo]]) bottom center no-repeat transparent;
+	width: 251px;
+	height:  120px;
+	margin-left: 20px;}
+
+#logo-frontpage {
 	background: url([[setting:logo]]) bottom center no-repeat transparent;
 	width: 251px;
 	height:  120px;
@@ -56,7 +77,15 @@ html, body {	font-family : "Helvetica Neue", Helvetica, Arial, sans-serif;	mar
 	vertical-align: middle;
 	padding-top: 13px;
 }
+
 .headerTable {
+	display:  table;
+	width: [[setting:screenwidthmargintag]];
+	min-width: 1005px;
+	border-spacing:0px;
+}
+
+.headerTable-frontpage {
 	display:  table;
 	width: 1005px;
 	border-spacing:0px;
@@ -79,13 +108,13 @@ html, body {	font-family : "Helvetica Neue", Helvetica, Arial, sans-serif;	mar
  #homeblocks {
 	background: url([[setting:banner]])  top center no-repeat #000;
 	width: 750px;
-	height: 250px;
+	height: [[setting:bannerheight]];
 	padding: 0px;
 	margin: 0px;
 }
 
 #toplinks {
-	height: 250px;
+	height: [[setting:bannerheight]];
 	width: 100%;
 	background: [[setting:menucolor]];
 	border-top: 3px solid [[setting:menutrimcolor]];
@@ -121,6 +150,12 @@ div#jcontrols_button a {
 
 #menuwrap {	height : 45px;	width : 100%;	margin: 0px;	clear : both;	background : [[setting:menucolor]];
 	border-bottom: 4px solid [[setting:menutrimcolor]];
+	margin-top: 86px;
+	margin-bottom: -4px;
+	margin-left: 20px;}
+
+#menuwrap-frontpage {	height : 45px;	width : 100%;	margin: 0px;	clear : both;	background : [[setting:menucolor]];
+	border-bottom: 4px solid [[setting:menutrimcolor]];
 	margin-top: 84px;}
 
 #custommenu {	border : none !important ;	height : 45px;}
@@ -152,7 +187,9 @@ div.yui3-menu.yui3-menu-horizontal {	background : transparent !important ;	bor
 
 /* @group Footer */
 
-#footerwrapper {	background : transparent;	width : 1000px;	margin-top: 10px;	margin-left : auto;	margin-right : auto;	margin-bottom : 10px;}
+#footerwrapper {	background : transparent;	width : [[setting:screenwidth]];	margin-top: 10px;	margin-left : auto;	margin-right : auto;	margin-bottom : 10px;}
+
+#footerwrapper-frontpage {	background : transparent;	width : 1000px;	margin-top: 10px;	margin-left : auto;	margin-right : auto;	margin-bottom : 10px;}
 #footerinner {margin-left : auto;margin-right : auto;color : #7d7d81;padding : 10px;height : 40px;font-size : .85em;}
 #footerinner a {color : #7d7d81;}
 
