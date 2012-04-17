@@ -1,0 +1,63 @@
+/** To hide the icons we are using opacity as display:none makes
+the buttons inaccessible. 
+
+FILTER attributes should apply to IE so long as the strict 
+doctype is served. Use Filter: none on clear to protect PNG alphas.
+
+Tweak the top opacity values to get "ghost" icons rather than hiding them**/
+.block .header .commands a img,
+.path-course-view .section .content li .commands a img,
+.path-course-view .section .content .summary a img.icon.edit{
+	opacity: 0.01;	
+	filter: alpha(opacity=1);
+	-o-transition: opacity 0.5s linear 0.3s;
+	-moz-transition: opacity 0.5s linear 0.3s;
+	-webkit-transition: opacity 0.5s linear 0.3s;
+	transition: opacity 0.5s linear 0.3s;
+}
+
+.path-course-view .section .left.side a img,
+.path-course-view .section .right.side a img,
+.path-course-view .section .right.side div img
+{
+    opacity: 0.01; 
+    filter: alpha(opacity=1);
+}
+
+.path-course-view .section:hover .right.side img,
+.path-course-view .section:hover .left.side img,
+.path-course-view .section .right.side a:focus img,
+.path-course-view .section .left.side a:focus img,
+.ie.path-course-view .section .right.side a:active img,
+.ie.path-course-view .section .left.side a:active img
+{
+    opacity:1;
+    filter: none;
+}
+.block:hover .header .commands a img,
+.block .header .commands a:focus img,
+.ie .block .header .commands a:active img,
+.path-course-view .section .content li:hover .commands a img,
+.path-course-view .section .content li .commands a:focus img,
+.ie.path-course-view .section .content li .commands a:active img,
+.path-course-view .section:hover .content .summary a img.icon.edit,
+.path-course-view .section .content .summary a:focus img.icon.edit,
+.ie.path-course-view .section .content .summary a:active img.icon.edit{
+	opacity:1;
+	filter: none;
+	-o-transition: opacity 0.3s;
+	-moz-transition: opacity 0.3s;
+	-webkit-transition: opacity 0.3s;
+	transition: opacity 0.3s;
+}
+
+/** some feedback to tell user we are in editing mode **/
+.editing.path-course-view div.content{
+	border: 2px #caa dotted;
+	box-shadow: #caa 0px 0px 10px;
+}
+
+.path-course-view .section .content .section_add_menus{
+	background-color: #caa;
+	padding: .1em 0;
+}
