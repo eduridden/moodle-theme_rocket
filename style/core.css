@@ -14,7 +14,7 @@ html {
 div.yui3-widget-bd a, .tabtree li a, .block div.content a, .unlist a, .categorybox a, .course_category_tree a, .section a {	text-decoration : none;}a:active {	outline : 0;}
 a:focus {	outline : 0;}
 
-#contentwrapper {width : [[setting:screenwidth]];margin-left : auto;margin-right : auto;margin-bottom : 15px;padding-top : 0;clear : both;
+#contentwrapper {width : 100%;margin-left : auto;margin-right : auto;margin-bottom : 15px;padding-top : 0;clear : both;
 border-top: 3px solid [[setting:menutrimcolor]];}
 
 #contentwrapper-frontpage {width : 1000px;margin-left : auto;margin-right : auto;margin-bottom : 15px;padding-top : 0;clear : both;}
@@ -25,7 +25,7 @@ border-top: 3px solid [[setting:menutrimcolor]];}
 	clear : both;	background : transparent;
 	padding-top: 0px;}
 
-#headerwrap {	width : 100%;	margin-left : auto;	margin-right : auto;	clear : both;	background : transparent;
+#headerwrap {	width : [[setting:screenwidth]];	margin-left : auto;	margin-right : auto;	clear : both;	background : transparent;
 	padding-top: 0px;}
 
 .headerTable .logininfo,
@@ -65,8 +65,6 @@ border-top: 3px solid [[setting:menutrimcolor]];}
 	height:  120px;
 	border-bottom: 4px solid [[setting:menutrimcolor]];}
 
-#header_right {	width : 710px;	margin-left : 261px;	margin-right : 0px;	clear : both;	background : #000;}
-
 #headerstrip {
 	width: 100%;
 	background: [[setting:themecolor]];
@@ -80,7 +78,7 @@ border-top: 3px solid [[setting:menutrimcolor]];}
 
 .headerTable {
 	display:  table;
-	width: [[setting:screenwidthmargintag]];
+	width: 100%;
 	min-width: 1005px;
 	border-spacing:0px;
 }
@@ -99,7 +97,7 @@ border-top: 3px solid [[setting:menutrimcolor]];}
  }
  
  .header_right {
-	float:left;/*fix for  buggy browsers*/
+	float:right; /*fix for  buggy browsers*/
     display:table-column;
     width:750px;
     background: transparent;
@@ -151,8 +149,7 @@ div#jcontrols_button a {
 #menuwrap {	height : 45px;	width : 100%;	margin: 0px;	clear : both;	background : [[setting:menucolor]];
 	border-bottom: 4px solid [[setting:menutrimcolor]];
 	margin-top: 86px;
-	margin-bottom: -4px;
-	margin-left: 20px;}
+	margin-bottom: -4px;}
 
 #menuwrap-frontpage {	height : 45px;	width : 100%;	margin: 0px;	clear : both;	background : [[setting:menucolor]];
 	border-bottom: 4px solid [[setting:menutrimcolor]];
