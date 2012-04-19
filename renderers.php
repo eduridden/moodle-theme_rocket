@@ -89,7 +89,7 @@ class theme_rocket_core_renderer extends core_renderer {
 	public function edit_button(moodle_url $url) {
 
 		$url->param('sesskey', sesskey());
-		$formclose .='</span>';
+		$formclose .='</span><div id="editmode">'.get_string('editmode', 'theme_rocket').'<div id="edittoggle">'.get_string('edittoggle', 'theme_rocket').'&nbsp;</div></div>';
         if ($this->page->user_is_editing()) {
             $formopen .='<span id="on">';
 			$url->param('edit', 'off');
