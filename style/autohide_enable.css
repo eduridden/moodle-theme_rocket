@@ -120,3 +120,5 @@ visability:hidden;
 .section.main:hover .section_add_menus{
 visability:visible;
 }
+
+.editing .course-content .main {background : #fee2e2;}
