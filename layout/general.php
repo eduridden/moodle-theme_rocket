@@ -10,7 +10,8 @@
 		</div>
 	</div>
 	
-		<div id="page-header"></div> 	<div id="contentwrapper">	<!-- start OF moodle CONTENT -->				<div id="page-content">
+		<div id="page-header"></div>
+<div id="editingmode"><strong>Editing Mode</strong> is now enabled. Please hover over the topic, item or block you wish to edit</div>	<div id="contentwrapper">	<!-- start OF moodle CONTENT -->				<div id="page-content">
 				<div id="headerstrip">
 					<div id="searchbox"><?php echo $OUTPUT->blocks_for_region('search') ?></div>
 					<div class="jcontrolsleft">								<?php if ($hasnavbar) { ?>        					<div class="nav_title">Navigation</div>

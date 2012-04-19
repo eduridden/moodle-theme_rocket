@@ -122,3 +122,7 @@ visability:visible;
 }
 
 .editing .course-content .main {background : #fee2e2;}
+
+.editing #editingmode {
+	display: block;
+}

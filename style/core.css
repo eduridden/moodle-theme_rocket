@@ -129,7 +129,17 @@ border-top: 3px solid [[setting:menutrimcolor]];}
 }
 div.langmenu {float : right !important ;display : inline !important ;padding : 0 0 0 0 !important ;line-height : 28px !important ;margin : 0 0 0 5px !important ;font-size : 9px;}
 
-#ebutton {width : 130px;float : right;text-align : right;margin-top : 4px;margin-right : 10px;
+#editingmode {
+	text-align: center;
+	background: #ff6666;
+	color: #fff;
+	padding: 5px;
+	font-size: .8em;
+	border-top: 4px solid [[setting:menutrimcolor]];
+	display: none;
+}
+
+#ebutton {width : 138px;float : right;text-align : right;margin-top : 4px;margin-right : 10px;
 font-size: .7em;}
 
 #ebutton #editmode {
@@ -138,13 +148,13 @@ font-size: .7em;}
 #ebutton input[type="submit"] {
 	float: right;
 	padding: 5px;
-	-moz-border-radius: 7px;
-	-webkit-border-radius: 7px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
 	color: #fff;
 	border: 0px none;
 	margin-left: 5px;
 	padding-left: 18px;
-	padding-right: 5px;
+	padding-right: 8px;
 	cursor: pointer;
 	text-transform: uppercase;
 }
