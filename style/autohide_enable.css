@@ -62,7 +62,7 @@ Tweak the top opacity values to get "ghost" icons rather than hiding them**/
 	border: 1px solid #fff;
 }
 
-.path-course-view .section .content li:hover {
+.editing .section .content li:hover {
 	border: 1px dashed #ff6666;
 }
 
