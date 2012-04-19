@@ -77,3 +77,5 @@ $string['fixedwidth'] = 'Fixed Width';
 $string['variablewidth'] = 'Variable Width';
 $string['turneditingoff'] = 'On';
 $string['turneditingon'] = 'Off';
+$string['editmode'] = 'Edit mode is:';
+$string['edittoggle'] = 'click to toggle';
