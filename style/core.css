@@ -139,10 +139,11 @@ border-top: 3px solid [[setting:menutrimcolor]];}
 	display: none;
 }
 
-#ebutton {width : 138px;float : right;text-align : right;margin-top : 4px;margin-right : 10px;
+#ebutton {width : 138px;float : right;text-align : right;margin-top : 6px;margin-right : 10px;
 font-size: .7em;}
 
-#ebutton #editmode {
+#ebutton #edittoggle {
+	font-size:.65em;
 }
 
 #ebutton input[type="submit"] {
@@ -157,6 +158,7 @@ font-size: .7em;}
 	padding-right: 8px;
 	cursor: pointer;
 	text-transform: uppercase;
+	background: #777;
 }
 
 #ebutton #off input[type="submit"] {
