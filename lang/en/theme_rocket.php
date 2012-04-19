@@ -75,3 +75,5 @@ $string['screenwidth'] = 'Screen Width';
 $string['screenwidthdesc'] = 'This allows you to designate if this theme is displayed as a fixed with of 1000px or a variable width of 100%. <br> Please note that for design reasons the frontpage of the site will always remain fixed width';
 $string['fixedwidth'] = 'Fixed Width';
 $string['variablewidth'] = 'Variable Width';
+$string['turneditingoff'] = 'On';
+$string['turneditingon'] = 'Off';

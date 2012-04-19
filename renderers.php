@@ -86,6 +86,22 @@ class theme_rocket_core_renderer extends core_renderer {
         return $output;
     }
 
+	public function edit_button(moodle_url $url) {
+
+		$url->param('sesskey', sesskey());
+		$formclose .='</span>';
+        if ($this->page->user_is_editing()) {
+            $formopen .='<span id="on">';
+			$url->param('edit', 'off');
+            $editstring = get_string('turneditingoff','theme_rocket');
+        } else {
+            $formopen .='<span id="off">';
+			$url->param('edit', 'on');
+            $editstring = get_string('turneditingon','theme_rocket');
+        }
+		return $formopen . $this->single_button($url, $editstring) . $formclose;
+    }
+
 	protected function render_custom_menu(custom_menu $menu) {
  
         $mycourses = $this->page->navigation->get('mycourses');

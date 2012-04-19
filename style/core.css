@@ -127,7 +127,36 @@ border-top: 3px solid [[setting:menutrimcolor]];}
 	margin-right: 20px;
 	margin-top: -13px;
 }
-div.langmenu {float : right !important ;display : inline !important ;padding : 0 0 0 0 !important ;line-height : 28px !important ;margin : 0 0 0 5px !important ;font-size : 9px;}#ebutton {width : auto;float : right;text-align : right;margin-top : 4px;margin-right : 10px;}.clearer {clear : left;}.arrow, .arrow_button input {color : #aaa;}
+div.langmenu {float : right !important ;display : inline !important ;padding : 0 0 0 0 !important ;line-height : 28px !important ;margin : 0 0 0 5px !important ;font-size : 9px;}
+
+#ebutton {width : 130px;float : right;text-align : right;margin-top : 4px;margin-right : 10px;
+font-size: .7em;}
+
+#ebutton #editmode {
+}
+
+#ebutton input[type="submit"] {
+	float: right;
+	padding: 5px;
+	-moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
+	color: #fff;
+	border: 0px none;
+	margin-left: 5px;
+	padding-left: 18px;
+	padding-right: 5px;
+	cursor: pointer;
+	text-transform: uppercase;
+}
+
+#ebutton #off input[type="submit"] {
+	background: url([[pix:theme|editmode_off]]) left no-repeat #777 !important;
+}
+
+#ebutton #on input[type="submit"] {
+	background: url([[pix:theme|editmode_on]]) left no-repeat #777 !important;
+}
+.clearer {clear : left;}.arrow, .arrow_button input {color : #aaa;}
 
 div#jcontrols_button a {
 	color: #fff;
