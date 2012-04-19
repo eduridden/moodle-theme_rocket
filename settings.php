@@ -20,7 +20,8 @@ $description = get_string('screenwidthdesc', 'theme_rocket');
 $default = 1000;
 $choices = array(1000=>get_string('fixedwidth','theme_rocket'), 97=>get_string('variablewidth','theme_rocket'));
 $setting = new admin_setting_configselect($name, $title, $description, $default, $choices);
-$settings->add($setting);// Main theme background colour setting$name = 'theme_rocket/themecolor';$title = get_string('themecolor','theme_rocket');$description = get_string('themecolordesc', 'theme_rocket');$default = '#a8213a';$previewconfig = NULL;$setting = new admin_setting_configcolourpicker($name, $title, $description, $default, $previewconfig);$settings->add($setting);
+$settings->add($setting);
+// Main theme background colour setting$name = 'theme_rocket/themecolor';$title = get_string('themecolor','theme_rocket');$description = get_string('themecolordesc', 'theme_rocket');$default = '#a8213a';$previewconfig = NULL;$setting = new admin_setting_configcolourpicker($name, $title, $description, $default, $previewconfig);$settings->add($setting);
 
 // Main theme trim colour setting$name = 'theme_rocket/themetrimcolor';$title = get_string('themetrimcolor','theme_rocket');$description = get_string('themetrimcolordesc', 'theme_rocket');$default = '#660000';$previewconfig = NULL;$setting = new admin_setting_configcolourpicker($name, $title, $description, $default, $previewconfig);$settings->add($setting);
 
@@ -31,4 +32,14 @@ $settings->add($setting);// Main theme background colour setting$name = 'them
 // Menu trim colour setting$name = 'theme_rocket/menutrimcolor';$title = get_string('menutrimcolor','theme_rocket');$description = get_string('menutrimcolordesc', 'theme_rocket');$default = '#4c4c4c';$previewconfig = NULL;$setting = new admin_setting_configcolourpicker($name, $title, $description, $default, $previewconfig);$settings->add($setting);
 
 // Menu link colour setting$name = 'theme_rocket/menulinkcolor';$title = get_string('menulinkcolor','theme_rocket');$description = get_string('menulinkcolordesc', 'theme_rocket');$default = '#ffffff';$previewconfig = NULL;$setting = new admin_setting_configcolourpicker($name, $title, $description, $default, $previewconfig);$settings->add($setting);// Footer text or link$name = 'theme_rocket/footnote';$title = get_string('footnote','theme_rocket');$description = get_string('footnotedesc', 'theme_rocket');$default = '';$setting = new admin_setting_confightmleditor($name, $title, $description, $default);$settings->add($setting);
-// Copyright Notice$name = 'theme_rocket/copyright';$title = get_string('copyright','theme_rocket');$description = get_string('copyrightdesc', 'theme_rocket');$default = '';$setting = new admin_setting_confightmleditor($name, $title, $description, $default);$settings->add($setting);}
+// Copyright Notice$name = 'theme_rocket/copyright';$title = get_string('copyright','theme_rocket');$description = get_string('copyrightdesc', 'theme_rocket');$default = '';$setting = new admin_setting_confightmleditor($name, $title, $description, $default);$settings->add($setting);
+
+/* Use Autohide Toggle
+$name = 'theme_rocket/autohide';
+$title = get_string('autohide','theme_rocket');
+$description = get_string('autohide desc', 'theme_rocket');
+$default = 1000;
+$choices = array('autohide_enable'=>get_string('enable','theme_rocket'), 'autohide_disable'=>get_string('disable','theme_rocket'));
+$setting = new admin_setting_configselect($name, $title, $description, $default, $choices);
+$settings->add($setting);
+*/}

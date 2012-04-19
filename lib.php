@@ -17,6 +17,8 @@
 	// Set the banner height    if (!empty($theme->settings->bannerheight)) {       $bannerheight = $theme->settings->bannerheight;    } else {       $bannerheight = null;    }    $css = rocket_set_bannerheight($css,$bannerheight);
 
 	// Set the screenwidth    if (!empty($theme->settings->screenwidth)) {       $screenwidth = $theme->settings->screenwidth;    } else {       $screenwidth = null;    }    $css = rocket_set_screenwidth($css,$screenwidth);
+
+	// Toggle AutoHide functionality    if (!empty($theme->settings->autohide)) {       $autohide = $theme->settings->autohide;    } else {       $autohide = null;    }    $css = rocket_set_autohide($css,$autohide);
     
     // Set the background image for the Banner     if (!empty($theme->settings->banner)) {        $banner = $theme->settings->banner;    } else {        $banner = null;    }    $css = rocket_set_banner($css, $banner);
             return $css;
@@ -45,7 +47,9 @@ function rocket_set_screenwidth($css, $screenwidth) {    $tag = '[[setting:scre
 	}
 	if ( $replacement == "97" ) {
 		$css = str_replace($tag, $replacement.'%', $css);
-	}    return $css;}/**
+	}    return $css;}
+
+function rocket_set_autohide($css, $autohide) {    $tag = '[[setting:autohide]]';    $replacement = 'autohide';    if (is_null($replacement)) {        $replacement = 'autohide_enable';    }    $css = str_replace($tag, $replacement, $css);	return $css;}/**
  * get_performance_output() override get_peformance_info()
  *  in moodlelib.php. Returns a string
  * values ready for use.
