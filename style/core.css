@@ -151,6 +151,7 @@ font-size: .7em;}
 	padding: 5px;
 	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px;
+	border-radius: 10px;
 	color: #fff;
 	border: 0px none;
 	margin-left: 5px;
