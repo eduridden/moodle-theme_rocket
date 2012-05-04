@@ -61,7 +61,7 @@ border-top: 3px solid [[setting:menutrimcolor]];}
 
 #logo-frontpage {
 	background: url([[setting:logo]]) bottom center no-repeat transparent;
-	width: 251px;
+	width: 250px;
 	height:  120px;
 	border-bottom: 4px solid [[setting:menutrimcolor]];}
 
