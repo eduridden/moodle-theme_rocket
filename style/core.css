@@ -71,7 +71,7 @@ border-top: 3px solid [[setting:menutrimcolor]];}
 	color: #fff;
 	font-size: 1.25em;
 	text-transform: uppercase;
-	height: 40px;
+	height: 39px;
 	vertical-align: middle;
 	padding-top: 13px;
 }
@@ -139,7 +139,7 @@ border-top: 3px solid [[setting:menutrimcolor]];}
 	display: none;
 }
 
-#ebutton {width : 138px;float : right;text-align : right;margin-top : 6px;margin-right : 10px;
+#ebutton {width : 150px;float : right;text-align : right;margin-top : 6px;margin-right : 10px;
 font-size: .7em;}
 
 #ebutton #edittoggle {
@@ -231,7 +231,7 @@ div.yui3-menu.yui3-menu-horizontal {	background : transparent !important ;	bor
 
 /* @group Footer */
 
-#footerwrapper {	background : transparent;	width : [[setting:screenwidth]];	margin-top: 10px;	margin-left : auto;	margin-right : auto;	margin-bottom : 10px;}
+#footerwrapper {	background : transparent;	width : [[setting:screenwidth]];	margin-top: 0px;	margin-left : auto;	margin-right : auto;	margin-bottom : 10px;}
 
 #footerwrapper-frontpage {	background : transparent;	width : 1000px;	margin-top: 10px;	margin-left : auto;	margin-right : auto;	margin-bottom : 10px;}
 #footerinner {margin-left : auto;margin-right : auto;color : #7d7d81;padding : 10px;height : 40px;font-size : .85em;}
@@ -270,8 +270,8 @@ border-bottom: 1px dashed #fff;}.breadcrumb li img {vertical-align : middle;
 /* @group Regions */
 
 #page-content {
-	border: 1px solid #fff;
 	border-top: 0px none;
+	border-bottom: 5px solid [[setting:themecolor]];
 }
 
 #region-main-box {
