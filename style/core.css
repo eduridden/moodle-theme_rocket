@@ -96,11 +96,10 @@ border-top: 3px solid [[setting:menutrimcolor]];}
     background-color:transparent;
  }
  
- .header_right {
+.header_right {
 	float:right; /*fix for  buggy browsers*/
-    display:table-column;
-    width:750px;
     background: transparent;
+    text-align: right;
  }
  
  #homeblocks {
@@ -189,7 +188,8 @@ div#jcontrols_button a {
 
 /* @group Dropdown Menu */
 
-#menuitemswrap {	font-size : 13px;	font-weight : 600;	float : right;	border : 0 !important ;	margin-left : 0;	margin-top : 0;	margin-bottom : 0;}
+#menuitemswrap {	font-size : 13px;	font-weight : 600;	float : right;	border : 0 !important ;	margin-left : 0;	margin-top : 0;	margin-bottom : 0;
+	text-align: right;}
 
 #menuwrap {	height : 45px;	width : 100%;	margin: 0px;	clear : both;	background : [[setting:menucolor]];
 	border-bottom: 4px solid [[setting:menutrimcolor]];
