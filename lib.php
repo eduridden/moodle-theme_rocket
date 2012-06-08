@@ -12,7 +12,13 @@
     if (!empty($theme->settings->menutrimcolor)) {        $menutrimcolor = $theme->settings->menutrimcolor;    } else {        $menutrimcolor = null;    }    $css = rocket_set_menutrimcolor($css, $menutrimcolor);
 
 	// Set the custommenu link color
-    if (!empty($theme->settings->menulinkcolor)) {        $menulinkcolor = $theme->settings->menulinkcolor;    } else {        $menulinkcolor = null;    }    $css = rocket_set_menulinkcolor($css, $menulinkcolor);    	// Set the background image for the logo     if (!empty($theme->settings->logo)) {        $logo = $theme->settings->logo;    } else {        $logo = null;    }    $css = rocket_set_logo($css, $logo);
+    if (!empty($theme->settings->menulinkcolor)) {        $menulinkcolor = $theme->settings->menulinkcolor;    } else {        $menulinkcolor = null;    }    $css = rocket_set_menulinkcolor($css, $menulinkcolor);
+
+	// Set the content link color
+    if (!empty($theme->settings->contentlinkcolor)) {        $contentlinkcolor = $theme->settings->contentlinkcolor;    } else {        $contentlinkcolor = null;    }    $css = rocket_set_contentlinkcolor($css, $contentlinkcolor);
+
+	// Set the block link color
+    if (!empty($theme->settings->blocklinkcolor)) {        $blocklinkcolor = $theme->settings->blocklinkcolor;    } else {        $blocklinkcolor = null;    }    $css = rocket_set_blocklinkcolor($css, $blocklinkcolor);    	// Set the background image for the logo     if (!empty($theme->settings->logo)) {        $logo = $theme->settings->logo;    } else {        $logo = null;    }    $css = rocket_set_logo($css, $logo);
 
 	// Set the banner height    if (!empty($theme->settings->bannerheight)) {       $bannerheight = $theme->settings->bannerheight;    } else {       $bannerheight = null;    }    $css = rocket_set_bannerheight($css,$bannerheight);
 
@@ -21,6 +27,14 @@
 	// Toggle AutoHide functionality    if (!empty($theme->settings->autohide)) {       $autohide = $theme->settings->autohide;    } else {       $autohide = null;    }    $css = rocket_set_autohide($css,$autohide);
     
     // Set the background image for the Banner     if (!empty($theme->settings->banner)) {        $banner = $theme->settings->banner;    } else {        $banner = null;    }    $css = rocket_set_banner($css, $banner);
+
+	// Allow for additional custom CSS from admins
+	if (!empty($theme->settings->customcss)) {
+        $customcss = $theme->settings->customcss;
+    } else {
+        $customcss = null;
+    }
+    $css = rocket_set_customcss($css, $customcss);
             return $css;
 }
 
@@ -33,6 +47,10 @@ function rocket_set_menucolor($css, $menucolor) {    $tag = '[[setting:menucolo
 function rocket_set_menuhovercolor($css, $menuhovercolor) {    $tag = '[[setting:menuhovercolor]]';    $replacement = $menuhovercolor;    if (is_null($replacement)) {        $replacement = '#919193';    }    $css = str_replace($tag, $replacement, $css);    return $css;}
 
 function rocket_set_menulinkcolor($css, $menulinkcolor) {    $tag = '[[setting:menulinkcolor]]';    $replacement = $menulinkcolor;    if (is_null($replacement)) {        $replacement = '#ffffff';    }    $css = str_replace($tag, $replacement, $css);    return $css;}
+
+function rocket_set_contentlinkcolor($css, $contentlinkcolor) {    $tag = '[[setting:contentlinkcolor]]';    $replacement = $contentlinkcolor;    if (is_null($replacement)) {        $replacement = '#006699';    }    $css = str_replace($tag, $replacement, $css);    return $css;}
+
+function rocket_set_blocklinkcolor($css, $blocklinkcolor) {    $tag = '[[setting:blocklinkcolor]]';    $replacement = $blocklinkcolor;    if (is_null($replacement)) {        $replacement = '#333333';    }    $css = str_replace($tag, $replacement, $css);    return $css;}
 
 function rocket_set_menutrimcolor($css, $menutrimcolor) {    $tag = '[[setting:menutrimcolor]]';    $replacement = $menutrimcolor;    if (is_null($replacement)) {        $replacement = '#4c4c4c';    }    $css = str_replace($tag, $replacement, $css);    return $css;}function rocket_set_logo($css, $logo) {	global $OUTPUT;  	$tag = '[[setting:logo]]';	$replacement = $logo;	if (is_null($replacement)) {        $replacement = 'rocket/pix/logo/rocket.png';    }	$css = str_replace($tag, $replacement, $css);	return $css;}
 
@@ -49,7 +67,17 @@ function rocket_set_screenwidth($css, $screenwidth) {    $tag = '[[setting:scre
 		$css = str_replace($tag, $replacement.'%', $css);
 	}    return $css;}
 
-function rocket_set_autohide($css, $autohide) {    $tag = '[[setting:autohide]]';    $replacement = 'autohide';    if (is_null($replacement)) {        $replacement = 'autohide_enable';    }    $css = str_replace($tag, $replacement, $css);	return $css;}/**
+function rocket_set_autohide($css, $autohide) {    $tag = '[[setting:autohide]]';    $replacement = 'autohide';    if (is_null($replacement)) {        $replacement = 'autohide_enable';    }    $css = str_replace($tag, $replacement, $css);	return $css;}
+
+function rocket_set_customcss($css, $customcss) {
+    $tag = '[[setting:customcss]]';
+    $replacement = $customcss;
+    if (is_null($replacement)) {
+        $replacement = '';
+    }
+    $css = str_replace($tag, $replacement, $css);
+    return $css;
+}/**
  * get_performance_output() override get_peformance_info()
  *  in moodlelib.php. Returns a string
  * values ready for use.
