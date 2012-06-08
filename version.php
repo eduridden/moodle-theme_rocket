@@ -19,13 +19,12 @@
  *
  * @package    theme
  * @subpackage rocket
- * @copyright  2011 Julian (Moodleman) Ridden
+ * @copyright  2012 Julian Ridden
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die;
 
-$plugin->version   = 2012050400; // The current module version (Date: YYYYMMDDXX)
-$plugin->requires  = 2011070100; // Requires this Moodle version
+$plugin->version   = 2012060800; // The current module version (Date: YYYYMMDDXX)
+$plugin->requires  = 2011081700; // Requires this Moodle version
 $plugin->component = 'theme_rocket'; // Full name of the plugin (used for diagnostics)
-$plugin->maturity  = MATURITY_STABLE;
