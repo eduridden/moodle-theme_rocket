@@ -15,12 +15,21 @@ class theme_rocket_core_renderer extends core_renderer {
 
 		// Generate custom My Courses dropdown
         $mycourses = $this->page->navigation->get('mycourses');
+		$mycoursetitle = $this->page->theme->settings-> mycoursetitle;
 
 		if (isloggedin() && $mycourses && $mycourses->has_children()) {
-            $branchlabel = get_string('mycourses', 'theme_rocket');
             $branchurl   = new moodle_url('/my/index.php');
-            $branchtitle = $branchlabel;
             $branchsort  = 10000;
+
+			if ($mycoursetitle == 'module') {
+				$branchlabel = get_string('mymodules', 'theme_rocket');
+			} else if ($mycoursetitle == 'unit') {
+				$branchlabel = get_string('myunits', 'theme_rocket');
+			} else {
+				$branchlabel = get_string('mycourses', 'theme_rocket');
+			}
+
+			$branchtitle = $branchlabel;
  
             $branch = $menu->add($branchlabel, $branchurl, $branchtitle, $branchsort);
  
@@ -29,9 +38,16 @@ class theme_rocket_core_renderer extends core_renderer {
             }
 
         } else {
-        	$branchlabel = get_string('mycourses', 'theme_rocket');
+        	if ($mycoursetitle == 'module') {
+				$branchlabel = get_string('allmodules', 'theme_rocket');
+			} else if ($mycoursetitle == 'unit') {
+				$branchlabel = get_string('allunits', 'theme_rocket');
+			} else {
+				$branchlabel = get_string('allcourses', 'theme_rocket');
+			}
+
+			$branchtitle = $branchlabel;
             $branchurl   = new moodle_url('/course/index.php');
-            $branchtitle = $branchlabel;
             $branchsort  = 10000;
             $branch = $menu->add($branchlabel, $branchurl, $branchtitle, $branchsort);  
         }

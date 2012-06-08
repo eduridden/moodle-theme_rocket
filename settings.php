@@ -28,6 +28,19 @@ $choices = array(
 	'disable' => get_string('disable', 'theme_rocket')
 );
 $setting = new admin_setting_configselect($name, $title, $description, $default, $choices);
+$settings->add($setting);
+
+// Set terminology for dropdown couse list
+$name = 'theme_rocket/mycoursetitle';
+$title = get_string('mycoursetitle','theme_rocket');
+$description = get_string('mycoursetitledesc', 'theme_rocket');
+$default = 'course';
+$choices = array(
+	'course' => get_string('mycourses', 'theme_rocket'),
+	'unit' => get_string('myunits', 'theme_rocket'),
+	'module' => get_string('mymodules', 'theme_rocket')
+);
+$setting = new admin_setting_configselect($name, $title, $description, $default, $choices);
 $settings->add($setting);// Logo file setting$name = 'theme_rocket/logo';$title = get_string('logo','theme_rocket');$description = get_string('logodesc', 'theme_rocket');
 $default = 'rocket/pix/logo/rocket.png';$setting = new admin_setting_configfile($name, $title, $description, $default);$settings->add($setting);
 

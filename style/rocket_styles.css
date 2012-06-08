@@ -606,9 +606,7 @@ body#page-course-view-topics.path-course div.moodle-dialogue-base div.yui3-widge
 }
 
 .home_title td {
-	padding: 15px;
-	padding-bottom: 5px;
-	padding-top: 10px;
+	padding-left: 10px;
 }
 
 .home_title h1 {
@@ -617,12 +615,15 @@ body#page-course-view-topics.path-course div.moodle-dialogue-base div.yui3-widge
 	font-size: 1.5em;
 	text-transform: uppercase;
 	margin-bottom: 5px;
+	margin-top: 5px;
 }
 
 .home_title h2 {
 	color: [[setting:themecolor]];
 	font-weight: normal;
-	font-size: 1em;
+	font-size: 1.2em;
+	margin-top: 0px;
+	margin-bottom: 5px;
 }
 
 /* @end */
@@ -634,6 +635,7 @@ body#page-course-view-topics.path-course div.moodle-dialogue-base div.yui3-widge
 	width: 100%;
 	background: #f0f0f0;
 	color: #666;
+	font-size: .9em;
 }
 
 .home_info td {
@@ -656,6 +658,7 @@ body#page-course-view-topics.path-course div.moodle-dialogue-base div.yui3-widge
 	background: #fff;
 	width: 100%;
 	margin-bottom: -10px;
+	font-size: .9em;
 }
 
 .home_info_text .links td {

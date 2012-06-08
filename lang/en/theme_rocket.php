@@ -49,6 +49,15 @@ $string['editmodetoggle'] = 'Edit Mode Toggle';$string['edittoggledesc'] = 'Whe
 $string['enable'] = 'Enabled';
 $string['disable'] = 'Disabled';
 
+$string['mycoursetitle'] = 'Dropdown menu "My Course" Terminology';
+$string['mycoursetitledesc'] = 'Change the terminology for the "My Courses" link in the dropdown menu';
+$string['mycourses'] = 'My Courses';
+$string['myunits'] = 'My Units';
+$string['mymodules'] = 'My Modules';
+$string['allcourses'] = 'All Courses';
+$string['allunits'] = 'All Units';
+$string['allmodules'] = 'All Modules';
+
 $string['copyright'] = 'Copyright Notice';$string['copyrightdesc'] = 'This location is where you can put your copyright notice if you have one.';
 
 $string['sitename'] = 'Institution Name';
@@ -87,8 +96,6 @@ $string['menutrimcolordesc'] = 'Change the color used to trim the edges of the m
 
 $string['menulinkcolor'] = 'Menu Link Color';
 $string['menulinkcolordesc'] = 'Change the color used for links in the menu';
-
-$string['mycourses'] = 'My Courses';
 
 $string['navigation'] = 'navigation';
 
