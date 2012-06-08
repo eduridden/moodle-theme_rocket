@@ -23,7 +23,8 @@
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
  $string['pluginname'] = 'Rocket';$string['region-side-post'] = 'Right';$string['region-side-pre'] = 'Left';
-$string['region-search'] = 'Search/Profile';$string['region-toplinks'] = 'Top Links';$string['choosereadme'] = '<div class="clearfix"><div class="theme_screenshot"><h1>Rocket (Beta Version)</h1><img src="rocket/pix/screenshot.jpg" /><h2>About</h2><p>Rocket is a three column fixed-width theme for Moodle 2.1+ originally designed by Julian Ridden to take Moodle themes to a more website focused look and feel. While the design is original, much of the CSS and the icons have come from <a href="http://moodle.org/user/profile.php?id=299683"><strong>Saun Daubney\'s</strong></a> fantastic Aardvark theme and also with support in the forums from <a href="http://moodle.org/user/profile.php?id=713800"><strong>Mary Evans</strong></a>.</p>
+$string['region-search'] = 'Search/Profile';$string['region-homeblock'] = 'Home Banner';
+$string['region-toplinks'] = 'Top Links';$string['choosereadme'] = '<div class="clearfix"><div class="theme_screenshot"><h1>Rocket</h1><img src="rocket/pix/screenshot.jpg" /><h2>About</h2><p>Rocket is a three column fixed-width theme for Moodle 2.1+ originally designed by Julian Ridden to take Moodle themes to a more website focused look and feel. While the design is original, much of the CSS and the icons have come from <a href="http://moodle.org/user/profile.php?id=299683"><strong>Saun Daubney\'s</strong></a> fantastic Aardvark theme and also with support in the forums from <a href="http://moodle.org/user/profile.php?id=713800"><strong>Mary Evans</strong></a>.</p>
 
 <p>The theme is highly customisable through Moodle\'s theme settings. You can adjust images, text and colurs all without changing code. The theme also has a function that means that when users log in, courses they are enrolled in will show up in the dropdown \'custom menu\' at the top of the screen.</p>
 
@@ -39,7 +40,14 @@ $string['region-search'] = 'Search/Profile';$string['region-toplinks'] = 'Top L
 <p>In the theme settings you can also adjust three additonal text fields. The \'Institution Name\' is hsown only on the homepage. This was added as often the name of thei organisation is different to the name of the Moodle site itself.</p>
 <p>';$string['configtitle'] = 'rocket theme';
 
-$string['homeblock'] = 'banner';$string['graphicwrap'] = 'Background Image';$string['graphicwrapdesc'] = 'Change the background image in the graphic wrap. It\'s currently a goldfish, but if that\'s making you a bit seasick then paste the URL of the image you want to use in here. Please note the graphic isn\'t repeated and is centred so be careful with your design. ';$string['graphicwrap'] = 'Background Image';$string['graphicwrapdesc'] = 'Change the background image in the graphic wrap. It\'s currently a goldfish, but if that\'s making you a bit seasick then paste the URL of the image you want to use in here. Please note the graphic isn\'t repeated and is centred so be careful with your design. ';$string['logo'] = 'Logo';$string['logodesc'] = 'Change the logo of this theme by entering the URL to a new one (i.e., http://www.somesite/logo.png). As a reference, the default logo is 260px by 120px. A transparent .png will work best.';$string['footnote'] = 'Footnote';$string['footnotedesc'] = 'The content from this textarea will be displayed in the footer of every page. A great place for links.';
+$string['homeblock'] = 'banner';$string['logo'] = 'Logo';$string['logodesc'] = 'Change the logo of this theme by entering the URL to a new one (i.e., http://www.somesite/logo.png). As a reference, the default logo is 250px by 130px. A transparent .png will work best.';$string['footnote'] = 'Footnote';$string['footnotedesc'] = 'The content from this textarea will be displayed in the footer of every page. A great place for links.';
+
+$string['autohide'] = 'Autohide Functionality';$string['autohidedesc'] = 'Enabling this feature will change how moodle looks when editing mode is turned on. Edit icons only appear when hovering over a particular item or block. This makes the interface alot cleaner and less intimidating.';
+
+$string['editmodetoggle'] = 'Edit Mode Toggle';$string['edittoggledesc'] = 'When enabled this replaces the "Turn Editing On" button with a status toggle instead.';
+
+$string['enable'] = 'Enabled';
+$string['disable'] = 'Disabled';
 
 $string['copyright'] = 'Copyright Notice';$string['copyrightdesc'] = 'This location is where you can put your copyright notice if you have one.';
 
@@ -47,11 +55,11 @@ $string['sitename'] = 'Institution Name';
 $string['sitenamedesc'] = 'The name of your institution is shown on the frontpage. This is not the name of your site';
 
 $string['banner'] = 'Banner';
-$string['bannerdesc'] = 'Change the banner on the frontpage by entering the URL to a new one (i.e., http://www.somesite/banner.png). As a reference, the default banner is 750px by 350px.';
+$string['bannerdesc'] = 'Change the banner on the frontpage by entering the URL to a new one (i.e., http://www.somesite/banner.png). As a reference, the default banner is 750px by 250px.';
 
-$string['bannerheight'] = 'Hoempage Banner Height';
+$string['bannerheight'] = 'Homepage Banner Height';
 $string['nobanner'] = 'Disable Banner';
-$string['bannerheightdesc'] = 'If you are using the Banner location on the homepage you can change its defult height here. The max is 350px.';
+$string['bannerheightdesc'] = 'If you are using the Banner location on the homepage you can change its defult height here. The max is 250px.';
 
 $string['themecolor'] = 'Theme Color';
 $string['themecolordesc'] = 'What color should your theme be. This will change mulitple components to produce the color you wish across the moodle site';
@@ -61,6 +69,15 @@ $string['themetrimcolordesc'] = 'What color should your theme be. This will chan
 
 $string['menucolor'] = 'Menu Color';
 $string['menucolordesc'] = 'Change the color of the menu';
+
+$string['contentlinkcolor'] = 'Content Link Color';
+$string['contentlinkcolordesc'] = 'Change the color of the links in content areas';
+
+$string['customcss'] = 'Custom CSS';
+$string['customcssdesc'] = 'For advanced users you can type in your own css here to override any of the theme defaults';
+
+$string['blocklinkcolor'] = 'Block Link Color';
+$string['blocklinkcolordesc'] = 'Change the color of the links in blocks';
 
 $string['menuhovercolor'] = 'Menu Hover Color';
 $string['menuhovercolordesc'] = 'Change the color of the menu items when the mouse hovers over them';
@@ -72,6 +89,10 @@ $string['menulinkcolor'] = 'Menu Link Color';
 $string['menulinkcolordesc'] = 'Change the color used for links in the menu';
 
 $string['mycourses'] = 'My Courses';
+
+$string['navigation'] = 'navigation';
+
+$string['editingmode'] = '<strong>Editing Mode is now enabled:</strong> Please hover over the topic, item or block you wish to edit. Drag and drop files onto course sections to upload them';
 
 $string['screenwidth'] = 'Screen Width';
 $string['screenwidthdesc'] = 'This allows you to designate if this theme is displayed as a fixed with of 1000px or a variable width of 100%. <br> Please note that for design reasons the frontpage of the site will always remain fixed width';
