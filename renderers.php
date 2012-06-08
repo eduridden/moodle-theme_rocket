@@ -25,6 +25,8 @@ class theme_rocket_core_renderer extends core_renderer {
 				$branchlabel = get_string('mymodules', 'theme_rocket');
 			} else if ($mycoursetitle == 'unit') {
 				$branchlabel = get_string('myunits', 'theme_rocket');
+			} else if ($mycoursetitle == 'class') {
+				$branchlabel = get_string('myclasses', 'theme_rocket');
 			} else {
 				$branchlabel = get_string('mycourses', 'theme_rocket');
 			}
@@ -42,6 +44,8 @@ class theme_rocket_core_renderer extends core_renderer {
 				$branchlabel = get_string('allmodules', 'theme_rocket');
 			} else if ($mycoursetitle == 'unit') {
 				$branchlabel = get_string('allunits', 'theme_rocket');
+			} else if ($mycoursetitle == 'class') {
+				$branchlabel = get_string('allclasses', 'theme_rocket');
 			} else {
 				$branchlabel = get_string('allcourses', 'theme_rocket');
 			}

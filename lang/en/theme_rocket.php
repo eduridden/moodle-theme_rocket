@@ -54,9 +54,11 @@ $string['mycoursetitledesc'] = 'Change the terminology for the "My Courses" link
 $string['mycourses'] = 'My Courses';
 $string['myunits'] = 'My Units';
 $string['mymodules'] = 'My Modules';
+$string['mymodules'] = 'My Classes';
 $string['allcourses'] = 'All Courses';
 $string['allunits'] = 'All Units';
 $string['allmodules'] = 'All Modules';
+$string['allclasses'] = 'All Classes';
 
 $string['copyright'] = 'Copyright Notice';$string['copyrightdesc'] = 'This location is where you can put your copyright notice if you have one.';
 

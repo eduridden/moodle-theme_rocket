@@ -38,6 +38,7 @@ $default = 'course';
 $choices = array(
 	'course' => get_string('mycourses', 'theme_rocket'),
 	'unit' => get_string('myunits', 'theme_rocket'),
+	'class' => get_string('myclasses', 'theme_rocket'),
 	'module' => get_string('mymodules', 'theme_rocket')
 );
 $setting = new admin_setting_configselect($name, $title, $description, $default, $choices);
