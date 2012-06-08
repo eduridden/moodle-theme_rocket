@@ -29,9 +29,11 @@ hr {
     border-top: 0px;
 }
 h2.headingblock {
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid [[setting:themetrimcolor]];
     font-size: 1.4em;
-    font-weight: bold;
+    font-weight: 200;
+    text-transform: uppercase;
+    color: [[setting:themecolor]];
 }
 
 .generalbox {
