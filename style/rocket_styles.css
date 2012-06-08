@@ -1,0 +1,797 @@
+/* @group Core */
+
+body {
+    margin: 0;
+    padding: 0;
+    color:#333333;
+    background : url([[pix:theme|core/body_bg_sml]]) repeat-x top [[setting:themecolor]];
+    border-top: 5px solid [[setting:themetrimcolor]];
+}
+
+#page-site-index {
+	background: url([[pix:theme|core/body_bg]]) [[setting:themecolor]] repeat-x 0 [[setting:bannerheight]];
+}
+
+h1,h2,h3,h4,h5,h6,p,ul,ol,dl,input,textarea {
+    font-family : "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+a:link,
+a:visited {
+    color: [[setting:contentlinkcolor]];
+    text-decoration: none;
+}
+a:hover, a:active {
+    color: [[setting:themecolor]];
+    text-decoration: none;
+}
+hr {
+    border-bottom: 1px dotted #808080;
+    border-top: 0px;
+}
+h2.headingblock {
+    border-bottom: 1px solid #ddd;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.generalbox {
+    border:0 none;
+}
+table {
+    font-size: 85%;
+}
+
+
+
+/* @end */
+
+/* @group Page */
+
+#page {
+    font-size: 90%;
+    font-family: Helvetica,Arial,sans-serif
+}
+#page-content {
+    padding-bottom: 10px;
+}
+
+/* @end */
+
+/* @group Header */
+
+#page-header {
+    height: 133px;
+    width: 100%;
+    background: transparent;
+    border-bottom: [[setting:menutrimcolor]] 3px solid;
+}
+
+#page-header .logininfo,
+#page-header .logininfo a {
+	color: #fff;
+	margin-top: -50px;
+	font-size: 12px;
+}
+a.logo {
+    background: url([[setting:logo]]) no-repeat 0 0;
+    width: 250px;
+    height: 130px;
+    display: block;
+    margin: 0px;
+    float: left;
+}
+.headermenu,
+.langmenu {
+    float:right;
+    clear: right;
+    font-size:1em;
+    margin:0px;
+    text-align:right;
+    position: relative;
+    top: 10px;
+}
+.headermenu {
+    right: 10px;
+}
+
+/* @group Homepage */
+
+#hometopblocks {
+	width: 100%;
+	background: transparent;
+	height: [[setting:bannerheight]];
+	vertical-align: middle;
+}
+
+#toplinks {
+	background: [[setting:menucolor]];
+	width: 250px;
+	height: [[setting:bannerheight]];
+	float: left;
+}
+
+#homeblocks {
+	background: url([[setting:banner]])  top right no-repeat #ccc;
+	height: [[setting:bannerheight]];
+}
+
+#headerstrip {
+	width: 100%;
+	background: [[setting:themecolor]];
+	height: 50px;
+	vertical-align: middle;
+	font-size: 1em;
+	text-transform: uppercase;
+}
+
+#searchbox {
+	background: #fff;
+	width: 250px;
+	height: 50px;
+	float: left;
+	margin-right: 20px;
+}
+
+#sitename {
+	padding: 14px;
+	font-size: 1.4em;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+
+
+/* @end */
+
+
+/* @group Editing Button */
+
+#ebutton {width : 150px;float : right;text-align : right;margin: 10px;
+color: #fff;}
+
+#ebutton a {
+	color: #fff;
+}
+
+#ebutton #edittoggle {
+	font-size:.65em;
+}
+
+#ebutton input[type="submit"] {
+	float: right;
+	padding: 5px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	color: #fff;
+	border: 0px none;
+	margin-left: 5px;
+	padding-left: 18px;
+	padding-right: 8px;
+	cursor: pointer;
+	text-transform: uppercase;
+	background: #777;
+}
+
+#ebutton #off input[type="submit"] {
+	background: url([[pix:theme|editmode_off]]) left no-repeat #777 !important;
+}
+
+#ebutton #on input[type="submit"] {
+	background: url([[pix:theme|editmode_on]]) left no-repeat #777 !important;
+}
+
+/* @end */
+
+/* @group Edit Mode */
+
+#dndupload-status,
+#editingmode {
+	text-align: center;
+	background: #ff6666;
+	color: #fff;
+	padding: 5px;
+	font-size: .9em;
+	border-bottom: 3px solid [[setting:menutrimcolor]];
+}
+
+#dndupload-status {
+	width: 100%;
+	margin-top: -1px;
+}
+
+#editingmode {
+	display: none;
+}
+
+/* @end */
+
+/* @group Navbar & Breadcrumb */
+
+
+
+.nav_title {
+	color: #fff;
+	font-size: .75em;
+	font-weight: normal;
+	padding-top: 10px;
+}
+
+.breadcrumb {text-transform : uppercase;font-weight : bold;font-size : 1em;margin-left : 0px;
+margin-top: -8px;
+color: #fff;}
+.breadcrumb a {color : #fff !important ;}
+.breadcrumb ul {color : #fff;
+line-height : 35px;}
+.breadcrumb li a, .breadcrumb li, .breadcrumb li a:visited {font-weight : 200;text-decoration : none;color : #fff;}.breadcrumb li a:hover {text-decoration:none;
+border-bottom: 1px dashed #fff;}.breadcrumb li img {vertical-align : middle;}
+.arrow, .arrow_button input {color : #aaa;}
+
+div#jcontrols_button span.arrow.sep {font-size : 1px;color : #dadada;display : inline-block;width : 16px;}
+
+div#jcontrols_button a {
+	color: #fff;
+}
+div.jcontrolsleft {	margin-left : 15px;	font-weight : 600;	float : left;	width : auto;	overflow : hidden;	height : 100%;}
+div.jcontrolsright {	float : right;	min-width : 50%;	height : 35px;	margin-right : 15px;}
+
+/* @end */
+
+
+
+/* @end */
+
+/* @group Footer */
+
+#page-footer {
+    background: transparent;
+    height: auto;
+    clear: both;
+    float: left;
+    width: 98%;
+    margin: 0;
+    padding: 1%;
+    color: #4b4b4b;
+    border-top: 3px solid [[setting:themecolor]];
+    line-height: 2em;
+    font-size: 1em;
+}
+#page-footer a:link,
+#page-footer a:visited  {
+    color: #aaa;
+    text-decoration:none;
+}
+#page-footer a:hover,
+#page-footer a:active {
+    color: #c30;
+    text-decoration:none;
+}
+
+#page-footer .footer-left {
+    float: left;
+    text-align: left;
+    color: #999;
+}
+
+#page-footer .footer-left p {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    line-height: 1;
+}
+
+#page-footer .footer-left #logo {
+	width: 100px;
+	height: 30px;
+	background: url([[pix:theme|footer/moodle-logo]]) no-repeat top left;
+	margin-top: 5px;
+}
+#page-footer .footer-right {
+    float: right;
+    text-align: right;
+    color: #aaa;
+}
+
+.footer-right .copyright {
+	margin-top: -8px;
+	margin-bottom: -10px;
+}
+
+
+
+/* @end */
+/* @group Collapse All - Expand All */
+
+div.controls .expandall,
+div.controls .collapseall {
+    font-size: .8em;
+    color: #008db0;
+    margin: 2px;
+    padding: 0;
+    float: right;
+    clear: both;
+    text-transform: capitalize;
+    font-variant: small-caps;
+    border-bottom: 1px solid #008db0;
+}
+.redirectmessage,
+.continuebutton {
+    text-align: center;
+    font-size: 14pt;
+    color: #444;
+    padding-bottom: 10px;
+}
+
+
+
+/* @end */
+
+/* @group Button */
+#loginbtn, input, button, select {
+    cursor: pointer;
+    margin-left: 5px;
+}
+input#username,
+input#password,
+input[type="text"],
+input[type="password"],
+textarea {
+    background-color: white;
+    border: 2px inset threedface;
+    color: #4b4b4b;
+    width: auto;
+    cursor: default;
+}
+
+
+
+/* @end */
+
+/* @group Coursebox Info & Summary */
+
+.sectionname {
+	border-bottom: 1px dashed #eee;
+	padding-bottom: 3px;
+	color: [[setting:themecolor]];
+	font-weight: 200;
+	font-size: 1.2em;
+}
+
+.section .content li {
+	border-top: 1px dashed #eee;
+	border-left: 1px solid #fff;
+}
+
+.section .content li:last-child {
+	border-bottom: 1px dashed #eee;
+}
+
+.course-content .main {	padding : 0px !important;
+	margin : 0px !important;
+	padding-top: 1px !important;
+	border: 0px none !important;
+	background: #eee;}
+
+.course-content .main .content {	padding : 5px 10px 5px 10px;	background : #fff;
+	font-size: .9em;}
+
+/* @end */
+
+/* @group Course Section Topic & Weekly */
+
+.course-content ul.topics li.section,
+.course-content ul.weeks li.section {
+    border: 1px solid #DDDDDD;
+    list-style: none outside none;
+    margin: 5px 0 0;
+    padding: 0;
+}
+.course-content ul.topics li.section {
+  padding-top: 1em;
+}
+.path-course-view .headingblock {
+    display: none; /* hides topic items title or weekly itens title */
+    margin-bottom: 9px;
+}
+
+
+
+/* @end */
+
+/* @group Login (Login Page) */
+
+.loginbox .loginform .form-label {width:46%;}
+.dir-rtl .loginbox .loginform .form-label {width:46%;}
+.loginbox .loginform .form-input {width:53%;}
+
+
+
+/* @end */
+
+/* @group Theme Selector */
+
+#page-admin-theme-index .generalbox {
+    border: none;
+}
+.theme_screenshot {
+    float: left;
+    width: 300px;
+}
+.theme_screenshot img {
+    width: 275px;
+}
+.theme_screenshot h2 {
+    font-size: 2em;
+}
+.theme_screenshot h3 {
+    font-size: 0.9em;
+    margin: 1em 0 0;
+}
+.theme_screenshot p {
+    font-size: 0.9em;
+    margin: 0 0 1em;
+}
+.theme_description {
+    margin-left: 300px;
+}
+.theme_description h2 {
+    padding-top: 0.5em;
+}
+
+
+
+/* @end */
+
+/* @group Tabs */
+
+.tabtree ul {
+    text-align:center;
+}
+.tabtree .tabrow0 {
+    width:100%;margin:1em 0px;
+}
+.tabtree .tabrow0 li {
+    margin-right:-4px;
+}
+.tabtree .tabrow0 li.here {
+    font-weight: bold;
+}
+.tabtree .tabrow0 li.here a {
+    position:relative;z-index:102;
+}
+.tabtree .tabrow0 li a {
+    background-image:url([[pix:theme|tab/left]]);
+    padding-left:14px;
+    padding-top:10px;
+    background-repeat:no-repeat;
+    padding-bottom:3px;
+    margin-bottom:-1px;
+}
+.tabtree .tabrow0 li a:hover {
+    background-image:url([[pix:theme|tab/left_hover]]);
+}
+.tabtree .tabrow0 li a span {
+    background-image:url([[pix:theme|tab/right]]);
+    background-repeat:no-repeat;
+    background-position:100% 0%;
+    padding-right:14px;
+    padding-top:10px;
+    padding-bottom:3px;
+}
+.tabtree .tabrow0 li a:hover span {
+    background-image:url([[pix:theme|tab/right_hover]]);
+}
+.tabtree .tabrow0 ul,
+.tabtree .tabrow0 div {
+    font-weight: normal;
+    background-image:url([[pix:theme|tab/tabrow1]]);
+    background-position:0% 50%;
+    border-top: 1px dotted #eee;
+    padding:0.25em 0px;
+    margin:0px;
+}
+.tabtree .tabrow0 li.here .empty {
+    display:block;
+    height:1px;
+    overflow:hidden;
+    padding:0px;
+    position:absolute;
+    width:100%;
+    bottom:-4px;
+}
+.tabtree .tabrow1 li a,
+.tabtree .tabrow1 li a:hover,
+.tabtree .tabrow1 li a span,
+.tabtree .tabrow1 li a:hover span {
+    background-image:none !important;
+}
+.tabtree a.nolink,
+.tabtree .here ul a.nolink,
+.tabtree a.nolink:hover,
+.tabtree .here ul a.nolink:hover {
+    color: #888;
+    text-decoration: none;
+}
+.tabtree .here a.nolink,
+.tabtree .here ul .here a.nolink,
+.tabtree .here a.nolink:hover,
+.tabtree .here ul .here a.nolink:hover {
+    color: black;text-decoration: none;
+}
+
+
+
+/* @end */
+
+/* @group tab styles for ie6 & ie7 */
+
+.ie7 .tabtree .tabrow0 li {
+    margin-left: 0;
+}
+
+.ie7 .tabtree .tabrow0 li.first {
+    margin-right: -4px;
+}
+.ie7 .tabtree .tabrow0 li.onerow {
+    margin-right: 0;
+}
+.ie7 .tabtree .tabrow0 a {
+    display: inline-block;
+    padding: 8px 0 0.35em 13px;
+    line-height: 1.5em;
+}
+.ie7 .tabtree .tabrow0 a span {
+    padding: 10px 1em 10px 0;
+}
+.ie7 .tabtree .tabrow0 div {
+    top: 2.6em;padding: 0.2em 0;
+}
+.ie7 .tabtree .tabrow0 div.empty {
+    margin-right: 0;
+}
+.ie7.mod-quiz div.tabtree a span img.iconsmall {
+    margin: 0;
+    vertical-align: baseline;
+    position: relative;
+    top: 2px;
+}
+.ie6 .tabtree {
+    height: 100%;
+}
+.ie6 .tabtree .tabrow0 {
+    padding-top: 10px;
+}
+.ie6 .tabtree .tabrow0 li {
+    margin-left: 0;
+}
+.ie6 .tabtree .tabrow0 li.first {
+    margin-left: -4px;
+    margin-right: -4px;
+}
+.ie6 .tabtree .tabrow0 li.last a {
+    margin-right: 0;
+}
+.ie6 .tabtree .tabrow0 li.onerow {
+    margin-right: 0;
+}
+.ie6 .tabtree .tabrow0 a {
+    padding: 0 0 0 13px;
+}
+.ie6 .tabtree .tabrow0 a span {
+    padding: 12px 1em 4px 0;
+}
+.ie6 .tabtree .tabrow0 div {
+    top: 3.5em;
+    padding: 0.2em 0;
+}
+.yui-skin-sam .yui-panel-container {
+    z-index: 999999!important;
+}
+body#page-course-view-topics.path-course div.moodle-dialogue-base div.yui3-widget{
+    z-index: 600!important;
+}
+
+
+
+/* @end */
+
+/* @group Homepage */
+
+/* @group Home_title */
+
+.home_title {
+	border: 1px solid #dededf;
+	width: 100%;
+	color: #666666;
+}
+
+.home_title td {
+	padding: 15px;
+	padding-bottom: 5px;
+	padding-top: 10px;
+}
+
+.home_title h1 {
+	color: [[setting:themetrimcolor]];
+	font-weight: normal;
+	font-size: 1.5em;
+	text-transform: uppercase;
+	margin-bottom: 5px;
+}
+
+.home_title h2 {
+	color: [[setting:themecolor]];
+	font-weight: normal;
+	font-size: 1em;
+}
+
+/* @end */
+
+/* @group Home_info */
+
+.home_info {
+	border: 1px solid #dededf;
+	width: 100%;
+	background: #f0f0f0;
+	color: #666;
+}
+
+.home_info td {
+	padding: 30px;
+	text-align: left;
+	vertical-align: top;
+	text-align: left !important;
+}
+
+.home_info img {
+	margin: -30px;
+}
+
+.home_info_text {
+	width: 100%;
+}
+
+.home_info_text .links {
+	border: 1px solid #dededf;
+	background: #fff;
+	width: 100%;
+	margin-bottom: -10px;
+}
+
+.home_info_text .links td {
+	padding: 10px;
+}
+
+.home_info_text .links a {
+	background: [[setting:themecolor]];
+	color: #fff;
+	padding: 5px;
+	border: 1px solid #dededf;
+}
+/* @end */
+
+/* @end */
+
+/* @group Performance Information */
+#page-footer .performanceinfo {
+	-moz-border-radius-topleft:15px;
+	-moz-border-radius-topright:15px;
+	-webkit-border-top-left-radius:15px 15px;
+	-webkit-border-top-right-radius:15px 15px;
+	bottom:0;
+	left:-290px !important;
+	position:fixed;
+	background-color:#444;
+	width:580px !important;
+	border-width:12px 12px medium;
+	margin:0 50% !important;
+}
+
+#page-footer .performanceinfo ul {
+	text-align: center; 
+	margin: 0 auto;
+}
+
+#page-footer .performanceinfo li{
+	display:block;
+	list-style-type:none;
+	float:left;
+	padding:5px 0;
+	width:25%;
+}
+
+#page-footer .performanceinfo li var{
+	font-size:1.3em;
+	font-weight:700;
+}
+
+#page-footer .performanceinfo .green{
+	color:#588E13 !important;
+}
+
+#page-footer .performanceinfo .blue{
+	color: #4381c3;
+}
+
+#page-footer .performanceinfo .purple{
+	color: #c052cf;
+}
+
+#page-footer .performanceinfo .orange{
+	color: #e69b22;
+}
+
+#page-footer .performanceinfo .red{
+	color: #df3b16;
+}
+
+#page-footer .performanceinfo .white{
+	color:#FFF !important;
+}
+
+#page-footer .performanceinfo span{
+	color:#fff;
+	display: block;
+}
+/* @end */
+
+/* @group Login Page */
+
+#page-login-index {
+	background: [[setting:themecolor]];
+	padding-top: 20px;
+	margin: 0px;
+	height: 1000px;
+}
+
+#page-login-index #page {
+	width: 550px;
+}
+
+#page-login-index #page-wrapper,
+#page-login-index #page,
+#page-login-index #page-content,
+#page-login-index #region-main-box {
+	background: transparent;
+}
+
+.loginbox {
+	margin-left: auto;
+	margin-right: auto;
+	background: #fff;
+	border: 3px solid [[setting:themetrimcolor]];
+}
+
+.loginbox .loginsub .desc {
+	line-height: 2em;
+}
+
+.loginbox .loginform .form-label {
+	padding-bottom: 10px;
+	padding-top: 2px;
+	color: [[setting:themecolor]];
+	text-transform: uppercase;
+}
+
+.loginbox .loginsub .forgetpass {
+	font-weight: 200;
+	text-transform: uppercase;
+	padding-top: 10px;
+}
+
+#page-login-index #page-wrapper h2 {
+	color: [[setting:themecolor]];
+	text-transform: uppercase;
+	font-weight: 200;
+	font-size: 1.6em;
+}
+
+#page-login-index #page-footer a{
+	color: #fff !important;
+}
+
+#page-login-index #page-footer .footer-right {
+	color: #fff;
+}
+
+/* @end */

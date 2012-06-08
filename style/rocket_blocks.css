@@ -1,0 +1,363 @@
+/* @group Generic Blocks */
+
+.block {	margin : 20px;
+	margin-top: 15px;
+	margin-bottom: 0px;	padding : 0px;	border: 0px none;
+	background : #fff;}
+
+.block .header {
+	margin : 0 0 0 !important ;	padding-top : 0 !important ;	border-bottom : 0px none;
+	background: [[setting:themecolor]];
+}
+
+.block .header .block_action {
+    float:right;
+    margin:0 4px;
+    vertical-align:top;
+}
+.block .header .block_action input {
+    margin-right:2px;
+}
+
+.block .content {
+    padding:10px;
+    border: 1px solid #ccc;
+    border-top: 0px none;
+}
+
+.block .content a {
+	color: [[setting:blocklinkcolor]];
+}
+
+.block.hidden .content {
+    display: none;
+}
+.block .content .userpicture {
+    width:16px;height:16px;
+    margin-right:4px;
+}
+.block .content .list li.listentry {
+    clear:both;
+}
+.block .content .list .c0 {
+    display:inline;
+}
+.block .content .list .c1 {
+    margin-left:5px;
+    display:inline;
+}
+.block .footer {
+    margin-bottom: 4px;
+}
+.block .blockannotation {
+    font-size:0.75em;
+    margin: -1em 0 1em;
+}
+.block.beingmoved {
+    border-width: 2px;
+    border-style: dashed;
+}
+.blockmovetarget {
+    display: block;
+    height: 1em;
+    margin-bottom: 1em;
+    border-width: 2px;
+    border-style: dashed;
+}
+.block-region .invisible {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+.block .block-hider-show,
+.block .block-hider-hide {
+    cursor:pointer;
+}
+.block .block-hider-show,
+.block.hidden .block-hider-hide {
+    display:none;
+}
+.block.hidden .block-hider-show {
+    display:inline;
+}
+.block-region {
+    float: left;
+    padding: 0;
+    font-size: 12px;
+}
+.block-region ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.block-region li {
+    padding: 0 0 20px 0;
+}
+.block-region li ul {
+}
+.block-region li li {
+    margin: 0 20px 0 10px;
+    padding: 8px 0px;
+}
+.block .header {
+    border:none;
+    padding: 6px 0 4px;
+    width: 100%;
+}
+.block .header div.commands {
+    margin-left: 10px;
+}
+#region-pre .block .header {
+    background: [[setting:themecolor]];
+    color:#50646d;
+}
+
+#region-pre .block .content {
+	border: 0px none;
+}
+
+#region-post .block .header {
+    background: [[setting:themecolor]];
+    border-bottom:1px solid #ddd;
+    color:#777;
+}
+.block .header .title h2 {
+    padding : 0px 0px 5px 10px;	font-size : 1.2em;	text-transform : uppercase;	margin : 0 !important ;	font-weight : 300;	color : #fff;	padding-top : 8px;
+}
+.block .header .block_action {
+    float:right;
+    margin-right: 3px;
+    vertical-align:top;
+    margin-top: 10px;
+}
+.block .region-content {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.block .minicalendar {
+    margin:10px auto;
+    width:100%;
+}
+
+
+
+/* @end */
+
+/* @group List Block Contents */
+
+.block .list .c0 {
+    display:inline;
+}
+.block .list .c0 img.icon {
+    vertical-align: middle
+}
+.block .list .c1 {
+    margin-left:5px;display:inline;
+}
+
+
+
+/* @end */
+
+
+/* @group Login Block */
+
+.block_login.block {
+	margin: 0px;
+	background: [[setting:themecolor]];
+}
+.block_login div.content label {	color: #fff;
+	text-transform: uppercase;
+	font-size : 1em;	display : inline-block;	min-width : 50px;	margin-right : 3px;
+	padding-bottom: 10px;}
+
+.block_login div.content a {
+	color: #fff;
+}
+
+.block_login input[type="text"],
+.block_login input[type="password"],
+.block_login textarea {
+	background: #fff !important;
+	font-size: 1em;
+	margin: 0px 0px 10px 0px;
+	border: 1px solid #ccc;
+	color: #000;
+	text-align: left !important;
+	width: 205px !important;
+}
+
+.block_login input, 
+.block_login input select {
+	background: #7e7f83;
+	border: 1px solid #fff;
+	padding: 12px;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	color: #fff;
+	margin-top: 5px;
+	float: right;
+}
+
+.block_login .footer {
+	padding-bottom: 10px;
+	height: 20px;
+}
+
+.block_login .header h2,
+.block_login .header .block_action {
+	display: none;
+}
+
+/* @end */
+
+
+/* @group Top Links */
+#toplinks .block {
+	background: transparent;
+	color: [[setting:menulinkcolor]];
+	margin-top: 10px;
+}
+
+#toplinks .block label,
+#toplinks .block .block_action {
+	display: none;
+}
+
+#toplinks .block .header {
+	background: transparent;
+	border-bottom: 1px solid [[setting:menutrimcolor]];
+}
+
+#toplinks .block .title h2 {
+	margin: 0px;
+	padding: 0px;
+	padding-bottom: 5px;
+	font-size: 1.1em;
+}
+
+#toplinks .block div.content {
+	padding: 0px;
+	margin-top: -3px;
+	border: none;
+	font-weight: 20000;
+}
+
+/* @group Top Links HTML block */
+
+#toplinks .block_html .content,
+#toplinks .block_html .content a {
+	color: [[setting:menulinkcolor]];
+}
+
+#toplinks .block_html .content ul li:hover {
+	background: [[setting:menuhovercolor]];}
+
+#toplinks .block_html .content ul {
+	margin:0;
+	padding:0;
+}
+
+#toplinks .block_html .content ul li {
+	border-bottom: [[setting:menutrimcolor]] 1px dashed;
+	padding: 8px;
+	text-transform: uppercase;
+	margin-left: 0px;
+	font-size: 1em;
+}
+
+#toplinks .block .header .commands {
+	background: transparent;
+	top: 0px;
+	left: -10px;
+}
+
+/* @end */
+
+/* @end */
+/* @group Bug fixes */
+
+.block_settings .block_tree li.item_with_icon > p img,
+.block_navigation .block_tree li.item_with_icon > p img {
+    left:0;
+    position:absolute;
+    top:0px !important;
+    vertical-align:middle;
+}
+.block_settings .block_tree li.item_with_icon p img.smallicon,
+.block_settings .block_tree li.item_with_icon p img.navicon,
+.block_navigation .block_tree li.item_with_icon p img.smallicon,
+.block_navigation .block_tree li.item_with_icon p img.navicon {
+    margin: 0;
+    padding: 0;
+    vertical-align:middle;
+}
+.block_navigation .block_tree .type_activity > .tree_item.branch img {
+    left:0px;
+    bottom: 0px;
+    position:absolute;
+}
+
+
+
+/* @end */
+
+/* @group My Profile */
+
+#searchbox .block_myprofile .header,
+#searchbox .block_myprofile .footer {
+	display: none;
+}
+
+#searchbox .block_myprofile .block {
+	background: transparent;
+}
+
+#searchbox .block_myprofile .title h2,
+#searchbox .block_myprofile label,
+#searchbox .block_myprofile .block_action {
+	display: none;
+}
+
+#searchbox .block_myprofile div.content {
+	padding: 0px;
+	margin-top: -7px;
+	color: [[setting:themecolor]];
+	border: none;
+}
+
+#searchbox .block_myprofile img.profilepicture {
+	height:  37px;
+	width: 37px;
+	float: right;
+	border: 1px solid [[setting:themecolor]];
+	margin-top: -2px;
+}
+
+#searchbox .block_myprofile .fullname {
+	font-size: 1.2em;
+}
+
+#searchbox .block_myprofile .email {
+	font-size: .95em;
+}
+
+#searchbox .block_myprofile .country,
+#searchbox .block_myprofile .city {
+	display: none;
+}
+/* @end */
+
+/* @group Home Banner Blocks */
+
+#homeblocks .block {
+	margin: 3px 3px 0px 0px;
+	width: 744px;
+	float: right;
+}
+
+#homeblocks .block .header .block_action{
+	display: none;
+}
+
+/* @end */
