@@ -51,7 +51,7 @@ table {
 
 #page {
     font-size: 90%;
-    font-family: Helvetica,Arial,sans-serif
+    font-family: Helvetica,Arial,sans-serif;
 }
 #page-content {
     padding-bottom: 10px;
@@ -234,7 +234,7 @@ div#jcontrols_button span.arrow.sep {font-size : 1px;color : #dadada;display 
 div#jcontrols_button a {
 	color: #fff;
 }
-div.jcontrolsleft {	margin-left : 15px;	font-weight : 600;	float : left;	width : auto;	overflow : hidden;	height : 100%;}
+div.jcontrolsleft {	margin-left : 15px;	font-weight : 600;	float : left;	width : 700px;	overflow : hidden;	height : 100%;}
 div.jcontrolsright {	float : right;	min-width : 50%;	height : 35px;	margin-right : 15px;}
 
 /* @end */
