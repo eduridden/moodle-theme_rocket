@@ -52,7 +52,10 @@
     border-width: 1px 0 0;
 }
 
-
+.forumsearch {
+	border: 1px solid #000;
+	display: none;
+}
 
 /* @end */
 
