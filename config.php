@@ -27,30 +27,30 @@ $THEME->editor_sheets = array('editor');
 $THEME->layouts = array(
     // Most backwards compatible layout without the blocks - this is the layout used by default
     'base' => array(
-        'file' => 'default.php',
+        'file' => 'general.php',
         'regions' => array('search'),
     ),
     // Standard layout with blocks, this is recommended for most pages with default information
     'standard' => array(
-        'file' => 'default.php',
+        'file' => 'general.php',
         'regions' => array('side-pre', 'side-post','search'),
         'defaultregion' => 'side-pre',
     ),
     // Main course page
     'course' => array(
-        'file' => 'default.php',
+        'file' => 'general.php',
         'regions' => array('side-pre', 'side-post','search'),
         'defaultregion' => 'side-pre',
         'options' => array('langmenu'=>true),
     ),
     'coursecategory' => array(
-        'file' => 'default.php',
+        'file' => 'general.php',
         'regions' => array('side-pre', 'side-post','search'),
         'defaultregion' => 'side-pre',
     ),
     // part of course, typical for modules - default page layout if $cm specified in require_login()
     'incourse' => array(
-        'file' => 'default.php',
+        'file' => 'general.php',
         'regions' => array('side-pre', 'side-post','search'),
         'defaultregion' => 'side-pre',
     ),
@@ -63,20 +63,20 @@ $THEME->layouts = array(
     ),
     // Server administration scripts.
     'admin' => array(
-        'file' => 'default.php',
+        'file' => 'general.php',
         'regions' => array('side-pre','search'),
         'defaultregion' => 'side-pre',
     ),
     // My dashboard page
     'mydashboard' => array(
-        'file' => 'default.php',
+        'file' => 'general.php',
         'regions' => array('side-post','search'),
         'defaultregion' => 'side-post',
         'options' => array('langmenu'=>true),
     ),
     // My public page
     'mypublic' => array(
-        'file' => 'default.php',
+        'file' => 'general.php',
         'regions' => array('side-pre','search'),
         'defaultregion' => 'side-pre',
     ),
@@ -88,13 +88,13 @@ $THEME->layouts = array(
 
     // Pages that appear in pop-up windows - no navigation, no blocks, no header.
     'popup' => array(
-        'file' => 'default.php',
+        'file' => 'general.php',
         'regions' => array('search'),
         'options' => array('nofooter'=>true, 'nonavbar'=>true, 'nocustommenu'=>true, 'nologininfo'=>true),
     ),
     // No blocks and minimal footer - used for legacy frame layouts only!
     'frametop' => array(
-        'file' => 'default.php',
+        'file' => 'general.php',
         'regions' => array('search'),
         'options' => array('nofooter'=>true),
     ),
@@ -107,13 +107,13 @@ $THEME->layouts = array(
     // This must not have any blocks, and it is good idea if it does not have links to
     // other places - for example there should not be a home link in the footer...
     'maintenance' => array(
-        'file' => 'default.php',
+        'file' => 'general.php',
         'regions' => array('search'),
         'options' => array('noblocks'=>true, 'nofooter'=>true, 'nonavbar'=>true, 'nocustommenu'=>true),
     ),
     // Should display the content and basic headers only.
     'print' => array(
-        'file' => 'default.php',
+        'file' => 'general.php',
         'regions' => array('search'),
         'options' => array('noblocks'=>true, 'nofooter'=>true, 'nonavbar'=>false, 'nocustommenu'=>true),
     ),
@@ -124,7 +124,7 @@ $THEME->layouts = array(
     ),
     // The pagelayout used for reports
     'report' => array(
-        'file' => 'default.php',
+        'file' => 'general.php',
         'regions' => array('side-pre','search'),
         'defaultregion' => 'side-pre',
     ),
