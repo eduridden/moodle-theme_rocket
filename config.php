@@ -71,7 +71,7 @@ $THEME->layouts = array(
     'mydashboard' => array(
         'file' => 'general.php',
         'regions' => array('side-post','search'),
-        'defaultregion' => 'side-post',
+        'defaultregion' => 'side-pre',
         'options' => array('langmenu'=>true),
     ),
     // My public page
