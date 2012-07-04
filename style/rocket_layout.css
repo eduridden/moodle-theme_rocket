@@ -9,7 +9,6 @@ html {
 body {
     margin: 0;
     padding: 0;
-    background: #fff url([[pix:theme|core/bground]]) repeat-x fixed;
 }
 
 #page-wrapper {
@@ -53,7 +52,7 @@ body {
     position:relative;
     left:250px;
     background: #fff;        /* Centre column background colour */
-}
+	}
 #region-post-box {
     float:left;
     width:100%;
@@ -156,7 +155,7 @@ body {
 .side-post-only #region-main-box {width: 200%; left: 250px;}
 .side-post-only #region-post-box {width: 100%; left: 50%; margin-left: -500px;}
 .side-post-only #region-main-wrap {width: 50%; right: 100%;}
-.side-post-only #region-main-pad {margin: 0px 10px 0px 230px;}
+.side-post-only #region-main-pad {margin: 0px 0px 0px 260px;}
 .side-post-only #region-main {width: 100%;}
 .side-post-only #region-pre {width: 0px;left: 0px;}
 .side-post-only #region-post {width: 250px; left: 0px;}
