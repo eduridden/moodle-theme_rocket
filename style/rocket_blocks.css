@@ -309,6 +309,11 @@
 	display: none;
 }
 
+.editing #searchbox .block_myprofile .header,
+.editing #searchbox .block_myprofile .footer {
+	display:block;
+}
+
 #searchbox .block_myprofile .block {
 	background: transparent;
 }
