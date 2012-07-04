@@ -82,6 +82,43 @@
 
 /* @end */
 
+/* @group Quiz */
+
+#page-mod-quiz-edit .questionbankwindow div.header {
+	background: [[setting:themecolor]];
+}
+
+#categoryquestions .questionnametext a,
+.qtype a {
+	color: #fff !important;
+	text-transform: uppercase;
+}
+
+#page-mod-quiz-edit div.questionbank {
+	background: #eee;
+}
+
+#page-mod-quiz-edit div.question {
+	background: transparent;
+	border: 0px none;
+}
+
+#page-mod-quiz-edit .reorder div.question div.content {
+	padding: 5px;
+	margin-bottom: 10px;
+}
+
+#page-mod-quiz-edit div.question div.content .singlequestion .questionpreview,
+#page-mod-quiz-edit div.question div.content .singlequestion .questionpreview a {
+	background: transparent;
+}
+
+.que .formulation {
+	background: transparent;
+}
+
+/* @end */
+
 /* @group Grader Report */
 
 .user-grade td.oddd1 {
