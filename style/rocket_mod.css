@@ -2,21 +2,35 @@
 
 .forumpost {
     border-collapse:separate;
-    border-style:solid;
-    border-width:0;
+    border: 1px dotted #ccc;
+    padding: 5px;
     margin-top:10px;
     width: 100%;
+    width: 98%;
 }
 .forumpost .row.maincontent {
-    background: #fff none no-repeat;
+    background: #fff;
 }
 .forumpost .row.header {
-    background: #fff url([[pix:theme|forum/gradient]]) repeat-x 43px 100%;
+    background: #fff;
     border:0px;
     min-height: 3em;
+    border-bottom: 1px dashed [[setting:themetrimcolor]];
 }
+
+.forumpost .row.header .subject {
+	text-transform: uppercase;
+	color: [[setting:themecolor]];
+	font-weight: bold;
+}
+
+.forumpost .row.header .author {
+	font-size: .85em;
+	margin-top: 4px;
+}
+
 .forumpost .picture img {
-    margin: 4px 4px 0 0;
+    margin: 0px 4px 0 0;
 }
 .forumpost .content .posting {
     margin-top: 15px;
@@ -25,14 +39,19 @@
 }
 .forumpost .topic a:link,
 .forumpost .topic a:visited {
-    color: #555;
+    color: #666;
 }
+
+.forumpost .topic a:hover {
+	color: [[setting:themecolor]] ;
+}
+
 .path-mod-forum .forumheaderlist .discussion .starter {
     border-left: 0 none;
     vertical-align: middle;
 }
 .path-mod-forum .forumheaderlist .discussion.r1 {
-    background-color: #ededed;
+    background-color: #f4f4f4;
     border-bottom: 1px solid #e6e6e6;
     border-top: 1px solid #d9d9d9;
 }
@@ -43,8 +62,12 @@
     width: 100%;
 }
 .path-mod-forum .forumheaderlist th.header {
-    background-color: #abc;
-    border-bottom: 1px solid #036;
+    background-color: [[setting:themecolor]];
+    color: #fff;
+    border-bottom: 4px solid [[setting:themetrimcolor]];
+    text-transform: uppercase;
+    font-weight: 200;
+    text-align: left;
 }
 .path-mod-forum .forumheaderlist td {
     border-color: #ccc;

@@ -148,8 +148,10 @@ a.logo {
 
 /* @group Editing Button */
 
-#ebutton {width : 150px;float : right;text-align : right;margin: 10px;
-color: #fff;}
+#ebutton {width : 150px;float : right;text-align : right;
+color: #fff;
+margin-top: -38px;
+margin-right: 20px;}
 
 #ebutton a {
 	color: #fff;
@@ -221,7 +223,8 @@ color: #fff;}
 
 .breadcrumb {text-transform : uppercase;font-weight : bold;font-size : 1em;margin-left : 0px;
 margin-top: -8px;
-color: #fff;}
+color: #fff;
+margin-right: 135px;}
 .breadcrumb a {color : #fff !important ;}
 .breadcrumb ul {color : #fff;
 line-height : 35px;}
@@ -236,6 +239,27 @@ div#jcontrols_button a {
 }
 div.jcontrolsleft {	margin-left : 15px;	font-weight : 600;	float : left;	width : 700px;	overflow : hidden;	height : 100%;}
 div.jcontrolsright {	float : right;	min-width : 50%;	height : 35px;	margin-right : 15px;}
+
+#coursesearchnavbar {
+	font-size: .8em;
+	margin-top: -3px;
+	text-align: left;
+}
+
+#coursesearchnavbar input {
+	float: left;
+	width: 100px;
+	margin: 0px;
+	margin-top: 5px;
+	font-size: 12px;
+}
+
+#coursesearchnavbar input[type="submit"] {
+	width: 35px;
+	padding: 8px;
+	padding-top: 4px;
+	height: 20px;
+}
 
 /* @end */
 
@@ -362,6 +386,9 @@ textarea {
 .section .content li {
 	border-top: 1px dashed #eee;
 	border-left: 1px solid #fff;
+	padding-top: 5px !important;
+	padding-bottom: 5px !important;
+
 }
 
 .section .content li:last-child {
@@ -372,7 +399,7 @@ textarea {
 	margin : 0px !important;
 	padding-top: 1px !important;
 	border: 0px none !important;
-	background: #eee;}
+	background: transparent;}
 
 .course-content .main .content {	padding : 5px 10px 5px 10px;	background : #fff;
 	font-size: .9em;}
@@ -396,7 +423,9 @@ textarea {
     margin-bottom: 9px;
 }
 
-
+.course-content ul.topics li.section .content {
+margin: 0 10px;
+}
 
 /* @end */
 
