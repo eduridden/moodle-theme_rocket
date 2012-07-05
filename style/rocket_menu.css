@@ -86,7 +86,7 @@ ul.dropdown ul {
     top:100%;z-index:598;
     left:auto;
     right:0;
-    margin-top: 3px;
+    margin-top: 0px;
     font:100% "Trebuchet MS",Arial,Helvetica,sans-serif;
 }
 ul.dropdown ul li {
@@ -98,6 +98,10 @@ ul.dropdown ul li {
     padding:0;
     font-size: 12px;
     text-transform: none;
+}
+
+ul.dropdown ul li:first-child {
+	border-top: 3px solid [[setting:menutrimcolor]];
 }
 
 
