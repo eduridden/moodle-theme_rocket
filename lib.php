@@ -59,12 +59,15 @@ function rocket_set_banner($css, $banner) {	global $OUTPUT;  	$tag = '[[settin
 function rocket_set_bannerheight($css, $bannerheight) {    $tag = '[[setting:bannerheight]]';    $replacement = $bannerheight;    if (is_null($replacement)) {        $replacement = '250';    }    $css = str_replace($tag, ($replacement-5).'px', $css);    return $css;}
 
 function rocket_set_screenwidth($css, $screenwidth) {    $tag = '[[setting:screenwidth]]';
+	$breadcrumbwidth = '[[setting:breadcrumbwidth]]';
 	$screenwidthmargintag = '[[setting:screenwidthmargintag]]';    $replacement = $screenwidth;    if (is_null($replacement)) {        $replacement = '1000';    }    if ( $screenwidth == "1000" ) {
 		$css = str_replace($tag, $replacement.'px', $css);
 		$css = str_replace($screenwidthmargintag, ($replacement+5).'px', $css);
+		$css = str_replace($breadcrumbwidth, ($replacement-470).'px', $css);
 	}
 	if ( $replacement == "97" ) {
 		$css = str_replace($tag, $replacement.'%', $css);
+		$css = str_replace($breadcrumbwidth, '50%', $css);
 	}    return $css;}
 
 function rocket_set_autohide($css, $autohide) {    $tag = '[[setting:autohide]]';    $replacement = 'autohide';    if (is_null($replacement)) {        $replacement = 'autohide_enable';    }    $css = str_replace($tag, $replacement, $css);	return $css;}
