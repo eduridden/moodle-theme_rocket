@@ -69,7 +69,7 @@ $THEME->layouts = array(
     ),
     // My dashboard page
     'mydashboard' => array(
-        'file' => 'default.php',
+        'file' => 'general.php',
         'regions' => array('side-pre', 'side-post', 'search'),
         'defaultregion' => 'side-pre',
         'options' => array('langmenu'=>true),
