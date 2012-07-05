@@ -630,17 +630,17 @@ body#page-course-view-topics.path-course div.moodle-dialogue-base div.yui3-widge
 
 /* @group Home_title */
 
-.home_title {
+table#home_title {
 	border: 1px solid #dededf;
 	width: 100%;
 	color: #666666;
 }
 
-.home_title td {
+table#home_title td {
 	padding-left: 10px;
 }
 
-.home_title h1 {
+table#home_title h1 {
 	color: [[setting:themetrimcolor]];
 	font-weight: normal;
 	font-size: 1.5em;
@@ -649,7 +649,7 @@ body#page-course-view-topics.path-course div.moodle-dialogue-base div.yui3-widge
 	margin-top: 5px;
 }
 
-.home_title h2 {
+table#home_title h2 {
 	color: [[setting:themecolor]];
 	font-weight: normal;
 	font-size: 1.2em;
@@ -661,7 +661,7 @@ body#page-course-view-topics.path-course div.moodle-dialogue-base div.yui3-widge
 
 /* @group Home_info */
 
-.home_info {
+table#home_info {
 	border: 1px solid #dededf;
 	width: 100%;
 	background: #f0f0f0;
@@ -669,22 +669,18 @@ body#page-course-view-topics.path-course div.moodle-dialogue-base div.yui3-widge
 	font-size: .9em;
 }
 
-.home_info td {
+table#home_info td {
 	padding: 30px;
 	text-align: left;
 	vertical-align: top;
 	text-align: left !important;
 }
 
-.home_info img {
+table#home_info img {
 	margin: -30px;
 }
 
-.home_info_text {
-	width: 100%;
-}
-
-.home_info_text .links {
+table#links {
 	border: 1px solid #dededf;
 	background: #fff;
 	width: 100%;
@@ -692,11 +688,11 @@ body#page-course-view-topics.path-course div.moodle-dialogue-base div.yui3-widge
 	font-size: .9em;
 }
 
-.home_info_text .links td {
+table#links td {
 	padding: 10px;
 }
 
-.home_info_text .links a {
+table#links a {
 	background: [[setting:themecolor]];
 	color: #fff;
 	padding: 5px;
