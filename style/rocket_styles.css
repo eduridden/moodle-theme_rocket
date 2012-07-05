@@ -825,3 +825,11 @@ table#links a {
 }
 
 /* @end */
+
+/* @group Calendar */
+
+.calendartable .today {
+	border: 1px dashed #ccc;
+}
+
+/* @end */
