@@ -179,11 +179,11 @@ margin-right: 20px;}
 	background: #777;
 }
 
-#ebutton #off input[type="submit"] {
+#ebutton #editbuttonoff input[type="submit"] {
 	background: url([[pix:theme|editmode_off]]) left no-repeat #777 !important;
 }
 
-#ebutton #on input[type="submit"] {
+#ebutton #editbuttonon input[type="submit"] {
 	background: url([[pix:theme|editmode_on]]) left no-repeat #777 !important;
 }
 

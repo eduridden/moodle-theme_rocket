@@ -182,15 +182,14 @@ class theme_rocket_core_renderer extends core_renderer {
             $edittoggle = $this->page->theme->settings->edittoggle;
         }
         if ($edittoggle == 'enable') {
-			$editmode = $PAGE->theme->settings->edittoggle;
 			$url->param('sesskey', sesskey());
-			$formclose .='</span><div id="editmode">'.get_string('editmode', 'theme_rocket').'<div id="edittoggle">'.get_string('edittoggle', 'theme_rocket').'&nbsp;</div></div>';
+			$formclose ='</span><div id="editmode">'.get_string('editmode', 'theme_rocket').'<div id="edittoggle">'.get_string('edittoggle', 'theme_rocket').'&nbsp;</div></div>';
        	 	if ($this->page->user_is_editing()) {
-				$formopen .= '<span id="on">';
+				$formopen = '<span id="editbuttonon">';
 				$url->param('edit', 'off');
 				$editstring = get_string('turneditingoff','theme_rocket');
         	} else {
-            	$formopen .='<span id="off">';
+            	$formopen ='<span id="editbuttonoff">';
 				$url->param('edit', 'on');
             	$editstring = get_string('turneditingon','theme_rocket');
         	}
