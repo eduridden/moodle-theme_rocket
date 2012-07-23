@@ -68,6 +68,7 @@
     text-transform: uppercase;
     font-weight: 200;
     text-align: left;
+    padding: 10px;
 }
 .path-mod-forum .forumheaderlist td {
     border-color: #ccc;
@@ -78,6 +79,29 @@
 .forumsearch {
 	border: 1px solid #000;
 	display: none;
+}
+
+/** Forum post colors **/
+.forumpost .topic {
+background:#fff url([[pix:theme|alert-overlay]]) repeat-x;
+padding: 7px;
+}
+
+/** og color #04346c **/
+.forumpost .subject {
+color: #fff;
+}
+
+.forumpost img.userpicture,
+.forumheaderlist img.userpicture {
+	border: 1px solid #ddd;
+	background: #fff;
+	padding: 3px;
+	padding-bottom: 10px;
+}
+
+.forumheaderlist {
+	font-size: .9em;
 }
 
 /* @end */
