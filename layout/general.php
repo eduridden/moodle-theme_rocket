@@ -32,6 +32,8 @@ $hasfooter = (empty($PAGE->layout_options['nofooter']));
 $hassidepre = (empty($PAGE->layout_options['noblocks']) && $PAGE->blocks->region_has_content('side-pre', $OUTPUT));
 $hassidepost = (empty($PAGE->layout_options['noblocks']) && $PAGE->blocks->region_has_content('side-post', $OUTPUT));
 $haslogininfo = (empty($PAGE->layout_options['nologininfo']));
+// get custom region settings
+$hassearch = ($PAGE->blocks->region_has_content('search', $OUTPUT));
 
 $showsidepre = ($hassidepre && !$PAGE->blocks->region_completely_docked('side-pre', $OUTPUT));
 $showsidepost = ($hassidepost && !$PAGE->blocks->region_completely_docked('side-post', $OUTPUT));
@@ -114,7 +116,13 @@ if ($autohide == 'enable') {
 <div id="page-content">
 <!-- START NAVBAR -->
 	<div id="headerstrip">
-		<div id="searchbox"><?php echo $OUTPUT->blocks_for_region('search') ?></div>
+		<?php if($hassearch) { ?>
+			<div id="search">
+				<div class="region-content">
+					<?php echo $OUTPUT->blocks_for_region('search') ?>
+				</div>
+			</div>
+		<?php } ?>
 		<div class="jcontrolsleft">					<?php if ($hasnavbar) { ?>			<div class="nav_title"><?php echo $navigation ?></div>
 			<div class="navbar clearfix">
 				<div class="breadcrumb"> <?php echo $OUTPUT->navbar();  ?></div>			</div>			<?php } ?>		</div>		<div id="ebutton">			<?php if ($hasnavbar) { 
