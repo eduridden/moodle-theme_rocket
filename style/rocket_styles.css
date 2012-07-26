@@ -110,7 +110,7 @@ a.logo {
 	float: left;
 }
 
-#homeblocks {
+#homeblock {
 	background: url([[setting:banner]])  top right no-repeat #ccc;
 	height: [[setting:bannerheight]];
 }
@@ -124,7 +124,7 @@ a.logo {
 	text-transform: uppercase;
 }
 
-#searchbox {
+#search {
 	background: #fff;
 	width: 250px;
 	height: 50px;

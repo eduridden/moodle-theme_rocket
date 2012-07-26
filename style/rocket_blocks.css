@@ -304,34 +304,34 @@
 
 /* @group My Profile */
 
-#searchbox .block_myprofile .header,
-#searchbox .block_myprofile .footer {
+#search .block_myprofile .header,
+#search .block_myprofile .footer {
 	display: none;
 }
 
-.editing #searchbox .block_myprofile .header,
-.editing #searchbox .block_myprofile .footer {
+.editing #search .block_myprofile .header,
+.editing #search .block_myprofile .footer {
 	display:block;
 }
 
-#searchbox .block_myprofile .block {
+#search .block_myprofile .block {
 	background: transparent;
 }
 
-#searchbox .block_myprofile .title h2,
-#searchbox .block_myprofile label,
-#searchbox .block_myprofile .block_action {
+#search .block_myprofile .title h2,
+#search .block_myprofile label,
+#search .block_myprofile .block_action {
 	display: none;
 }
 
-#searchbox .block_myprofile div.content {
+#search .block_myprofile div.content {
 	padding: 0px;
 	margin-top: -7px;
 	color: [[setting:themecolor]];
 	border: none;
 }
 
-#searchbox .block_myprofile img.profilepicture {
+#search .block_myprofile img.profilepicture {
 	height:  37px;
 	width: 37px;
 	float: right;
@@ -339,16 +339,16 @@
 	margin-top: -2px;
 }
 
-#searchbox .block_myprofile .fullname {
+#search .block_myprofile .fullname {
 	font-size: 1.2em;
 }
 
-#searchbox .block_myprofile .email {
+#search .block_myprofile .email {
 	font-size: .95em;
 }
 
-#searchbox .block_myprofile .country,
-#searchbox .block_myprofile .city {
+#search .block_myprofile .country,
+#search .block_myprofile .city {
 	display: none;
 }
 /* @end */
