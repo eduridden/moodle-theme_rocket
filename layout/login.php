@@ -32,6 +32,19 @@ echo $OUTPUT->doctype() ?>
 <head>
     <title><?php echo $PAGE->title ?></title>
     <link rel="shortcut icon" href="<?php echo $OUTPUT->pix_url('favicon', 'theme')?>" />
+    
+    <!-- START BOOTSRTAP STATUS CHECK -->
+    <?php if (!empty($PAGE->theme->settings->bootstrap)) {
+        $bootstrap = $PAGE->theme->settings->bootstrap;
+    } else {
+        $bootstrap = 'disable';
+    }
+    
+    if ($bootstrap == 'enable') {
+        ?><link rel="stylesheet" type="text/css" href="<?php echo $CFG->wwwroot; ?>/theme/rocket/style/rocket_bootstrap.css" />
+    <?php } ?>
+    <!-- END BOOTSTRAP STATUS CHECK -->
+    
     <?php echo $OUTPUT->standard_head_html() ?>
 </head>
 
