@@ -44,6 +44,9 @@ $string['homeblock'] = 'banner';$string['logo'] = 'Logo';$string['logodesc'] 
 
 $string['autohide'] = 'Autohide Functionality';$string['autohidedesc'] = 'Enabling this feature will change how moodle looks when editing mode is turned on. Edit icons only appear when hovering over a particular item or block. This makes the interface alot cleaner and less intimidating.';
 
+$string['bootstrap'] = 'Bootstrap Stying - BETA';
+$string['bootstrapdesc'] = 'This feature will enable new Bootstrap styling. This project for moodle is headed by <a href="http://moodle.org/user/view.php?id=3152&course=5">David Scotson</a> and introduced into Rocket as a Beta status. Bootstrap is a project from Twitter that provides "Simple and flexible HTML, CSS, and Javascript for popular user interface components and interactions." For more inofmration on Bootstrap <a href="http://twitter.github.com/bootstrap/">click here</a>.';
+
 $string['editmodetoggle'] = 'Edit Mode Toggle';$string['edittoggledesc'] = 'When enabled this replaces the "Turn Editing On" button with a status toggle instead.';
 
 $string['enable'] = 'Enabled';
