@@ -30,6 +30,18 @@ $choices = array(
 $setting = new admin_setting_configselect($name, $title, $description, $default, $choices);
 $settings->add($setting);
 
+// Set status of Bootstrap functionality
+$name = 'theme_rocket/bootstrap';
+$title = get_string('bootstrap','theme_rocket');
+$description = get_string('bootstrapedesc', 'theme_rocket');
+$default = 'disable';
+$choices = array(
+	'enable' => get_string('enable', 'theme_rocket'),
+	'disable' => get_string('disable', 'theme_rocket')
+);
+$setting = new admin_setting_configselect($name, $title, $description, $default, $choices);
+$settings->add($setting);
+
 // Set terminology for dropdown couse list
 $name = 'theme_rocket/mycoursetitle';
 $title = get_string('mycoursetitle','theme_rocket');

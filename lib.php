@@ -26,6 +26,14 @@
 
 	// Toggle AutoHide functionality    if (!empty($theme->settings->autohide)) {       $autohide = $theme->settings->autohide;    } else {       $autohide = null;    }    $css = rocket_set_autohide($css,$autohide);
     
+    // Toggle Bootstrap functionality
+    if (!empty($theme->settings->bootstrap)) {
+       $bootstrap = $theme->settings->bootstrap;
+    } else {
+       $bootstrap = null;
+    }
+    $css = rocket_set_bootstrap($css,$bootstrap);
+    
     // Set the background image for the Banner     if (!empty($theme->settings->banner)) {        $banner = $theme->settings->banner;    } else {        $banner = null;    }    $css = rocket_set_banner($css, $banner);
 
 	// Allow for additional custom CSS from admins
@@ -71,6 +79,16 @@ function rocket_set_screenwidth($css, $screenwidth) {    $tag = '[[setting:scre
 	}    return $css;}
 
 function rocket_set_autohide($css, $autohide) {    $tag = '[[setting:autohide]]';    $replacement = 'autohide';    if (is_null($replacement)) {        $replacement = 'autohide_enable';    }    $css = str_replace($tag, $replacement, $css);	return $css;}
+
+function rocket_set_bootstrap($css, $bootstrap) {
+    $tag = '[[setting:bootstrap]]';
+    $replacement = 'bootstrap';
+    if (is_null($replacement)) {
+        $replacement = 'bootstrap_disable';
+    }
+    $css = str_replace($tag, $replacement, $css);
+	return $css;
+}
 
 function rocket_set_customcss($css, $customcss) {
     $tag = '[[setting:customcss]]';
