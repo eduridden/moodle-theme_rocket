@@ -809,6 +809,10 @@ table#links a {
 	padding-top: 10px;
 }
 
+.loginbox .signuppanel .subcontent {
+	width: 90%;
+}
+
 #page-login-index #page-wrapper h2 {
 	color: [[setting:themecolor]];
 	text-transform: uppercase;
