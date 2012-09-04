@@ -5769,6 +5769,14 @@ tr.discussion td.picture a,
 	margin-right: 5px;
 }
 
+#adminsettings .form-item .form-label {
+	padding-right: 25px;
+}
+
+.settingsform {
+	margin-bottom: 10px;
+}
+
 /* @end */
 
 
