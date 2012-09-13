@@ -33,7 +33,7 @@ $settings->add($setting);
 // Set status of Bootstrap functionality
 $name = 'theme_rocket/bootstrap';
 $title = get_string('bootstrap','theme_rocket');
-$description = get_string('bootstrapedesc', 'theme_rocket');
+$description = get_string('bootstrapdesc', 'theme_rocket');
 $default = 'disable';
 $choices = array(
 	'enable' => get_string('enable', 'theme_rocket'),
