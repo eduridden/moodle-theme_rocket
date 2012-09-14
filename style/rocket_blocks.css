@@ -1,6 +1,6 @@
 /* @group Generic Blocks */
 
-.block {	margin : 20px;
+#region-pre .block, #region-post .block {	margin : 20px;
 	margin-top: 15px;
 	margin-bottom: 0px;	padding : 0px;	border: 0px none;
 	background : #fff;}
@@ -163,8 +163,8 @@
 /* @group Login Block */
 
 .block_login.block {
-	margin: 0px;
-	background: [[setting:themecolor]];
+	margin: 0px !important;
+	background: [[setting:themecolor]] !important;
 }
 .block_login div.content label {	color: #fff;
 	text-transform: uppercase;
@@ -214,9 +214,10 @@
 
 /* @group Top Links */
 #toplinks .block {
-	background: transparent;
-	color: [[setting:menulinkcolor]];
-	margin-top: 10px;
+	background: transparent !important;
+	color: [[setting:menulinkcolor]] !important;
+	border: none;
+	padding: 5px;
 }
 
 #toplinks .block label,
@@ -225,8 +226,8 @@
 }
 
 #toplinks .block .header {
-	background: transparent;
-	border-bottom: 1px solid [[setting:menutrimcolor]];
+	background: transparent !important;
+	border-bottom: 1px solid [[setting:menutrimcolor]] !important;
 }
 
 #toplinks .block .title h2 {
