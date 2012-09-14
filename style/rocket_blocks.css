@@ -304,6 +304,11 @@
 /* @end */
 
 /* @group My Profile */
+#search .block {
+	margin-top: 5px;
+	padding: 10px;
+	border: 0px;
+}
 
 #search .block_myprofile .header,
 #search .block_myprofile .footer {
@@ -356,15 +361,30 @@
 
 /* @group Home Banner Blocks */
 
-#homeblocks .block {
-	margin: 3px 3px 0px 0px;
-	width: 744px;
-	float: right;
+#homeblock .block {
+	border: none;
+	padding-top: 5px;
 }
 
-#homeblocks .block .header .block_action{
+#homeblock .block .content {
+	border: none;
+}
+
+#homeblock .block .header .block_action{
 	display: none;
 }
+
+#homeblock .block .header h2 {
+    padding : 0px;
+	color : #fff;
+	padding-top : 0px;
+}
+
+#homeblock .block .header {
+	padding: 0px;
+	margin: 0px;
+}
+
 
 /* @end */
 
