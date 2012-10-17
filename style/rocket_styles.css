@@ -82,8 +82,6 @@ a.logo {
 }
 .headermenu,
 .langmenu {
-    float:right;
-    clear: right;
     font-size:1em;
     margin:0px;
     text-align:right;
