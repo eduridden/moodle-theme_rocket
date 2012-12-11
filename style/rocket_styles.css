@@ -401,7 +401,7 @@ textarea {
 	border: 0px none !important;
 	background: transparent;}
 
-.course-content .main .content {	padding : 5px 10px 5px 10px;	background : #fff;
+.course-content .main .content {	padding : 5px 0px 5px 30px;	background : #fff;
 	font-size: .9em;}
 
 /* @end */
