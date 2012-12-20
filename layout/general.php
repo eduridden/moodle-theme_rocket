@@ -33,7 +33,7 @@ $hassidepre = (empty($PAGE->layout_options['noblocks']) && $PAGE->blocks->region
 $hassidepost = (empty($PAGE->layout_options['noblocks']) && $PAGE->blocks->region_has_content('side-post', $OUTPUT));
 $haslogininfo = (empty($PAGE->layout_options['nologininfo']));
 // get custom region settings
-$hassearch = ($PAGE->blocks->region_has_content('search', $OUTPUT));
+$hassidesearch = (empty($PAGE->layout_options['noblocks']) && $PAGE->blocks->region_has_content('side-search', $OUTPUT));
 
 $showsidepre = ($hassidepre && !$PAGE->blocks->region_completely_docked('side-pre', $OUTPUT));
 $showsidepost = ($hassidepost && !$PAGE->blocks->region_completely_docked('side-post', $OUTPUT));
@@ -128,13 +128,17 @@ if ($bootstrap == 'enable') {
 <div id="page-content">
 <!-- START NAVBAR -->
 	<div id="headerstrip">
-		<?php if($hassearch) { ?>
-			<div id="search">
-				<div class="region-content">
-					<?php echo $OUTPUT->blocks_for_region('search') ?>
-				</div>
+	<!-- START CUSTOM SEARCH REGION  -->
+		<?php if ($hassidesearch) { ?>
+		<div id="search">
+			<div id="region-search">
+    			<div class="region-content">
+        			<?php echo $OUTPUT->blocks_for_region('side-search') ?>
+    			</div>
 			</div>
+		</div>
 		<?php } ?>
+	<!-- END CUSTOM SEARCH REGION -->
 		<div class="jcontrolsleft">					<?php if ($hasnavbar) { ?>			<div class="nav_title"><?php echo $navigation ?></div>
 			<div class="navbar clearfix">
 				<div class="breadcrumb"> <?php echo $OUTPUT->navbar();  ?></div>			</div>			<?php } ?>		</div>		<div id="ebutton">			<?php if ($hasnavbar) { 

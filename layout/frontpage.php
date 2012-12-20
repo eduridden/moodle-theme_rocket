@@ -33,9 +33,9 @@ $hassidepre = (empty($PAGE->layout_options['noblocks']) && $PAGE->blocks->region
 $hassidepost = (empty($PAGE->layout_options['noblocks']) && $PAGE->blocks->region_has_content('side-post', $OUTPUT));
 $haslogininfo = (empty($PAGE->layout_options['nologininfo']));
 // get custom region settings
-$hassearch = ($PAGE->blocks->region_has_content('search', $OUTPUT));
-$hastoplinks = ($PAGE->blocks->region_has_content('toplinks', $OUTPUT));
-$hashomeblock = ($PAGE->blocks->region_has_content('homeblock', $OUTPUT));
+$hassidesearch = (empty($PAGE->layout_options['noblocks']) && $PAGE->blocks->region_has_content('side-search', $OUTPUT));
+$hassidetoplinks = (empty($PAGE->layout_options['noblocks']) && $PAGE->blocks->region_has_content('side-toplinks', $OUTPUT));
+$hassidehomeblock = (empty($PAGE->layout_options['noblocks']) && $PAGE->blocks->region_has_content('side-homeblock', $OUTPUT));
 
 $showsidepre = ($hassidepre && !$PAGE->blocks->region_completely_docked('side-pre', $OUTPUT));
 $showsidepost = ($hassidepost && !$PAGE->blocks->region_completely_docked('side-post', $OUTPUT));
@@ -128,31 +128,45 @@ if ($bootstrap == 'enable') {
 	<div id="editingmode"><?php echo $editingmode ?></div>
     <div id="page-content">
 	<div id="hometopblocks">
+
+	<!-- START CUSTOM TOPLINKS REGION  -->
 		<div id="toplinks">
-			<?php if($hastoplinks) { ?>
-				<div class="region-content">
-					<?php echo $OUTPUT->blocks_for_region('toplinks') ?>
+			<?php if ($hassidetoplinks) { ?>
+				<div id="region-toplinks">
+    				<div class="region-content">
+        				<?php echo $OUTPUT->blocks_for_region('side-toplinks') ?>
+    				</div>
 				</div>
 			<?php } ?>
 		</div>
+	<!-- END CUSTOM TOPLINKS REGION -->
+
+	<!-- START CUSTOM HOMEBLOCK REGION  -->
 		<div id="homeblock">
-			<?php if($hashomeblock) { ?>
-				<div class="region-content">
-					<?php echo $OUTPUT->blocks_for_region('homeblock') ?>
+			<?php if ($hassidehomeblock) { ?>
+				<div id="region-homeblock">
+    				<div class="region-content">
+        				<?php echo $OUTPUT->blocks_for_region('side-homeblock') ?>
+    				</div>
 				</div>
 			<?php } ?>
 		</div>
+	<!-- END CUSTOM HOMEBLOCK REGION -->
+
 	</div>
-	<div id="headerstrip">
-		<div id="search">
-			<?php if($hassearch) { ?>
-				<div class="region-content">
-					<?php echo $OUTPUT->blocks_for_region('search') ?>
-				</div>
-			<?php } ?>
-		</div>
+	<!-- START CUSTOM SEARCH REGION  -->
+	<div id="search">
+		<?php if ($hassidesearch) { ?>
+			<div id="region-search">
+    			<div class="region-content">
+        			<?php echo $OUTPUT->blocks_for_region('side-search') ?>
+    			</div>
+			</div>
+		<?php } ?>
+	</div>
+	<!-- END CUSTOM SEARCH REGION -->
 		<div id="sitename"><?php echo $PAGE->theme->settings->sitename; ?></div>
-	</div>
+
        <div id="region-main-box">
            <div id="region-post-box">
               <div id="region-main-wrap">

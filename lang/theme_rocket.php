@@ -23,8 +23,8 @@
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
  $string['pluginname'] = 'Rocket';$string['region-side-post'] = 'Δεξιά';$string['region-side-pre'] = 'Αριστερά';
-$string['region-search'] = 'Αναζήτηση/Προφίλ';$string['region-homeblock'] = 'Banner Αρχικής σελίδας';
-$string['region-toplinks'] = 'Top Links';$string['choosereadme'] = '<div class="clearfix"><div class="theme_screenshot"><h1>Rocket</h1><img src="rocket/pix/screenshot.jpg" /><h2>About</h2><p>Rocket is a three column fixed-width theme for Moodle 2.1+ originally designed by Julian Ridden to take Moodle themes to a more website focused look and feel. While the design is original, much of the CSS and the icons have come from <a href="http://moodle.org/user/profile.php?id=299683"><strong>Saun Daubney\'s</strong></a> fantastic Aardvark theme and also with support in the forums from <a href="http://moodle.org/user/profile.php?id=713800"><strong>Mary Evans</strong></a>.</p>
+$string['region-side-search'] = 'Αναζήτηση/Προφίλ';$string['region-side-homeblock'] = 'Banner Αρχικής σελίδας';
+$string['region-side-toplinks'] = 'Top Links';$string['choosereadme'] = '<div class="clearfix"><div class="theme_screenshot"><h1>Rocket</h1><img src="rocket/pix/screenshot.jpg" /><h2>About</h2><p>Rocket is a three column fixed-width theme for Moodle 2.1+ originally designed by Julian Ridden to take Moodle themes to a more website focused look and feel. While the design is original, much of the CSS and the icons have come from <a href="http://moodle.org/user/profile.php?id=299683"><strong>Saun Daubney\'s</strong></a> fantastic Aardvark theme and also with support in the forums from <a href="http://moodle.org/user/profile.php?id=713800"><strong>Mary Evans</strong></a>.</p>
 
 <p>The theme is highly customisable through Moodle\'s theme settings. You can adjust images, text and colurs all without changing code. The theme also has a function that means that when users log in, courses they are enrolled in will show up in the dropdown \'custom menu\' at the top of the screen.</p>
 
