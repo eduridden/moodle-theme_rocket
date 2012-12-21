@@ -7,7 +7,6 @@
 
 .block .header {
 	margin : 0 0 0 !important ;	padding-top : 0 !important ;	border-bottom : 0px none;
-	background: [[setting:themecolor]];
 }
 
 .block .header .block_action {
@@ -23,10 +22,6 @@
     padding:10px;
     border: 1px solid #ccc;
     border-top: 0px none;
-}
-
-.block .content a {
-	color: [[setting:blocklinkcolor]];
 }
 
 .block.hidden .content {
@@ -107,7 +102,6 @@
     margin-left: 10px;
 }
 #region-pre .block .header {
-    background: [[setting:themecolor]];
     color:#50646d;
 }
 
@@ -116,10 +110,10 @@
 }
 
 #region-post .block .header {
-    background: [[setting:themecolor]];
     border-bottom:1px solid #ddd;
     color:#777;
 }
+
 .block .header .title h2 {
     padding : 0px 0px 5px 10px;	font-size : 1.2em;	text-transform : uppercase;	margin : 0 !important ;	font-weight : 300;	color : #fff;	padding-top : 8px;
 }
@@ -164,7 +158,6 @@
 
 .block_login.block {
 	margin: 0px !important;
-	background: [[setting:themecolor]] !important;
 }
 .block_login div.content label {	color: #fff;
 	text-transform: uppercase;
@@ -215,7 +208,6 @@
 /* @group Top Links */
 #toplinks .block {
 	background: transparent !important;
-	color: [[setting:menulinkcolor]] !important;
 	border: none;
 	padding: 5px;
 }
@@ -227,7 +219,6 @@
 
 #toplinks .block .header {
 	background: transparent !important;
-	border-bottom: 1px solid [[setting:menutrimcolor]] !important;
 }
 
 #toplinks .block .title h2 {
@@ -246,21 +237,12 @@
 
 /* @group Top Links HTML block */
 
-#toplinks .block_html .content,
-#toplinks .block_html .content a {
-	color: [[setting:menulinkcolor]];
-}
-
-#toplinks .block_html .content ul li:hover {
-	background: [[setting:menuhovercolor]];}
-
 #toplinks .block_html .content ul {
 	margin:0;
 	padding:0;
 }
 
 #toplinks .block_html .content ul li {
-	border-bottom: [[setting:menutrimcolor]] 1px dashed;
 	padding: 8px;
 	text-transform: uppercase;
 	margin-left: 0px;
@@ -333,7 +315,6 @@
 #search .block_myprofile div.content {
 	padding: 0px;
 	margin-top: -7px;
-	color: [[setting:themecolor]];
 	border: none;
 }
 
@@ -341,7 +322,6 @@
 	height:  37px;
 	width: 37px;
 	float: right;
-	border: 1px solid [[setting:themecolor]];
 	margin-top: -2px;
 }
 
@@ -391,7 +371,6 @@
 /* @group Calendar Block */
 
 .block_calendar_month .calendartable .today {
-	border: 1px dotted [[setting:themetrimcolor]];
 	background: #efefef;
 }
 
@@ -403,7 +382,6 @@
 }
 
 .block_rss_client .list li {
-	border-top: 1px solid [[setting:themetrimcolor]];
 	padding: 5px;
 }
 /* @end */

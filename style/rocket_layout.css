@@ -12,7 +12,6 @@ body {
 }
 
 #page-wrapper {
-    width:[[setting:screenwidth]];
     min-width: 910px;
     margin: 0 auto;
     background: transparent;

@@ -4,12 +4,6 @@ body {
     margin: 0;
     padding: 0;
     color:#333333;
-    background : url([[pix:theme|core/body_bg_sml]]) repeat-x top [[setting:themecolor]];
-    border-top: 5px solid [[setting:themetrimcolor]];
-}
-
-#page-site-index {
-	background: url([[pix:theme|core/body_bg]]) [[setting:themecolor]] repeat-x 0 [[setting:bannerheight]];
 }
 
 h1,h2,h3,h4,h5,h6,p,ul,ol,dl,input,textarea {
@@ -17,11 +11,9 @@ h1,h2,h3,h4,h5,h6,p,ul,ol,dl,input,textarea {
 }
 a:link,
 a:visited {
-    color: [[setting:contentlinkcolor]];
     text-decoration: none;
 }
 a:hover, a:active {
-    color: [[setting:themecolor]];
     text-decoration: none;
 }
 hr {
@@ -29,11 +21,9 @@ hr {
     border-top: 0px;
 }
 h2.headingblock {
-    border-bottom: 1px solid [[setting:themetrimcolor]];
     font-size: 1.4em;
     font-weight: 200;
     text-transform: uppercase;
-    color: [[setting:themecolor]];
 }
 
 .generalbox {
@@ -63,7 +53,6 @@ table {
     height: 133px;
     width: 100%;
     background: transparent;
-    border-bottom: [[setting:menutrimcolor]] 3px solid;
 }
 
 #page-header .logininfo,
@@ -73,7 +62,6 @@ table {
 	font-size: 12px;
 }
 a.logo {
-    background: url([[setting:logo]]) no-repeat 0 0;
     width: 250px;
     height: 130px;
     display: block;
@@ -99,25 +87,16 @@ a.logo {
 #hometopblocks {
 	width: 100%;
 	background: transparent;
-	height: [[setting:bannerheight]];
 	vertical-align: middle;
 }
 
 #toplinks {
-	background: [[setting:menucolor]];
 	width: 250px;
-	height: [[setting:bannerheight]];
 	float: left;
-}
-
-#homeblock {
-	background: url([[setting:banner]])  top right no-repeat #ccc;
-	height: [[setting:bannerheight]];
 }
 
 #headerstrip {
 	width: 100%;
-	background: [[setting:themecolor]];
 	height: 50px;
 	vertical-align: middle;
 	font-size: 1em;
@@ -179,14 +158,6 @@ margin-right: 20px;}
 	background: #777;
 }
 
-#ebutton #editbuttonoff input[type="submit"] {
-	background: url([[pix:theme|editmode_off]]) left no-repeat #777 !important;
-}
-
-#ebutton #editbuttonon input[type="submit"] {
-	background: url([[pix:theme|editmode_on]]) left no-repeat #777 !important;
-}
-
 /* @end */
 
 /* @group Edit Mode */
@@ -198,7 +169,6 @@ margin-right: 20px;}
 	color: #fff;
 	padding: 5px;
 	font-size: .9em;
-	border-bottom: 3px solid [[setting:menutrimcolor]];
 }
 
 #dndupload-status {
@@ -238,7 +208,7 @@ div#jcontrols_button span.arrow.sep {font-size : 1px;color : #dadada;display 
 div#jcontrols_button a {
 	color: #fff;
 }
-div.jcontrolsleft {	margin-left : 15px;	font-weight : 600;	float : left;	max-width : [[setting:breadcrumbwidth]];	overflow : hidden;	height : 100%;}
+div.jcontrolsleft {	margin-left : 15px;	font-weight : 600;	float : left;	overflow : hidden;	height : 100%;}
 
 #coursesearchnavbar {
 	font-size: .8em;
@@ -278,7 +248,6 @@ div#jcontrols_button a {
     margin: 0;
     padding: 1%;
     color: #4b4b4b;
-    border-top: 3px solid [[setting:themecolor]];
     line-height: 2em;
     font-size: 1em;
 }
@@ -309,9 +278,9 @@ div#jcontrols_button a {
 #page-footer .footer-left #logo {
 	width: 100px;
 	height: 30px;
-	background: url([[pix:theme|footer/moodle-logo]]) no-repeat top left;
 	margin-top: 5px;
 }
+
 #page-footer .footer-right {
     float: right;
     text-align: right;
@@ -378,7 +347,6 @@ textarea {
 .sectionname {
 	border-bottom: 1px dashed #eee;
 	padding-bottom: 3px;
-	color: [[setting:themecolor]];
 	font-weight: 200;
 	font-size: 1.2em;
 }
@@ -491,31 +459,24 @@ margin: 0 10px;
     position:relative;z-index:102;
 }
 .tabtree .tabrow0 li a {
-    background-image:url([[pix:theme|tab/left]]);
     padding-left:14px;
     padding-top:10px;
     background-repeat:no-repeat;
     padding-bottom:3px;
     margin-bottom:-1px;
 }
-.tabtree .tabrow0 li a:hover {
-    background-image:url([[pix:theme|tab/left_hover]]);
-}
+
 .tabtree .tabrow0 li a span {
-    background-image:url([[pix:theme|tab/right]]);
     background-repeat:no-repeat;
     background-position:100% 0%;
     padding-right:14px;
     padding-top:10px;
     padding-bottom:3px;
 }
-.tabtree .tabrow0 li a:hover span {
-    background-image:url([[pix:theme|tab/right_hover]]);
-}
+
 .tabtree .tabrow0 ul,
 .tabtree .tabrow0 div {
     font-weight: normal;
-    background-image:url([[pix:theme|tab/tabrow1]]);
     background-position:0% 50%;
     border-top: 1px dotted #eee;
     padding:0.25em 0px;
@@ -641,7 +602,6 @@ table#home_title td {
 }
 
 table#home_title h1 {
-	color: [[setting:themetrimcolor]];
 	font-weight: normal;
 	font-size: 1.5em;
 	text-transform: uppercase;
@@ -650,7 +610,6 @@ table#home_title h1 {
 }
 
 table#home_title h2 {
-	color: [[setting:themecolor]];
 	font-weight: normal;
 	font-size: 1.2em;
 	margin-top: 0px;
@@ -693,7 +652,6 @@ table#links td {
 }
 
 table#links a {
-	background: [[setting:themecolor]];
 	color: #fff;
 	padding: 5px;
 	border: 1px solid #dededf;
@@ -768,7 +726,6 @@ table#links a {
 /* @group Login Page */
 
 #page-login-index {
-	background: [[setting:themecolor]];
 	padding-top: 20px;
 	margin: 0px;
 	height: 1000px;
@@ -789,7 +746,6 @@ table#links a {
 	margin-left: auto;
 	margin-right: auto;
 	background: #fff;
-	border: 3px solid [[setting:themetrimcolor]];
 }
 
 .loginbox .loginsub .desc {
@@ -799,7 +755,6 @@ table#links a {
 .loginbox .loginform .form-label {
 	padding-bottom: 10px;
 	padding-top: 2px;
-	color: [[setting:themecolor]];
 	text-transform: uppercase;
 }
 
@@ -814,7 +769,6 @@ table#links a {
 }
 
 #page-login-index #page-wrapper h2 {
-	color: [[setting:themecolor]];
 	text-transform: uppercase;
 	font-weight: 200;
 	font-size: 1.6em;

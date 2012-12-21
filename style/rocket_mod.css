@@ -15,12 +15,10 @@
     background: #fff;
     border:0px;
     min-height: 3em;
-    border-bottom: 1px dashed [[setting:themetrimcolor]];
 }
 
 .forumpost .row.header .subject {
 	text-transform: uppercase;
-	color: [[setting:themecolor]];
 	font-weight: bold;
 }
 
@@ -42,10 +40,6 @@
     color: #666;
 }
 
-.forumpost .topic a:hover {
-	color: [[setting:themecolor]] ;
-}
-
 .path-mod-forum .forumheaderlist .discussion .starter {
     border-left: 0 none;
     vertical-align: middle;
@@ -62,9 +56,7 @@
     width: 100%;
 }
 .path-mod-forum .forumheaderlist th.header {
-    background-color: [[setting:themecolor]];
     color: #fff;
-    border-bottom: 4px solid [[setting:themetrimcolor]];
     text-transform: uppercase;
     font-weight: 200;
     text-align: left;
@@ -83,7 +75,6 @@
 
 /** Forum post colors **/
 .forumpost .topic {
-background:#fff url([[pix:theme|alert-overlay]]) repeat-x;
 padding: 7px;
 }
 
@@ -107,10 +98,6 @@ color: #fff;
 /* @end */
 
 /* @group Quiz */
-
-#page-mod-quiz-edit .questionbankwindow div.header {
-	background: [[setting:themecolor]];
-}
 
 #categoryquestions .questionnametext a,
 .qtype a {
