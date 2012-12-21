@@ -4,8 +4,6 @@
     width:[[setting:screenwidth]];
 }
 
-
-
 /* @end */
 
 body {
@@ -72,6 +70,26 @@ a.logo {
 
 div.jcontrolsleft {
 	max-width : [[setting:breadcrumbwidth]];
+}
+
+#page-my-index .coursebox h3.main{
+	background:url([[pix:theme|core/icons]]) no-repeat left top;
+}
+
+.coursebox .info h3{
+	background:url([[pix:theme|core/icons]]) no-repeat left top; 
+}
+
+.coursebox {
+	border-bottom: 1px dashed [[setting:themecolor]];
+}
+
+#page-my-index .course_title{
+	background:url([[pix:theme|core/icons]]) no-repeat left top; 
+}
+
+#adminsettings h2.main{
+	background:url([[pix:theme|core/icons]]) no-repeat left -76px; 
 }
 
 #page-footer {

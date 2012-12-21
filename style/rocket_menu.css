@@ -70,7 +70,6 @@ ul.dropdown li {
     vertical-align:middle;
     background-color:transparent;
     color:#fff;
-    zoom:1 !important;
 }
 ul.dropdown li.hover,
 ul.dropdown li:hover {

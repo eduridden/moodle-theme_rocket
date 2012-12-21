@@ -119,16 +119,52 @@ a.logo {
 }
 
 
+/* @end */
+
+/* @group New Icons */
+
+#page-my-index .coursebox h3.main{
+	padding-left:45px;
+	padding-top: 5px;
+	padding-bottom:5px;
+}
+
+.coursebox .info h3{
+	padding-left:40px; 
+	padding-top:10px; 
+	padding-bottom:9px;
+}
+
+#page-my-index .course_title{
+	padding-left:45px; 
+	padding-top:8px; 
+	padding-bottom:8px;
+	border-bottom: 1px dotted #ccc;
+}
+
+#page-my-index .block .content {
+	border: 0px none;
+	margin: 0px;
+}
+
+#adminsettings h2.main{
+	padding-left:44px; 
+	padding-top:10px; 
+	padding-bottom:10px
+}
 
 /* @end */
 
-
 /* @group Editing Button */
 
-#ebutton {width : 150px;float : right;text-align : right;
+#ebutton {
+width : 150px;
+float : right;
+text-align : right;
 color: #fff;
 margin-top: 10px;
-margin-right: 20px;}
+margin-right: 20px;
+}
 
 #sitename #ebutton {
 	margin-top: 0px;
@@ -193,22 +229,58 @@ margin-right: 20px;}
 	padding-top: 10px;
 }
 
-.breadcrumb {text-transform : uppercase;font-weight : bold;font-size : 1em;margin-left : 0px;
+.breadcrumb {
+text-transform : uppercase;
+font-weight : bold;
+font-size : 1em;
+margin-left : 0px;
 margin-top: -8px;
-color: #fff;}
-.breadcrumb a {color : #fff !important ;}
-.breadcrumb ul {color : #fff;
-line-height : 35px;}
-.breadcrumb li a, .breadcrumb li, .breadcrumb li a:visited {font-weight : 200;text-decoration : none;color : #fff;}.breadcrumb li a:hover {text-decoration:none;
-border-bottom: 1px dashed #fff;}.breadcrumb li img {vertical-align : middle;}
-.arrow, .arrow_button input {color : #aaa;}
+color: #fff;
+}
 
-div#jcontrols_button span.arrow.sep {font-size : 1px;color : #dadada;display : inline-block;width : 16px;}
+.breadcrumb a {
+color : #fff !important ;
+}
+
+.breadcrumb ul {
+color : #fff;
+line-height : 35px;
+}
+
+.breadcrumb li a, .breadcrumb li, .breadcrumb li a:visited {
+font-weight : 200;
+text-decoration : none;
+color : #fff;
+}
+.breadcrumb li a:hover {
+text-decoration:none;
+border-bottom: 1px dashed #fff;
+}
+.breadcrumb li img {
+vertical-align : middle;
+}
+.arrow, .arrow_button input {
+color : #aaa;
+}
+
+div#jcontrols_button span.arrow.sep {
+font-size : 1px;
+color : #dadada;
+display : inline-block;
+width : 16px;
+}
 
 div#jcontrols_button a {
 	color: #fff;
 }
-div.jcontrolsleft {	margin-left : 15px;	font-weight : 600;	float : left;	overflow : hidden;	height : 100%;}
+
+div.jcontrolsleft {
+	margin-left : 15px;
+	font-weight : 600;
+	float : left;
+	overflow : hidden;
+	height : 100%;
+}
 
 #coursesearchnavbar {
 	font-size: .8em;
@@ -363,14 +435,19 @@ textarea {
 	border-bottom: 1px dashed #eee;
 }
 
-.course-content .main {	padding : 0px !important;
+.course-content .main {
+	padding : 0px !important;
 	margin : 0px !important;
 	padding-top: 1px !important;
 	border: 0px none !important;
-	background: transparent;}
+	background: transparent;
+}
 
-.course-content .main .content {	padding : 5px 0px 5px 30px;	background : #fff;
-	font-size: .9em;}
+.course-content .main .content {
+	padding : 5px 0px 5px 30px;
+	background : #fff;
+	font-size: .9em;
+}
 
 /* @end */
 
@@ -588,6 +665,24 @@ body#page-course-view-topics.path-course div.moodle-dialogue-base div.yui3-widge
 /* @end */
 
 /* @group Homepage */
+
+/* @group Coursebox */
+
+.coursebox {
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+}
+
+.coursebox .info h3 {
+	margin-top: 0px;
+}
+
+ul.teachers {
+	margin-left: 40px;
+	margin-top: -10px;
+}
+
+/* @end */
 
 /* @group Home_title */
 
