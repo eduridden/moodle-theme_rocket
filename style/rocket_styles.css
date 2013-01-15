@@ -438,19 +438,7 @@ textarea {
 	border-bottom: 1px dashed #eee;
 }
 
-.course-content .main {
-	padding : 0px !important;
-	margin : 0px !important;
-	padding-top: 1px !important;
-	border: 0px none !important;
-	background: transparent;
-}
 
-.course-content .main .content {
-	padding : 5px 0px 5px 30px;
-	background : #fff;
-	font-size: .9em;
-}
 
 /* @end */
 
