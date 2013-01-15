@@ -397,7 +397,10 @@ div.controls .collapseall {
 #loginbtn, input, button, select {
     cursor: pointer;
     margin-left: 5px;
+    margin-right: 7px;
 }
+
+
 input#username,
 input#password,
 input[type="text"],
