@@ -29,4 +29,4 @@ $plugin->version   = 2012080300; // The current module version (Date: YYYYMMDDXX
 $plugin->requires  = 2012062500; // Requires this Moodle version
 $plugin->component = 'theme_rocket'; // Full name of the plugin (used for diagnostics)
 $plugin->maturity = 'stable'; // The current stability of this version (used for diagnostics)
-$plugin->release = '2.2'; // The release nam of this version (used for diagnostics)
+$plugin->release = '2.2'; // The release name of this version (used for diagnostics)
