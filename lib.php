@@ -24,7 +24,7 @@
 
 	// Set the screenwidth    if (!empty($theme->settings->screenwidth)) {       $screenwidth = $theme->settings->screenwidth;    } else {       $screenwidth = null;    }    $css = rocket_set_screenwidth($css,$screenwidth);
 
-	// Toggle AutoHide functionality    if (!empty($theme->settings->autohide)) {       $autohide = $theme->settings->autohide;    } else {       $autohide = null;    }    $css = rocket_set_autohide($css,$autohide);
+	// Toggle AutoHide functionality    if (!empty($theme->settings->autohide)) {       $autohide = $theme->settings->autohide;    } else {       $autohide = null;    }    //$css = rocket_set_autohide($css,$autohide);
     
     // Toggle Bootstrap functionality
     if (!empty($theme->settings->bootstrap)) {
@@ -32,7 +32,7 @@
     } else {
        $bootstrap = null;
     }
-    $css = rocket_set_bootstrap($css,$bootstrap);
+    //$css = rocket_set_bootstrap($css,$bootstrap);
     
     // Set the background image for the Banner     if (!empty($theme->settings->banner)) {        $banner = $theme->settings->banner;    } else {        $banner = null;    }    $css = rocket_set_banner($css, $banner);
 
@@ -78,13 +78,13 @@ function rocket_set_screenwidth($css, $screenwidth) {    $tag = '[[setting:scre
 		$css = str_replace($breadcrumbwidth, '50%', $css);
 	}    return $css;}
 
-function rocket_set_autohide($css, $autohide) {    $tag = '[[setting:autohide]]';    $replacement = 'autohide';    if (is_null($replacement)) {        $replacement = 'autohide_enable';    }    $css = str_replace($tag, $replacement, $css);	return $css;}
+function rocket_set_autohide($css, $autohide) {    $tag = '[[setting:autohide]]';    $replacement = $autohide;    if (is_null($replacement)) {        $replacement = 'enable';    }    $css = str_replace($tag, $replacement, $css);	return $css;}
 
 function rocket_set_bootstrap($css, $bootstrap) {
     $tag = '[[setting:bootstrap]]';
-    $replacement = 'bootstrap';
+    $replacement = $bootstrap;
     if (is_null($replacement)) {
-        $replacement = 'bootstrap_disable';
+        $replacement = 'disable';
     }
     $css = str_replace($tag, $replacement, $css);
 	return $css;
