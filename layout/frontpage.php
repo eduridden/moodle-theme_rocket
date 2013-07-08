@@ -128,28 +128,28 @@ if ($bootstrap == 'enable') {
 	<div id="editingmode"><?php echo $editingmode ?></div>
     <div id="page-content">
 	<div id="hometopblocks">
-		<div id="toplinks">
-			<?php if($hastoplinks) { ?>
-				<div class="region-content">
+		<div class="block-region" id="toplinks">
+			<div class="region-content">
+				<?php if($hastoplinks) { ?>
 					<?php echo $OUTPUT->blocks_for_region('toplinks') ?>
-				</div>
-			<?php } ?>
+				<?php } ?>
+			</div>
 		</div>
-		<div id="homeblock">
-			<?php if($hashomeblock) { ?>
-				<div class="region-content">
+		<div class="block-region" id="homeblock">
+			<div class="region-content">
+				<?php if($hashomeblock) { ?>
 					<?php echo $OUTPUT->blocks_for_region('homeblock') ?>
-				</div>
-			<?php } ?>
+				<?php } ?>
+			</div>
 		</div>
 	</div>
 	<div id="headerstrip">
-		<div id="search">
-			<?php if($hassearch) { ?>
-				<div class="region-content">
+		<div class="block-region" id="search">
+			<div class="region-content">
+				<?php if($hassearch) { ?>
 					<?php echo $OUTPUT->blocks_for_region('search') ?>
-				</div>
-			<?php } ?>
+				<?php } ?>
+			</div>
 		</div>
 		<div id="sitename"><?php echo $PAGE->theme->settings->sitename; ?></div>
 	</div>
