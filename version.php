@@ -25,8 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die;
 
-$plugin->version   = 2012080300; // The current module version (Date: YYYYMMDDXX)
-$plugin->requires  = 2012062500; // Requires this Moodle version
-$plugin->component = 'theme_rocket'; // Full name of the plugin (used for diagnostics)
-$plugin->maturity = 'stable'; // The current stability of this version (used for diagnostics)
-$plugin->release = '2.2'; // The release name of this version (used for diagnostics)
+$plugin->version   = 2013070900;        // YYYYMMDD.
+$plugin->maturity = MATURITY_STABLE;             // this version's maturity level.
+$plugin->release = '2.5 (Build: 20130705)';
+$plugin->requires  = 2013050100;        // Requires Moodle 2.5.
+$plugin->component = 'theme_rocket';
+$plugin->dependencies = array(
+    'theme_canvas'  => 2013050100,
+);
