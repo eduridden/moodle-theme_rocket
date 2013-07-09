@@ -105,9 +105,7 @@
     opacity: 1;
 }
 
-.editing .sitetopic:hover .section-modchooser .section-modchooser-link a {
-	font-size: 2em !important;
-}
+
 
 /** some feedback to tell user we are in editing mode **/
 .path-course-view .section .content .section_add_menus{

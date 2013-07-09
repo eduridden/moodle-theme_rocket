@@ -1,15 +1,12 @@
 /* @group Generic Blocks */
 
-#region-pre .block, #region-post .block {	margin : 20px;
-	margin-top: 15px;
-	margin-bottom: 0px;	padding : 0px;	border: 0px none;
-	background : #fff;}
-
+#region-pre .block, #region-post .block {    margin : 20px;
+    margin-top: 15px;
+    margin-bottom: 0px;    padding : 0px;    border: 0px none;
+    background : #fff;}
 .block .header {
-	margin : 0 0 0 !important ;	padding-top : 0 !important ;	border-bottom : 0px none;
-	background: [[setting:themecolor]];
+    margin : 0 0 0 !important ;    padding-top : 0 !important ;    border-bottom : 0px none;
 }
-
 .block .header .block_action {
     float:right;
     margin:0 4px;
@@ -18,17 +15,11 @@
 .block .header .block_action input {
     margin-right:2px;
 }
-
 .block .content {
     padding:10px;
     border: 1px solid #ccc;
     border-top: 0px none;
 }
-
-.block .content a {
-	color: [[setting:blocklinkcolor]];
-}
-
 .block.hidden .content {
     display: none;
 }
@@ -107,21 +98,17 @@
     margin-left: 10px;
 }
 #region-pre .block .header {
-    background: [[setting:themecolor]];
     color:#50646d;
 }
-
 #region-pre .block .content {
-	border: 0px none;
+    border: 0px none;
 }
-
 #region-post .block .header {
-    background: [[setting:themecolor]];
     border-bottom:1px solid #ddd;
     color:#777;
 }
 .block .header .title h2 {
-    padding : 0px 0px 5px 10px;	font-size : 1.2em;	text-transform : uppercase;	margin : 0 !important ;	font-weight : 300;	color : #fff;	padding-top : 8px;
+    padding : 0px 0px 5px 10px;    font-size : 1.2em;    text-transform : uppercase;    margin : 0 !important ;    font-weight : 300;    color : #fff;    padding-top : 8px;
 }
 .block .header .block_action {
     float:right;
@@ -138,9 +125,6 @@
     margin:10px auto;
     width:100%;
 }
-
-
-
 /* @end */
 
 /* @group List Block Contents */
@@ -154,125 +138,102 @@
 .block .list .c1 {
     margin-left:5px;display:inline;
 }
-
-
-
 /* @end */
 
 
 /* @group Login Block */
 
 .block_login.block {
-	margin: 0px !important;
-	background: [[setting:themecolor]] !important;
+    margin: 0px !important;
 }
-.block_login div.content label {	color: #fff;
-	text-transform: uppercase;
-	font-size : 1em;	display : inline-block;	min-width : 50px;	margin-right : 3px;
-	padding-bottom: 10px;}
-
+.block_login div.content label {    color: #fff;
+    text-transform: uppercase;
+    font-size : 1em;    display : inline-block;    min-width : 50px;    margin-right : 3px;
+    padding-bottom: 10px;}
 .block_login div.content a {
-	color: #fff;
+    color: #fff;
 }
-
 .block_login input[type="text"],
 .block_login input[type="password"],
 .block_login textarea {
-	background: #fff !important;
-	font-size: 1em;
-	margin: 0px 0px 10px 0px;
-	border: 1px solid #ccc;
-	color: #000;
-	text-align: left !important;
-	width: 205px !important;
+    background: #fff !important;
+    font-size: 1em;
+    margin: 0px 0px 10px 0px;
+    border: 1px solid #ccc;
+    color: #000;
+    text-align: left !important;
+    width: 205px !important;
 }
-
-.block_login input, 
+.block_login input,
 .block_login input select {
-	background: #7e7f83;
-	border: 1px solid #fff;
-	padding: 12px;
-	padding-top: 7px;
-	padding-bottom: 7px;
-	color: #fff;
-	margin-top: 5px;
-	float: right;
+    background: #7e7f83;
+    border: 1px solid #fff;
+    padding: 12px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    color: #fff;
+    margin-top: 5px;
+    float: right;
 }
-
 .block_login .footer {
-	padding-bottom: 10px;
-	height: 20px;
+    padding-bottom: 10px;
+    height: 20px;
 }
-
 .block_login .header h2,
 .block_login .header .block_action {
-	display: none;
+    display: none;
 }
-
 /* @end */
 
 
 /* @group Top Links */
-#toplinks .block {
-	background: transparent !important;
-	color: [[setting:menulinkcolor]] !important;
-	border: none;
-	padding: 5px;
+#toplinks .region-content {
+    margin: 0;
+    padding: 20px;
 }
-
+#toplinks .block {
+    background: none;
+    border: none;
+    padding: 5px;
+}
 #toplinks .block label,
 #toplinks .block .block_action {
-	display: none;
+    display: none;
 }
-
 #toplinks .block .header {
-	background: transparent !important;
-	border-bottom: 1px solid [[setting:menutrimcolor]] !important;
+    background: none;
 }
 
 #toplinks .block .title h2 {
-	margin: 0px;
-	padding: 0px;
-	padding-bottom: 5px;
-	font-size: 1.1em;
+    margin: 0px;
+    padding: 0px;
+    padding-bottom: 5px;
+    font-size: 1.1em;
 }
-
-#toplinks .block div.content {
-	padding: 0px;
-	margin-top: -3px;
-	border: none;
-	font-weight: 20000;
+#toplinks .block .content {
+    padding: 0;
+    margin-top: -3px;
+    border: none;
+    font-weight: 20000;
 }
-
 /* @group Top Links HTML block */
 
-#toplinks .block_html .content,
-#toplinks .block_html .content a {
-	color: [[setting:menulinkcolor]];
-}
-
-#toplinks .block_html .content ul li:hover {
-	background: [[setting:menuhovercolor]];}
-
 #toplinks .block_html .content ul {
-	margin:0;
-	padding:0;
+    margin: 0 auto;
+    padding: 0;
+    width: 190px;
 }
-
 #toplinks .block_html .content ul li {
-	border-bottom: [[setting:menutrimcolor]] 1px dashed;
-	padding: 8px;
-	text-transform: uppercase;
-	margin-left: 0px;
-	font-size: 1em;
+    padding: 8px;
+    text-transform: uppercase;
+    margin-left: 0px;
+    font-size: 1em;
 }
-
 #toplinks .block .header .commands {
-	background: transparent;
-	top: 0px;
-	left: -10px;
+    background: transparent;
+    top: 0px;
+    left: -10px;
 }
-
 /* @end */
 
 /* @end */
@@ -298,112 +259,108 @@
     bottom: 0px;
     position:absolute;
 }
-
-
-
 /* @end */
 
 /* @group My Profile */
+.editing #search .block {
+    border: 0 none;
+    margin-top: 0;
+    padding: 0 10px;
+    width: 230px;
+}
 #search .block {
-	margin-top: 5px;
-	padding: 10px;
-	border: 0px;
+    margin-top: 5px;
+    padding: 10px;
+    border: 0px;
+    width: 230px;
 }
-
-#search .block_myprofile .header,
-#search .block_myprofile .footer {
-	display: none;
-}
-
 .editing #search .block_myprofile .header,
 .editing #search .block_myprofile .footer {
-	display:block;
+    display: block;
 }
-
+#search .block_myprofile .header,
+#search .block_myprofile .footer {
+    display: none;
+}
 #search .block_myprofile .block {
-	background: transparent;
+    background: transparent;
+}
+.editing #search .block_myprofile .title h2,
+.editing #search .block_myprofile label,
+.editing #search .block_myprofile .block_action {
+    display: block;
 }
 
 #search .block_myprofile .title h2,
 #search .block_myprofile label,
 #search .block_myprofile .block_action {
-	display: none;
+    display: none;
 }
-
+.editing #search .block_myprofile div.content {
+    padding: 0px;
+    margin-top: 10px;
+    border: 0 none;
+}
 #search .block_myprofile div.content {
-	padding: 0px;
-	margin-top: -7px;
-	color: [[setting:themecolor]];
-	border: none;
+    padding: 0px;
+    margin-top: -7px;
+    border: none;
 }
-
 #search .block_myprofile img.profilepicture {
-	height:  37px;
-	width: 37px;
-	float: right;
-	border: 1px solid [[setting:themecolor]];
-	margin-top: -2px;
+    height:  20px;
+    width: 20px;
+    float: right;
+    margin-top: 0;
+    padding: 5px;
 }
-
 #search .block_myprofile .fullname {
-	font-size: 1.2em;
+    font-size: 1.2em;
 }
 
 #search .block_myprofile .email {
-	font-size: .95em;
+    font-size: .95em;
 }
-
 #search .block_myprofile .country,
 #search .block_myprofile .city {
-	display: none;
+    display: none;
 }
 /* @end */
 
 /* @group Home Banner Blocks */
 
 #homeblock .block {
-	border: none;
-	padding-top: 5px;
+    border: none;
+    padding-top: 5px;
 }
-
 #homeblock .block .content {
-	border: none;
+    border: none;
 }
-
 #homeblock .block .header .block_action{
-	display: none;
+    display: none;
 }
-
 #homeblock .block .header h2 {
     padding : 0px;
-	color : #fff;
-	padding-top : 0px;
+    color : #fff;
+    padding-top : 0px;
 }
-
 #homeblock .block .header {
-	padding: 0px;
-	margin: 0px;
+    padding: 0px;
+    margin: 0px;
 }
-
-
 /* @end */
 
 /* @group Calendar Block */
 
 .block_calendar_month .calendartable .today {
-	border: 1px dotted [[setting:themetrimcolor]];
-	background: #efefef;
+    background: #efefef;
 }
-
 /* @end */
 
 /* #group RSS block */
 .block_rss_client .list li:first-child {
-	border-top-width: 0;
+    border-top-width: 0;
 }
-
 .block_rss_client .list li {
-	border-top: 1px solid [[setting:themetrimcolor]];
-	padding: 5px;
+    padding: 5px;
 }
 /* @end */

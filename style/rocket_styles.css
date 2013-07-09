@@ -4,12 +4,6 @@ body {
     margin: 0;
     padding: 0;
     color:#333333;
-    background : url([[pix:theme|core/body_bg_sml]]) repeat-x top [[setting:themecolor]];
-    border-top: 5px solid [[setting:themetrimcolor]];
-}
-
-#page-site-index {
-	background: url([[pix:theme|core/body_bg]]) [[setting:themecolor]] repeat-x 0 [[setting:bannerheight]];
 }
 
 h1,h2,h3,h4,h5,h6,p,ul,ol,dl,input,textarea {
@@ -17,11 +11,9 @@ h1,h2,h3,h4,h5,h6,p,ul,ol,dl,input,textarea {
 }
 a:link,
 a:visited {
-    color: [[setting:contentlinkcolor]];
     text-decoration: none;
 }
 a:hover, a:active {
-    color: [[setting:themecolor]];
     text-decoration: none;
 }
 hr {
@@ -29,11 +21,9 @@ hr {
     border-top: 0px;
 }
 h2.headingblock {
-    border-bottom: 1px solid [[setting:themetrimcolor]];
     font-size: 1.4em;
     font-weight: 200;
     text-transform: uppercase;
-    color: [[setting:themecolor]];
 }
 
 .generalbox {
@@ -63,25 +53,23 @@ table {
     height: 133px;
     width: 100%;
     background: transparent;
-    border-bottom: [[setting:menutrimcolor]] 3px solid;
 }
 
 #page-header .logininfo,
 #page-header .logininfo a {
-	color: #fff;
-	margin-top: -50px;
-	font-size: 12px;
+    color: #fff;
+    margin-top: -50px;
+    font-size: 12px;
 }
 a.logo {
-    background: url([[setting:logo]]) no-repeat 0 0;
     width: 250px;
     height: 130px;
     display: block;
     margin: 0px;
     float: left;
 }
-.headermenu,
-.langmenu {
+
+.headermenu {
     float:right;
     clear: right;
     font-size:1em;
@@ -90,6 +78,11 @@ a.logo {
     position: relative;
     top: 10px;
 }
+
+.langmenu {
+    margin-top: 2px;
+}
+
 .headermenu {
     right: 10px;
 }
@@ -97,95 +90,116 @@ a.logo {
 /* @group Homepage */
 
 #hometopblocks {
-	width: 100%;
-	background: transparent;
-	height: [[setting:bannerheight]];
-	vertical-align: middle;
+    width: 100%;
+    background: transparent;
+    vertical-align: middle;
 }
-
 #toplinks {
-	background: [[setting:menucolor]];
-	width: 250px;
-	height: [[setting:bannerheight]];
-	float: left;
-}
-
-#homeblock {
-	background: url([[setting:banner]])  top right no-repeat #ccc;
-	height: [[setting:bannerheight]];
-	width: 750px;
+    width: 250px;
+    float: left;
 }
 
 #headerstrip {
-	width: 100%;
-	background: [[setting:themecolor]];
-	height: 50px;
-	vertical-align: middle;
-	font-size: 1em;
-	text-transform: uppercase;
+    width: 100%;
+    height: 50px;
+    vertical-align: middle;
+    font-size: 1em;
+    text-transform: uppercase;
 }
 
 #search {
-	background: #fff;
-	width: 250px;
-	height: 50px;
-	float: left;
-	margin-right: 20px;
+    background: #fff;
+    width: 250px;
+    height: 50px;
+    float: left;
+    margin: 0;
+    padding: 0;
 }
 
 #sitename {
-	padding: 14px;
-	font-size: 1.4em;
-	text-transform: uppercase;
-	color: #fff;
+    float: left;
+    text-align: left;
+    padding: 14px;
+    font-size: 1.4em;
+    text-transform: uppercase;
+    color: #000;
+    width: auto;
 }
-
 
 
 /* @end */
 
+/* @group New Icons */
+
+#page-my-index .coursebox h3.main{
+    padding-left:45px;
+    padding-top: 5px;
+    padding-bottom:5px;
+}
+
+.coursebox .info h3{
+    padding-left:40px;
+    padding-top:10px;
+    padding-bottom:9px;
+}
+
+#page-my-index .course_title{
+    padding-left:45px;
+    padding-top:8px;
+    padding-bottom:8px;
+    border-bottom: 1px dotted #ccc;
+}
+
+#page-my-index .block .content {
+    border: 0px none;
+    margin: 0px;
+}
+
+#adminsettings h2.main{
+    padding-left:44px;
+    padding-top:10px;
+    padding-bottom:10px
+}
+
+/* @end */
 
 /* @group Editing Button */
 
-#ebutton {width : 150px;float : right;text-align : right;
+#ebutton {
+width : 160px;
+float : right;
+text-align : right;
 color: #fff;
 margin-top: 10px;
-margin-right: 20px;}
+margin-right: 20px;
+}
 
 #sitename #ebutton {
-	margin-top: 0px;
+    margin-top: 0px;
 }
 
 #ebutton a {
-	color: #fff;
+    color: #fff;
 }
 
 #ebutton #edittoggle {
-	font-size:.65em;
+    font-size:.65em;
 }
 
 #ebutton input[type="submit"] {
-	float: right;
-	padding: 5px;
-	-moz-border-radius: 10px;
-	-webkit-border-radius: 10px;
-	border-radius: 10px;
-	color: #fff;
-	border: 0px none;
-	margin-left: 5px;
-	padding-left: 18px;
-	padding-right: 8px;
-	cursor: pointer;
-	text-transform: uppercase;
-	background: #777;
-}
-
-#ebutton #editbuttonoff input[type="submit"] {
-	background: url([[pix:theme|editmode_off]]) left no-repeat #777 !important;
-}
-
-#ebutton #editbuttonon input[type="submit"] {
-	background: url([[pix:theme|editmode_on]]) left no-repeat #777 !important;
+    float: right;
+    padding: 5px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    color: #fff;
+    border: 0px none;
+    margin-left: 5px;
+    padding-left: 18px;
+    padding-right: 8px;
+    cursor: pointer;
+    text-transform: uppercase;
+    background: #777;
 }
 
 /* @end */
@@ -194,21 +208,20 @@ margin-right: 20px;}
 
 #dndupload-status,
 #editingmode {
-	text-align: center;
-	background: #ff6666;
-	color: #fff;
-	padding: 5px;
-	font-size: .9em;
-	border-bottom: 3px solid [[setting:menutrimcolor]];
+    text-align: center;
+    background: #ff6666;
+    color: #fff;
+    padding: 5px;
+    font-size: .9em;
 }
 
 #dndupload-status {
-	width: 100%;
-	margin-top: -1px;
+    width: 100%;
+    margin-top: -1px;
 }
 
 #editingmode {
-	display: none;
+    display: none;
 }
 
 /* @end */
@@ -218,48 +231,84 @@ margin-right: 20px;}
 
 
 .nav_title {
-	color: #fff;
-	font-size: .75em;
-	font-weight: normal;
-	padding-top: 10px;
+    color: #fff;
+    font-size: .75em;
+    font-weight: normal;
+    padding-top: 10px;
 }
 
-.breadcrumb {text-transform : uppercase;font-weight : bold;font-size : 1em;margin-left : 0px;
+.breadcrumb {
+text-transform : uppercase;
+font-weight : bold;
+font-size : 1em;
+margin-left : 0px;
 margin-top: -8px;
-color: #fff;}
-.breadcrumb a {color : #fff !important ;}
-.breadcrumb ul {color : #fff;
-line-height : 35px;}
-.breadcrumb li a, .breadcrumb li, .breadcrumb li a:visited {font-weight : 200;text-decoration : none;color : #fff;}.breadcrumb li a:hover {text-decoration:none;
-border-bottom: 1px dashed #fff;}.breadcrumb li img {vertical-align : middle;}
-.arrow, .arrow_button input {color : #aaa;}
+color: #fff;
+}
 
-div#jcontrols_button span.arrow.sep {font-size : 1px;color : #dadada;display : inline-block;width : 16px;}
+.breadcrumb a {
+color : #fff !important ;
+}
+
+.breadcrumb ul {
+color : #fff;
+line-height : 35px;
+}
+
+.breadcrumb li a, .breadcrumb li, .breadcrumb li a:visited {
+font-weight : 200;
+text-decoration : none;
+color : #fff;
+}
+.breadcrumb li a:hover {
+text-decoration:none;
+border-bottom: 1px dashed #fff;
+}
+.breadcrumb li img {
+vertical-align : middle;
+}
+.arrow, .arrow_button input {
+color : #aaa;
+}
+
+div#jcontrols_button span.arrow.sep {
+font-size : 1px;
+color : #dadada;
+display : inline-block;
+width : 16px;
+}
 
 div#jcontrols_button a {
-	color: #fff;
+    color: #fff;
 }
-div.jcontrolsleft {	margin-left : 15px;	font-weight : 600;	float : left;	max-width : [[setting:breadcrumbwidth]];	overflow : hidden;	height : 100%;}
+
+div.jcontrolsleft {
+    margin-left : 15px;
+    font-weight : 600;
+    float : left;
+    overflow : hidden;
+    height : 100%;
+}
 
 #coursesearchnavbar {
-	font-size: .8em;
-	margin-top: -3px;
-	text-align: left;
+    font-size: .8em;
+    margin-top: -3px;
+    text-align: left;
 }
 
 #coursesearchnavbar input {
-	float: left;
-	width: 100px;
-	margin: 0px;
-	margin-top: 5px;
-	font-size: 12px;
+    float: left;
+    width: 100px;
+    margin: 0px;
+    margin-top: 5px;
+    font-size: 12px;
 }
 
 #coursesearchnavbar input[type="submit"] {
-	width: 35px;
-	padding: 8px;
-	padding-top: 4px;
-	height: 20px;
+    width: 35px;
+    padding: 8px;
+    padding-top: 4px;
+    height: 20px;
 }
 
 /* @end */
@@ -279,7 +328,6 @@ div#jcontrols_button a {
     margin: 0;
     padding: 1%;
     color: #4b4b4b;
-    border-top: 3px solid [[setting:themecolor]];
     line-height: 2em;
     font-size: 1em;
 }
@@ -308,11 +356,11 @@ div#jcontrols_button a {
 }
 
 #page-footer .footer-left #logo {
-	width: 100px;
-	height: 30px;
-	background: url([[pix:theme|footer/moodle-logo]]) no-repeat top left;
-	margin-top: 5px;
+    width: 100px;
+    height: 30px;
+    margin-top: 5px;
 }
+
 #page-footer .footer-right {
     float: right;
     text-align: right;
@@ -320,8 +368,8 @@ div#jcontrols_button a {
 }
 
 .footer-right .copyright {
-	margin-top: -8px;
-	margin-bottom: -10px;
+    margin-top: -8px;
+    margin-bottom: -10px;
 }
 
 
@@ -357,7 +405,10 @@ div.controls .collapseall {
 #loginbtn, input, button, select {
     cursor: pointer;
     margin-left: 5px;
+    margin-right: 7px;
 }
+
+
 input#username,
 input#password,
 input[type="text"],
@@ -377,33 +428,25 @@ textarea {
 /* @group Coursebox Info & Summary */
 
 .sectionname {
-	border-bottom: 1px dashed #eee;
-	padding-bottom: 3px;
-	color: [[setting:themecolor]];
-	font-weight: 200;
-	font-size: 1.2em;
+    border-bottom: 1px dashed #eee;
+    padding-bottom: 3px;
+    font-weight: 200;
+    font-size: 1.2em;
 }
 
 .section .content li {
-	border-top: 1px dashed #eee;
-	border-left: 1px solid #fff;
-	padding-top: 5px !important;
-	padding-bottom: 5px !important;
+    border-top: 1px dashed #eee;
+    border-left: 1px solid #fff;
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
 
 }
 
 .section .content li:last-child {
-	border-bottom: 1px dashed #eee;
+    border-bottom: 1px dashed #eee;
 }
 
-.course-content .main {	padding : 0px !important;
-	margin : 0px !important;
-	padding-top: 1px !important;
-	border: 0px none !important;
-	background: transparent;}
 
-.course-content .main .content {	padding : 5px 0px 5px 30px;	background : #fff;
-	font-size: .9em;}
 
 /* @end */
 
@@ -492,31 +535,24 @@ margin: 0 10px;
     position:relative;z-index:102;
 }
 .tabtree .tabrow0 li a {
-    background-image:url([[pix:theme|tab/left]]);
     padding-left:14px;
     padding-top:10px;
     background-repeat:no-repeat;
     padding-bottom:3px;
     margin-bottom:-1px;
 }
-.tabtree .tabrow0 li a:hover {
-    background-image:url([[pix:theme|tab/left_hover]]);
-}
+
 .tabtree .tabrow0 li a span {
-    background-image:url([[pix:theme|tab/right]]);
     background-repeat:no-repeat;
     background-position:100% 0%;
     padding-right:14px;
     padding-top:10px;
     padding-bottom:3px;
 }
-.tabtree .tabrow0 li a:hover span {
-    background-image:url([[pix:theme|tab/right_hover]]);
-}
+
 .tabtree .tabrow0 ul,
 .tabtree .tabrow0 div {
     font-weight: normal;
-    background-image:url([[pix:theme|tab/tabrow1]]);
     background-position:0% 50%;
     border-top: 1px dotted #eee;
     padding:0.25em 0px;
@@ -629,33 +665,49 @@ body#page-course-view-topics.path-course div.moodle-dialogue-base div.yui3-widge
 
 /* @group Homepage */
 
+/* @group Coursebox */
+
+.coursebox {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.coursebox .info h3 {
+    margin-top: 0px;
+}
+
+ul.teachers {
+    margin-left: 40px;
+    margin-top: -10px;
+}
+
+/* @end */
+
 /* @group Home_title */
 
 table#home_title {
-	border: 1px solid #dededf;
-	width: 100%;
-	color: #666666;
+    border: 1px solid #dededf;
+    width: 100%;
+    color: #666666;
 }
 
 table#home_title td {
-	padding-left: 10px;
+    padding-left: 10px;
 }
 
 table#home_title h1 {
-	color: [[setting:themetrimcolor]];
-	font-weight: normal;
-	font-size: 1.5em;
-	text-transform: uppercase;
-	margin-bottom: 5px;
-	margin-top: 5px;
+    font-weight: normal;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    margin-top: 5px;
 }
 
 table#home_title h2 {
-	color: [[setting:themecolor]];
-	font-weight: normal;
-	font-size: 1.2em;
-	margin-top: 0px;
-	margin-bottom: 5px;
+    font-weight: normal;
+    font-size: 1.2em;
+    margin-top: 0px;
+    margin-bottom: 5px;
 }
 
 /* @end */
@@ -663,41 +715,40 @@ table#home_title h2 {
 /* @group Home_info */
 
 table#home_info {
-	border: 1px solid #dededf;
-	width: 100%;
-	background: #f0f0f0;
-	color: #666;
-	font-size: .9em;
+    border: 1px solid #dededf;
+    width: 100%;
+    background: #f0f0f0;
+    color: #666;
+    font-size: .9em;
 }
 
 table#home_info td {
-	padding: 30px;
-	text-align: left;
-	vertical-align: top;
-	text-align: left !important;
+    padding: 30px;
+    text-align: left;
+    vertical-align: top;
+    text-align: left !important;
 }
 
 table#home_info img {
-	margin: -30px;
+    margin: -30px;
 }
 
 table#links {
-	border: 1px solid #dededf;
-	background: #fff;
-	width: 100%;
-	margin-bottom: -10px;
-	font-size: .9em;
+    border: 1px solid #dededf;
+    background: #fff;
+    width: 100%;
+    margin-bottom: -10px;
+    font-size: .9em;
 }
 
 table#links td {
-	padding: 10px;
+    padding: 10px;
 }
 
 table#links a {
-	background: [[setting:themecolor]];
-	color: #fff;
-	padding: 5px;
-	border: 1px solid #dededf;
+    color: #fff;
+    padding: 5px;
+    border: 1px solid #dededf;
 }
 /* @end */
 
@@ -705,128 +756,123 @@ table#links a {
 
 /* @group Performance Information */
 #page-footer .performanceinfo {
-	-moz-border-radius-topleft:15px;
-	-moz-border-radius-topright:15px;
-	-webkit-border-top-left-radius:15px 15px;
-	-webkit-border-top-right-radius:15px 15px;
-	bottom:0;
-	left:-290px !important;
-	position:fixed;
-	background-color:#444;
-	width:580px !important;
-	border-width:12px 12px medium;
-	margin:0 50% !important;
+    -moz-border-radius-topleft:15px;
+    -moz-border-radius-topright:15px;
+    -webkit-border-top-left-radius:15px 15px;
+    -webkit-border-top-right-radius:15px 15px;
+    bottom:0;
+    left:-290px !important;
+    position:fixed;
+    background-color:#444;
+    width:580px !important;
+    border-width:12px 12px medium;
+    margin:0 50% !important;
 }
 
 #page-footer .performanceinfo ul {
-	text-align: center; 
-	margin: 0 auto;
+    text-align: center;
+    margin: 0 auto;
 }
 
 #page-footer .performanceinfo li{
-	display:block;
-	list-style-type:none;
-	float:left;
-	padding:5px 0;
-	width:25%;
+    display:block;
+    list-style-type:none;
+    float:left;
+    padding:5px 0;
+    width:25%;
 }
 
 #page-footer .performanceinfo li var{
-	font-size:1.3em;
-	font-weight:700;
+    font-size:1.3em;
+    font-weight:700;
 }
 
 #page-footer .performanceinfo .green{
-	color:#588E13 !important;
+    color:#588E13 !important;
 }
 
 #page-footer .performanceinfo .blue{
-	color: #4381c3;
+    color: #4381c3;
 }
 
 #page-footer .performanceinfo .purple{
-	color: #c052cf;
+    color: #c052cf;
 }
 
 #page-footer .performanceinfo .orange{
-	color: #e69b22;
+    color: #e69b22;
 }
 
 #page-footer .performanceinfo .red{
-	color: #df3b16;
+    color: #df3b16;
 }
 
 #page-footer .performanceinfo .white{
-	color:#FFF !important;
+    color:#FFF !important;
 }
 
 #page-footer .performanceinfo span{
-	color:#fff;
-	display: block;
+    color:#fff;
+    display: block;
 }
 /* @end */
 
 /* @group Login Page */
 
 #page-login-index {
-	background: [[setting:themecolor]];
-	padding-top: 20px;
-	margin: 0px;
-	height: 1000px;
+    padding: 0;
+    margin: 0px;
+    height: 1000px;
 }
 
 #page-login-index #page {
-	width: 550px;
+    width: 550px;
 }
-
 #page-login-index #page-wrapper,
 #page-login-index #page,
 #page-login-index #page-content,
 #page-login-index #region-main-box {
-	background: transparent;
+    background: none;
 }
 
 .loginbox {
-	margin-left: auto;
-	margin-right: auto;
-	background: #fff;
-	border: 3px solid [[setting:themetrimcolor]];
+    margin-left: auto;
+    margin-right: auto;
+    background: #fff;
 }
 
 .loginbox .loginsub .desc {
-	line-height: 2em;
+    line-height: 2em;
 }
 
 .loginbox .loginform .form-label {
-	padding-bottom: 10px;
-	padding-top: 2px;
-	color: [[setting:themecolor]];
-	text-transform: uppercase;
+    padding-bottom: 10px;
+    padding-top: 2px;
+    text-transform: uppercase;
 }
 
 .loginbox .loginsub .forgetpass {
-	font-weight: 200;
-	text-transform: uppercase;
-	padding-top: 10px;
+    font-weight: 200;
+    text-transform: uppercase;
+    padding-top: 10px;
 }
 
 .loginbox .signuppanel .subcontent {
-	width: 90%;
+    width: 90%;
 }
 
 #page-login-index #page-wrapper h2 {
-	color: [[setting:themecolor]];
-	text-transform: uppercase;
-	font-weight: 200;
-	font-size: 1.6em;
+    text-transform: uppercase;
+    font-weight: 200;
+    font-size: 1.6em;
 }
 
 #page-login-index #page-footer a{
-	color: #fff !important;
+    color: #fff !important;
 }
 
 #page-login-index #page-footer .footer-right {
-	color: #fff;
+    color: #fff;
 }
 
 /* @end */
@@ -834,7 +880,7 @@ table#links a {
 /* @group Calendar */
 
 .calendartable .today {
-	border: 1px dashed #ccc;
+    border: 1px dashed #ccc;
 }
 
 /* @end */

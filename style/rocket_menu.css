@@ -2,7 +2,6 @@
 -------------------------- */
 #menuwrap {
 	height: 36px;
-	background: [[setting:menucolor]];
 	width: 100%;
 	padding: 0px;
 }
@@ -11,7 +10,6 @@
     padding: 0;
     clear:both;
     height: 100%;
-    background: [[setting:menucolor]];
     margin: 0px;
     white-space: nowrap;
     float: right;
@@ -72,7 +70,6 @@ ul.dropdown li {
     vertical-align:middle;
     background-color:transparent;
     color:#fff;
-    zoom:1 !important;
 }
 ul.dropdown li.hover,
 ul.dropdown li:hover {
@@ -91,17 +88,11 @@ ul.dropdown ul {
 }
 ul.dropdown ul li {
     float:none;
-    background-color: [[setting:menucolor]];
     border-width: 1px;
     border-style: solid;
-    border-color: #666 #ccc [[setting:menucolor]];
     padding:0;
     font-size: 12px;
     text-transform: none;
-}
-
-ul.dropdown ul li:first-child {
-	border-top: 3px solid [[setting:menutrimcolor]];
 }
 
 
@@ -120,7 +111,6 @@ ul.dropdown li:hover > ul {
 ul.dropdown span,
 ul.dropdown span a,
 ul.dropdown li.clickable-with-children > a {
-    background-color: [[setting:menucolor]];
     width:auto;
     padding:2px 6px 4px 20px;
     color: #fff;
@@ -128,8 +118,6 @@ ul.dropdown li.clickable-with-children > a {
 ul.dropdown ul span,
 ul.dropdown ul span a,
 ul.dropdown ul li.clickable-with-children > a {
-    background-color:[[setting:menucolor]];
-    background-image: url([[pix:theme|menu/nav-arrow-right]]);
     background-position:100% 50%;
     background-repeat:no-repeat;
     color: #fff;
@@ -137,8 +125,6 @@ ul.dropdown ul li.clickable-with-children > a {
 ul.dropdown ul ul span,
 ul.dropdown ul ul span a,
 ul.dropdown ul ul li.clickable-with-children > a {
-    background-color:[[setting:menucolor]];
-    background-image: url([[pix:theme|menu/nav-arrow-right]]);
     background-position:100% 50%;
     background-repeat:no-repeat;
     color: #fff;
@@ -149,65 +135,59 @@ ul.dropdown a:link, ul.dropdown a:visited {
 }
 ul.dropdown a:hover {
     border:0;
-    background-color: [[setting:menuhovercolor]];
     color: #fff;
 }
-ul.dropdown ul ul li {
-    background-color: [[setting:menucolor]];
-}
-ul.dropdown ul ul ul li {
-    background-color: [[setting:menucolor]];
-}
+
 ul.dropdown li a,
 ul.dropdown span,
 ul.dropdown span a {
     border: none;
     background-color: transparent;
 }
+
 ul.dropdown ul li a,
 ul.dropdown ul span,
 ul.dropdown ul span a {
     border: 0;
 }
+
 ul.dropdown ul ul li a,
 ul.dropdown ul ul span,
 ul.dropdown ul ul span a {
     border:0
 }
+
 ul.dropdown ul ul ul li a,
 ul.dropdown ul ul ul span,
 ul.dropdown ul ul ul span a {
     border:0;
 }
+
 ul.dropdown a,ul.dropdown span{
     display:block;
 }
+
 ul.dropdown ul a {
     width:190px;
     padding:2px 0 4px 5px;
 }
+
 ul.dropdown ul a.open:hover {
-    background-color: [[setting:menuhovercolor]];
     color:#fff;
 }
+
 ul.dropdown ul li:hover > span,
 ul.dropdown ul li:hover > span a {
-    background-color:[[setting:menuhovercolor]];
-    background-image:url([[pix:theme|menu/ab-arrowover]]);
     color: #fff;
 }
-ul.dropdown li.clickable-with-children:hover > a {
-    background-image:url([[pix:theme|menu/ab-arrowover]]);
-}
+
 ul.dropdown *.open,
 ul.dropdown li:hover > span,
 ul.dropdown li:hover > span a {
-    background-color:[[setting:menuhovercolor]];
     color: #fff;
 }
 ul.dropdown ul ul *.open,
 ul.dropdown ul ul li:hover > span,
 ul.dropdown ul ul li:hover > span a {
-    background: url([[pix:theme|menu/ab-arrowover]]) [[setting:menuhovercolor]];
     color:#fff;
 }

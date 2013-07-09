@@ -1,3 +1,327 @@
-/* Custom CSS Settings
--------------------------*/
+/* @group Layout */
+
+#page-wrapper {
+    width:[[setting:screenwidth]];
+}
+
+/* @end */
+
+body {
+    background-image: url([[pix:theme|core/body_bg_sml]]);
+    background-repeat: repeat-x;
+    background-position: left top;
+    background-color: [[setting:themecolor]];
+    border-top: 5px solid [[setting:themetrimcolor]];
+}
+a:link,
+a:visited {
+    color: [[setting:contentlinkcolor]];
+}
+a:hover,
+a:active,
+h2.headingblock {
+    color: [[setting:themecolor]];
+}
+#page-site-index {
+    background-color: [[setting:themecolor]];
+    background-image: url([[pix:theme|core/body_bg]]);
+    background-repeat: repeat-x;
+    background-position: left [[setting:bannerheight]];
+}
+h2.headingblock {
+    border-width: 0 0 1px;
+}
+table#home_title h1 {
+    color: [[setting:themetrimcolor]];
+}
+.block_calendar_month .calendartable .today {
+    border-width: 1px;
+    border-style: dotted;
+}
+.block_rss_client .list li {
+    border-width: 1px 0 0;
+}
+#page-header {
+    border-width: 0 0 3px;
+}
+h2.headingblock,
+.block_rss_client .list li,
+#page-header {
+    border-style: solid;
+}
+h2.headingblock,
+.block_calendar_month .calendartable .today,
+.block_rss_client .list li,
+#page-header {
+    border-color: [[setting:menutrimcolor]];
+}
+a.logo {
+    background-image: url([[setting:logo]]);
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+#hometopblocks {
+    height: [[setting:bannerheight]];
+    width: 750px;
+}
+#toplinks {
+    background: [[setting:menucolor]];
+    height: [[setting:bannerheight]];
+}
+#homeblock {
+    background-image: url([[setting:banner]]);
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-color: #ccc;
+    height: [[setting:bannerheight]];
+}
+#headerstrip {
+    background-color: [[setting:themecolor]];
+}
+#ebutton #editbuttonoff input[type="submit"] {
+    background-image: url([[pix:theme|editmode_off]]);
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-color: #777;
+}
+#ebutton #editbuttonon input[type="submit"] {
+    background-image: url([[pix:theme|editmode_on]]);
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-color: #777;
+}
+#dndupload-status,
+#editingmode {
+    border-width: 0 0 3px;
+    border-style: solid;
+    border-color: [[setting:menutrimcolor]];
+}
+div.jcontrolsleft {
+    max-width: [[setting:breadcrumbwidth]];
+}
+#page-my-index .coursebox h3.main{
+    background-image: url([[pix:theme|core/icons]]);
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+.coursebox .info h3{
+    background-image: url([[pix:theme|core/icons]]);
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+.coursebox {
+    border-width: 0 0 1px;
+    border-style: dashed;
+    border-color: [[setting:themecolor]];
+}
+#page-my-index .course_title{
+    background-image: url([[pix:theme|core/icons]]);
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+#adminsettings h2.main{
+    background-image: url([[pix:theme|core/icons]]);
+    background-repeat: no-repeat;
+    background-position: left -76px;
+}
+#page-footer {
+    border-width: 3px 0 0;
+    border-style: solid;
+    border-color: [[setting:themecolor]];
+}
+#page-footer .footer-left #logo {
+    background-image: url([[pix:theme|footer/moodle-logo]]);
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+.sectionname {
+    color: [[setting:themecolor]];
+}
+.tabtree .tabrow0 li a {
+    background-image:url([[pix:theme|tab/left]]);
+}
+.tabtree .tabrow0 li a:hover {
+    background-image:url([[pix:theme|tab/left_hover]]);
+}
+.tabtree .tabrow0 li a span {
+    background-image:url([[pix:theme|tab/right]]);
+}
+.tabtree .tabrow0 li a:hover span {
+    background-image:url([[pix:theme|tab/right_hover]]);
+}
+.tabtree .tabrow0 ul,
+.tabtree .tabrow0 div {
+    background-image: url([[pix:theme|tab/tabrow1]]);
+}
+table#home_title h2 {
+    color: [[setting:themecolor]];
+}
+table#links a {
+    background-color: [[setting:themecolor]];
+}
+#page-login-index {
+    background-color: [[setting:themecolor]];
+}
+#page-login-index #page-wrapper h2 {
+    color: [[setting:themecolor]];
+}
+.loginbox {
+    border-width: 3px;
+    border-style: solid;
+    border-color: [[setting:themetrimcolor]];
+}
+.loginbox .loginform .form-label {
+    color: [[setting:themecolor]];
+}
+/* @group Blocks */
+
+.block .header {
+    background-color: [[setting:themecolor]];
+}
+.block .content a {
+    color: [[setting:blocklinkcolor]];
+}
+#region-pre .block .header {
+    background-color: [[setting:themecolor]];
+}
+#region-post .block .header {
+    background: [[setting:themecolor]];
+}
+.block_login.block {
+    background-color: [[setting:themecolor]];
+}
+#toplinks .block {
+    color: [[setting:menulinkcolor]] !important;
+}
+
+#toplinks .block .header {
+    border-bottom: 1px solid [[setting:menutrimcolor]] !important;
+}
+
+#toplinks .block_html .content,
+#toplinks .block_html .content a {
+    color: [[setting:menulinkcolor]];
+}
+#toplinks .block_html .content ul li:hover {
+    background: [[setting:menuhovercolor]];
+}
+#toplinks .block_html .content ul li {
+    border-bottom: [[setting:menutrimcolor]] 1px dashed;
+}
+#search .block_myprofile div.content {
+    color: [[setting:themecolor]];
+}
+#search .block_myprofile img.profilepicture {
+    border: 1px solid [[setting:themecolor]];
+}
+/* @end */
+
+
+/* @group Dock */
+
+#dock .dockedtitle {
+    background-color: [[setting:themecolor]];
+}
+
+#dock .dockedtitle.activeitem {
+    background-color: [[setting:themecolor]];
+}
+
+#dockeditempanel .dockeditempanel_hd {
+    background-color: [[setting:themecolor]];
+}
+
+/* @end */
+
+/* @group Menu */
+
+ul.dropdown ul li {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #666 #ccc [[setting:menucolor]];
+}
+ul.dropdown ul li:first-child {
+    border-width: 3px 0 0;
+    border-style: solid;
+    border-color: [[setting:menutrimcolor]];
+}
+#menuwrap,
+#custommenu,
+ul.dropdown ul li,
+ul.dropdown span,
+ul.dropdown span a,
+ul.dropdown ul span,
+ul.dropdown ul span a,
+ul.dropdown ul ul span,
+ul.dropdown ul ul span a,
+ul.dropdown li.clickable-with-children > a
+ul.dropdown ul li.clickable-with-children > a,
+ul.dropdown ul ul li.clickable-with-children > a{
+    background-color: [[setting:menucolor]];
+}
+ul.dropdown ul span,
+ul.dropdown ul span a,
+ul.dropdown ul ul span,
+ul.dropdown ul ul span a,
+ul.dropdown ul li.clickable-with-children > a,
+ul.dropdown ul ul li.clickable-with-children > a {
+    background-image: url([[pix:theme|menu/nav-arrow-right]]);
+}
+ul.dropdown ul ul li,
+ul.dropdown ul ul ul li {
+    background-color: [[setting:menucolor]];
+}
+ul.dropdown *.open,
+ul.dropdown ul ul *.open,
+ul.dropdown ul a.open:hover,
+ul.dropdown a:hover,
+ul.dropdown li:hover > span,
+ul.dropdown li:hover > span a,
+ul.dropdown ul li:hover > span,
+ul.dropdown ul li:hover > span a,
+ul.dropdown ul ul li:hover > span,
+ul.dropdown ul ul li:hover > span a {
+    background-color: [[setting:menuhovercolor]];
+}
+ul.dropdown ul ul *.open,
+ul.dropdown ul li:hover > span,
+ul.dropdown ul li:hover > span a,
+ul.dropdown ul ul li:hover > span,
+ul.dropdown ul ul li:hover > span a,
+ul.dropdown li.clickable-with-children:hover > a {
+    background-image: url([[pix:theme|menu/ab-arrowover]]);
+}
+/* @end */
+
+/* @group Modules */
+.forumpost .row.header {
+    border-width: 0 0 1px;
+    border-style: dashed;
+}
+.path-mod-forum .forumheaderlist th.header {
+    border-width: 0 0 4px;
+    border-style: solid;
+}
+.path-mod-forum .forumheaderlist th.header,
+.forumpost .row.header {
+    border-color: [[setting:themetrimcolor]];
+}
+.forumpost .row.header .subject,
+.forumpost .topic a:hover {
+    color: [[setting:themecolor]] ;
+}
+.forumpost .topic {
+    background-color: #fff;
+    background-image: url([[pix:theme|alert-overlay]]);
+    background-repeat: repeat-x;
+}
+.path-mod-forum .forumheaderlist th.header,
+#page-mod-quiz-edit .questionbankwindow div.header {
+    background-color: [[setting:themecolor]];
+}
+
+/* @end */
+
+/* @group Custom CSS Settings */
 [[setting:customcss]]
+/* @end */
