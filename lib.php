@@ -82,7 +82,7 @@ function rocket_set_logo($css, $logo) {
     $tag = '[[setting:logo]]';
     $replacement = $logo;
     if (is_null($replacement)) {
-        $replacement = '';
+        $replacement = $OUTPUT->pix_url('logo/'.$setting, 'theme');
     }
 
     $css = str_replace($tag, $replacement, $css);
