@@ -59,12 +59,10 @@ $choices = array(
 );
 $setting = new admin_setting_configselect($name, $title, $description, $default, $choices);
 $setting->set_updatedcallback('theme_reset_all_caches');
-$settings->add($setting);// Logo file setting$name = 'theme_rocket/logo';$title = get_string('logo','theme_rocket');$description = get_string('logodesc', 'theme_rocket');
-$default = 'rocket/pix/logo/rocket.png';$setting = new admin_setting_configfile($name, $title, $description, $default);
+$settings->add($setting);// Logo file setting$name = 'theme_rocket/logo';$title = get_string('logo','theme_rocket');$description = get_string('logodesc', 'theme_rocket');$setting = new admin_setting_configstoredfile($name, $title, $description, 'logo');
 $setting->set_updatedcallback('theme_reset_all_caches');$settings->add($setting);
 
-// Banner file setting$name = 'theme_rocket/banner';$title = get_string('banner','theme_rocket');$description = get_string('bannerdesc', 'theme_rocket');
-$default = 'rocket/pix/banner/default.png';$setting = new admin_setting_configtext($name, $title, $description, $default);
+// Banner file setting$name = 'theme_rocket/bannerimage';$title = get_string('bannerimage','theme_rocket');$description = get_string('bannerimagedesc', 'theme_rocket');$setting = new admin_setting_configstoredfile($name, $title, $description, 'bannerimage');
 $setting->set_updatedcallback('theme_reset_all_caches');$settings->add($setting);
 
 // Banner Height

@@ -68,8 +68,8 @@ $string['copyright'] = 'Copyright Notice';$string['copyrightdesc'] = 'This loca
 $string['sitename'] = 'Institution Name';
 $string['sitenamedesc'] = 'The name of your institution is shown on the frontpage. This is not the name of your site';
 
-$string['banner'] = 'Banner';
-$string['bannerdesc'] = 'Change the banner on the frontpage by entering the URL to a new one (i.e., http://www.somesite/banner.png). As a reference, the default banner is 750px by 250px.';
+$string['bannerimage'] = 'Banner';
+$string['bannerimagedesc'] = 'Change the banner on the frontpage by entering the URL to a new one (i.e., http://www.somesite/banner.png). As a reference, the default banner is 750px by 250px.';
 
 $string['bannerheight'] = 'Homepage Banner Height';
 $string['nobanner'] = 'Disable Banner';
