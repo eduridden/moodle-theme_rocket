@@ -113,6 +113,7 @@ a.logo {
 #homeblock {
 	background: url([[setting:banner]])  top right no-repeat #ccc;
 	height: [[setting:bannerheight]];
+	width: 750px;
 }
 
 #headerstrip {
