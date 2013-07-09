@@ -62,7 +62,6 @@ a.logo {
 }
 #hometopblocks {
     height: [[setting:bannerheight]];
-    width: 750px;
 }
 #toplinks {
     background: [[setting:menucolor]];
@@ -74,6 +73,7 @@ a.logo {
     background-repeat: no-repeat;
     background-color: #ccc;
     height: [[setting:bannerheight]];
+    width: 750px;
 }
 #headerstrip {
     background-color: [[setting:themecolor]];
